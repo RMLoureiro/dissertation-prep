@@ -1,0 +1,324 @@
+%!TEX root = ../template.tex
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% chapter2.tex
+%% NOVA thesis document file
+%%
+%% Chapter with the template manual
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\typeout{NT FILE chapter2.tex}%
+
+\chapter{Related work}
+\label{cha:related_work}
+
+In this chapter we will discuss relevant work considering the goals of the work
+to be conducted in this thesis. In particular, we will focus on the following topics:
+
+In section \ref{sec:membership_protocols} we discuss the differences between
+the different kinds of membership systems as well as some implementations.
+
+In section \ref{sec:babel} we will discuss Babel(insert reference), a framework
+to develop distributed protocols.
+
+In section \ref{sec:protocol_analysis_tools} we will present and compare some 
+protocol analysis tools and compare them to MOBs.
+
+\section{Membership Protocols}
+\label{sec:membership_protocols}
+
+This section introduces some membership protocols that have been considered to
+part of the work that will be developed.
+
+
+\subsection{Membership}
+\label{sub:membership}
+
+A protocol where each node knows every other node in the network might work well
+for small networks, but it is not a scalable solution since each node would need
+to have \textit{n - 1} communications channels open at all time, being n the
+amount of nodes in the system, and each node needs to be following any and all
+changes to the system. This is not feasible since the number of links between
+nodes would rise quadratically and networks can easily reach thousands of
+participants. In order to overcome the challenges that arise from large networks,
+we use partial view membership protocols. In these protocols each node only knows
+and maintains information about a small selection of nodes in the systems,
+making it a more scalable strategy than a total view protocol, since
+the number of connections grow at a logarithmic rate instead.
+
+When maintaining a partial view, protocols usually follow one of two strategies
+when managing their memberships:
+
+\begin{itemize}
+  \item \textbf{Reactive:} With this strategy the partial view only changes when
+the membership suffers changes, usually by a node leaving or joining the membership
+  \item \textbf{Cyclic:} With this approach, the partial view changes periodically.
+Every \textit{t} seconds nodes exchange information that may lead to changes to the
+partial view.
+\end{itemize}
+
+This membership protocols may be represented by a graph where the vertices represent
+the participants of the networks and the edges represent the communication links.
+Depending on how the graph ends up we can classify the membership as structured,
+unstructured or partially structured. In the next sections we will go over these
+types of memberships and some implementations.
+
+\subsection{Structured Overlays}
+\label{sub:structured_overlays}
+
+Structured overlay memberships follow a pre-defined structure by having the nodes
+routed to a specific logical position in the network. This known structure allows
+improvement on search primitives, enabling efficient discovery of data and process.
+This position is usually determined by giving a unique identifier for each node of the
+network.
+
+However, having a predefined topology come at the cost of more costly re-structuring
+usually by a node leaving the network or a new participant joining. This process
+is usually slow and costly since a change of one node in the membership may affect
+the network at a global level. This drawback becomes more relevant in high churn rate
+scenarios.
+
+\subsubsection{Chord}
+\label{subsec:chord}
+
+Consistent Hashing and Random Trees, or Chord(referencia) is a Distributed Hash
+Table based algorithm where each node is assigned a unique identifier based on
+the output of a hash function. Usually this has is based on the IP address of
+the node since this is unique for every node of the network, and making it so
+that once a node joins the network their identifier is set in stone. These
+identifiers are also so that each node knows which keys of the distributed hash
+table are assigned to them, since the range of keys that belong to a certain
+node is represented by the range defined by their identifier up to the
+identifier of the next node.
+
+The graph generated based on the membership overlay will be a cyclic graph with
+a ring shape, with the nodes ordered by their generated identifier. Each node
+also maintains a routing table with around O(log \textit{n}) distinct entries
+called a finger table. This routing table is used in order to navigate the overlay
+in a more efficient manner.
+
+The tables maintained by these nodes are automatically updated when a new node joins
+or leaves the system  making it always possible to find a node responsible to a given
+key. However, simultaneous failures may break the overlay since the correctness
+of the membership depends on each node knowing their correct neighbors. In order
+to increase fault tolerance, a periodical stabilization protocol is run in background,
+making sure the neighbors are still active and restructuring the overlay
+accordingly as well as updating the entries on the finger table.
+
+\subsubsection{Pastry}
+\label{subsec:pastry}
+
+Pastry(insert reference), similarly to Chord is a structured overlay protocol that
+defines a distributed hash table. A Pastry system is a self-organizing overlay
+network of nodes where every node has a 128-bit identifier. This identifier
+is assigned randomly when a node joins the system and is used to indicate a
+node's position in a circular space that ranges from 0 to $2^{128}-1$. It is assumed
+that the hash function that gives the node's identifier generated a uniform
+distribution of identifiers around the 128-bit space.
+
+Each Pastry node maintains a \textit{routing table}, a \textit{neighborhood set}
+and a \textit{leafing set}. The routing table contains the entries based
+on substrings of the own node's identifier. The neighborhood set contains
+the node identifiers and the corresponding IP address of the \textit{M} the closest
+nodes to the local node, \textit{M} being parameterizable.  The neighborhood
+set contains the nodes that are used to maintain local properties. The leafing
+set contains the \textit{L}/2 closest large node identifiers and \textit{L}/2
+smallest node identifiers, \textit{L} also being a parametrized value. The
+leaf set is used in message routing.
+
+Pastry makes use these tables in the following fashion: when a message is received
+for another node in the network we check the leaf set, if the node is in range of
+the leaf set we route directly to the destination node, otherwise we check
+the routing table for a node that shares a common prefix with the key.
+
+\subsection{Unstructured Overlays}
+\label{sub:unstructured_overlays}
+
+Unstructured overlays place few constrains as on how the nodes chose their
+neighbors. This results in a random graph that is hard to predict and describe.
+
+By not having a structured overlay these memberships end up being more fault-tolerant
+in high churn rate scenarios due to the cost of the network restructuring
+itself is fairly low.
+
+\subsubsection{SWIM}
+\label{subsec:swim}
+
+SWIM(referencia) stands for \textbf{S}calable \textbf{W}eakly-consistent \textbf{I}nfection-style
+Process Group \textbf{M}embership Protocol. This protocol is composed of two distinct
+components, a failure detector and a dissemination component.
+
+Unlike traditional gossip based overlays that rely on a heartbeat strategy,
+the failure detector in SWIM is independent of the rest of the protocol.
+The failure detector is fully decentralized and is executed in a randomized
+probe-based fashion, the authors later suggest an optimization via a round-robin
+fashion instead. Every \textit{t} seconds, parameterizable value, a random
+node that belongs to the membership is checked to see if its still alive, if
+no awnser is received the request is forwarded to \textit{k} other members to
+execute an indirect probe. If the nodes responds to at least one of the indirect
+requests the suspicion is removed and an \textit{alive} message is spread to
+fasten the process in case other nodes suspect from it.  This mechanism reduces The
+number of false positives in failure detection, which can usually be due to a
+temporary unavailability from a network partition or from a slow-down of a node
+due to a high load of requests. As a drawback failure detection is slower.
+
+The other component of this protocol is the gossip dissemination system which
+maintains a partial view of the network. This component updates whenever a member
+joins or leaves the system by an infection style dissemination protocol. In order to
+make this more efficient, the updates piggyback the messages that are sent during the
+failure detection procedure.
+
+\subsubsection{HyParView}
+\label{subsec:hyparview}
+
+HyParView (referencia) is a gossip based membership protocol that offers high
+resilience and high delivery reliability of messages while being highly scalable.
+It relies on a hybrid approach by maintaining, besides the active view that is 
+used by the nodes to maintain the communication overlay, a passive view, in case
+the networks needs to be restructured.
+
+HyParView uses different approaches when it comes to maintaining each of the views,
+for active view a reactive strategy is used, nodes react to events that require 
+the network to be restructured such as new nodes joining the membership or
+existing ones leaving, either by failing or by choice.
+
+The nodes in the active view are the ones with which each node maintains a
+communication link. In case the active view needs to be changed the nodes in
+the passive view may be promoted to active nodes the same way nodes in the
+active view may be demoted to the passive view. All the nodes in the active
+view of a given node have that node in their active view, making the connection
+graph that represents the overlay be a bidirectional graph.
+
+For the passive view, HyParView uses a cyclic strategy by periodically exchanging
+information with other nodes regarding the contents of its views. This information
+is exchanged by means of a shuffle operation with another node from its active view.
+After the exchange, the nodes integrate the new received members in its
+passive views, even if for that, some older members have to be dropped. This
+mechanism helps maintaining a homogeneous overlay in the number of connections
+each node has.
+
+The gossip strategy relies on the use of TCP as a reliable transport protocol and fail
+detector. Since all members are tested at each step of the gossip protocol, failed nodes
+do not stay unnoticed for long. This way, HyParView provides with fast self-healing
+properties that are characteristic of gossip protocols.
+
+Tests done in (referencia hyparview) show that the algorithm is able to recover from as much as 80\%
+node failure, as long as the overlay stays connected. By being able quickly react to failures
+in the system, the protocol was shown to be able to maintain 100\% reliability 
+for message dissemination.
+
+
+\subsection{Partially Structured Overlays}
+\label{sub:partially_structured_overlays}
+
+Partially structured overlays aim to get the best of both strategies. We can 
+leverage the easy to maintain and fault-tolerant unstructured overlays and
+by applying some optimization procedure to the network we can achieve a more
+efficient search and application level routing.
+
+\subsubsection{T-MAN}
+\label{subsec:t-man}
+
+T-MAN (referencia) was created with the motivation to give
+the ability of taking some random overlay, and \textit{evolve} it into another one.
+
+The logic behind the algorithm is giving each node a ranking value that every node can
+use to apply a function to determine how desirable a node is as a neighbor.
+Each node maintains a partial view that contains the addresses of nodes that are not its
+immediate neighbors, much like the HyParView overlay described in \ref{subsec:hyparview}.
+Periodically each node exchanges its partial view with the first node in its active view,
+according to the ranking
+values which depends on the target overlay. The receiver will execute the same procedure
+as the sender so they can later merge their local views and apply the ranking function.
+Using their peers' views to improve their own the overlay will gradually become closer
+the desired overlay.
+
+Experimentally this algorithm is shown to be scalable and fast, with the convergence
+times growing approximately at a logarithmic rate in function of the number of nodes in
+the network. The problem that surges with this, is that the network only becomes as 
+fault-tolerant as the desired overlay, since T-MAN doesn't aim to maintain a balanced degree
+between the nodes, this might create uneven load balance or even node isolation during
+or after the procedure
+
+\subsubsection{X-BOT}
+\label{subsec:x-bot}
+
+X-BOT (referencia) stands for \textbf{B}ias the \textbf{O}verlay \textbf{T}opology
+according to some targeting criteria \textbf{X}. This protocol is completely decentralized,
+and the nodes do not require any prior knowledge of where they will end up in the final topology. 
+This protocol strives to preserve the degree of the nodes that participate in the 4-node coordinated
+optimization technique, described in greater detail below, this is essential to preserve
+the connectivity of the overlay. X-BOT is built in a way that every modification that is
+done by the protocol increases its efficiency and due to the dynamic nature of the model,
+its ensured that the overlay does not stabilize in a local minimum. These optimizations
+are done in a way that key features of the overlay, such as low clustering coefficient and
+low overlay diameter, are preserved. The protocol is highly flexible because it relies on a
+companion oracle to estimate the link cost and therefore bias the network according to
+different cost metrics.
+
+The companion oracle is accessible by all nodes, and its sole purpose is to give the
+link cost from the node that invokes it to a given node.
+
+The 4-node coordinated technique that has been referred above works as follow, a
+node \textit{i}, the initiator, starts the optimization round selecting a node from
+its passive view. Node \textit{O} is a node from \textit{i}'s active view that
+will be replaced. Node \textit{c}, the candidate, is a node from \textit{i}'s passive
+view that is going to be upgraded to its active view. And finally node \textit{d}
+is the node to be removed from the candidate's view so that \textit{i} can be accepted.
+These nodes are always selected based upon the link cost values provided by the oracle,
+ensuring that every time the optimization procedure is called the network increases its
+efficiency
+
+\section{Babel}
+\label{sec:babel}
+
+In this section we will discuss Babel (referência), a framework that simplifies the
+development of distributed protocols within a process that executes in real hardware.
+Babel simplifies the development process by abstracting the developer from the
+low level complexities associated with typical distributed systems implementations like
+interactions with other protocols, communication details, handling timers and concurrency control.
+The communication comlpexities are hidden behind abstractions called \textit{channels}
+that can be extended by the developer. The Babel framework is composed by three main components:
+
+\begin{itemize}
+  \item \textbf{Protocols:} This is the component the developer implements encoding
+the behavior of the distributed system being designed. Protocols are modeled as
+state machines whose state changes by action of external events, for this purpose
+each protocol contains an event queue that keeps track of these events.
+  \item \textbf{Core:} This is the central component that coordinates the
+execution of all protocols and mediates all interactions within the framework.
+Core also keeps track of timers setup by the protocols and delivers an event to the
+correct protocol when the timer is up.
+  \item \textbf{Network:} This component handle the channel abstraction that was
+mentioned previously. Protocols can interact with channels by opening and closing connections
+and sending messages as well as receiving relevant events for the protocol.
+\end{itemize}
+
+Babel is provided as a java library and the developer can implement a protocol
+by extending the abstract class \textit{GenericProtocol} that provides the needed
+methods to generate events, register callbacks to process received events and 
+the initial behavior for a node for the protocol that is being implemented.
+The provided API can be split into three categories:
+
+\begin{itemize}
+  \item \textbf{Timers:} This allows for the execution of periodic actions.
+  \item \textbf{Inter-protocol communication:} Babel supports multiple protocols
+executing concurrently in the same process so mechanisms for these protocols
+to interact with each other exist. These mechanisms take the form of requests and
+notifications.
+  \item \textbf{Networking:} Babel offers different network channels with different
+capabilities but keeping the same model of interactions between protocols and the
+different channel implementations.
+\end{itemize}
+
+Evaluation testing in (referencia) show that Babel can reduce the effort for programmers
+in creating prototypes of distributed protocols, comparing the number of lines programmed
+using Babel and standalone versions of the same protocols in java. This is achieved
+mostly by the logic that is covered in the network and core layers, relieving the developer
+from having to worry about handling timers, message ordering and most communication besides events.
+
+Regarding performance tests conducted by implementing MultiPaxos (referencia no artigo do babel) with the framework
+when comparing to standalone implementations, the implementation using Babel showed comparable performance
+with less implementation overhead.
+
+\section{Protocol Analysis Tools}
+\label{sec:protocol_analysis_tools}

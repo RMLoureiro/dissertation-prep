@@ -1,0 +1,42 @@
+%!TEX root = ../template.tex
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% abstrac-en.tex
+%% NOVA thesis document file
+%%
+%% Abstract in English([^%]*)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\typeout{NT FILE abstrac-en.tex}%
+
+The number of services and applications that require and rely on transactional, replicated and verifiable data to 
+function is increasing with each passing day, from banking and financial applications to online voting. With these
+requirements also come challenges, like availability, consistency, and security mechanisms that allow for integrity, non-repudiation and
+encryption of messages.
+
+A common solution that these applications use to satisfy these requirements is Distributed Ledger Technologies 
+or DLT. These systems are characterized as having a decentralized database, consensus mechanisms 
+to validate transactions and immutable data once verified. But with the wide range of different requirements come a wide range protocols.
+These require testing, validation, and inevitably come vulnerabilities or errors that need to be corrected.
+Since the use of DLTs is recently new there is a lack of tools for the testing and
+validation of these protocols, which means that problems with the logic of the algorithm or vulnerabilities are often discovered in live
+applications.
+
+One of these tools is MOBS(meter referência), which stands for Modular Blockchain Simulator, a simulator built with the extensibility and
+modularity in mind, allowing users to simulate any family of protocols as well as parametrize multiple scenarios for their study.
+These parameterizations include bandwidth limits, byzantine behavior of the participant nodes and adversarial behavior. After the execution
+the desired statistics and information needed to validate the execution of the protocols can also be parametrized.
+
+The goal of this dissertation is twofold we propose an extension to this tool to better allow the simulator to provide different sets of execution environments by
+allowing parameterization of the network layer of the simulator. This will allow for the definition of membership protocols in which this 
+layer will be built, either with structured or unstructured overlays or with the help network optimization algorithms, we propose Chord,
+HyParView and X-BOT respectively. We also propose the implementation of tools that will allow us to validate the correctness of the
+implemented protocols through the logs of the simulator.
+
+% Palavras-chave do resumo em Inglês
+% \begin{keywords}
+% Keyword 1, Keyword 2, Keyword 3, Keyword 4, Keyword 5, Keyword 6, Keyword 7, Keyword 8, Keyword 9
+% \end{keywords}
+\keywords{
+  Distributed Ledger Technology,
+  Blockchain
+}
