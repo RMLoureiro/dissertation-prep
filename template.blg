@@ -1,17 +1,17 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
 [0] Config.pm:310> INFO - Logfile is 'template.blg'
-[40] biber-darwin:340> INFO - === Tue May  9, 2023, 23:04:11
-[52] Biber.pm:419> INFO - Reading 'template.bcf'
-[98] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
-[98] Biber.pm:979> INFO - Found 1 citekeys in bib section 1
-[98] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
-[110] Biber.pm:4419> INFO - Processing section 1
-[117] Biber.pm:4610> INFO - Looking for bibtex file './NOVAthesisFiles/fix-bib.bib' for section 1
-[117] bibtex.pm:1713> INFO - LaTeX decoding ...
-[119] bibtex.pm:1519> INFO - Found BibTeX data source './NOVAthesisFiles/fix-bib.bib'
-[137] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[137] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[137] Biber.pm:4239> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
-[137] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
-[142] bbl.pm:660> INFO - Writing 'template.bbl' with encoding 'UTF-8'
-[142] bbl.pm:763> INFO - Output to template.bbl
+[65] biber-darwin:340> INFO - === Tue Jul 11, 2023, 18:42:08
+[80] Biber.pm:419> INFO - Reading 'template.bcf'
+[153] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
+[153] Biber.pm:979> INFO - Found 1 citekeys in bib section 1
+[153] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
+[167] Biber.pm:4419> INFO - Processing section 1
+[174] Biber.pm:4610> INFO - Looking for bibtex file './NOVAthesisFiles/fix-bib.bib' for section 1
+[176] bibtex.pm:1713> INFO - LaTeX decoding ...
+[178] bibtex.pm:1519> INFO - Found BibTeX data source './NOVAthesisFiles/fix-bib.bib'
+[206] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[206] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[206] Biber.pm:4239> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[206] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[212] bbl.pm:660> INFO - Writing 'template.bbl' with encoding 'UTF-8'
+[213] bbl.pm:763> INFO - Output to template.bbl

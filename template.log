@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.4.25)  10 JUL 2023 21:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.4.25)  11 JUL 2023 18:42
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -2123,7 +2123,7 @@ Package biblatex Info: Reference segment=0 on input line 204.
 \cftsubfigureindent=\skip296
 \cftsubfigurenumwidth=\skip297
 
-TIME class loading=140503
+TIME class loading=132173
 \c@/@nt/hook/mainmatter/@names/@sizecnt=\count729
 \c@/@nt/hook/mainmatter/@paths/@sizecnt=\count730
 \c@/@nt/hook/mainmatter/pre/@sizecnt=\count731
@@ -2257,7 +2257,7 @@ l.215 \typeout
 
  <./NOVAthesisFiles/Schools/nova/Images//nova-insignia.pdf> <./NOVAthesisFiles/
 Schools/nova/fct/Images//nova-fct-logo.pdf>]
-TIME process covers=162414
+TIME process covers=151613
 LaTeX Font Info:    Font shape `T1/zplTLF/m/n' will be
 (Font)              scaled to size 24.88pt on input line 216.
 LaTeX Font Info:    Font shape `T1/GilliusADFNoTwo-LF/m/n' will be
@@ -2271,7 +2271,7 @@ LaTeX Font Info:    Font shape `T1/zplTLF/m/sc' will be
 (./Chapters/abstract-en.tex
 NT FILE abstrac-en.tex
 LaTeX Font Info:    Font shape `T1/zplTLF/b/n' will be
-(Font)              scaled to size 10.95pt on input line 41.
+(Font)              scaled to size 10.95pt on input line 42.
 ) [1
 
 
@@ -2291,16 +2291,16 @@ Underfull \vbox (badness 3536) has occurred while \output is active []
 
 
 ]
-[3] (./template.toc) [4
+[3] (./template.toc [4
 
 
-] [5] (./template.lof) [6
+]) [5] (./template.lof) [6
 
 ] (./template.lot) [7
 
 ]
 (./template.gls) (./template.acr) (./template.sls)
-TIME process frontmatter=173346
+TIME process frontmatter=159299
 (./Chapters/chapter1.tex
 NT FILE chapter1.tex
 LaTeX Font Info:    Font shape `T1/zplTLF/m/n' will be
@@ -2354,14 +2354,33 @@ LaTeX Font Info:    Font shape `T1/zplTLF/m/it' will be
 
 [4
 
-] [5]) (./Chapters/chapter3.tex
-NT FILE chapter3.tex
-[6{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}])
-(./Chapters/chapter4.tex
-NT FILE chapter4.tex
-[7
+] [5] [6{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.e
+nc}]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-]) [8
+ [7]
+[8] [9]) (./Chapters/chapter3.tex
+NT FILE chapter3.tex
+[10] [11
+
+] [12]
+LaTeX Font Info:    Font shape `T1/zplTLF/m/n' will be
+(Font)              scaled to size 7.0pt on input line 116.
+LaTeX Font Info:    Font shape `OT1/zplTLF/m/n' will be
+(Font)              scaled to size 7.3pt on input line 118.
+LaTeX Font Info:    Font shape `OT1/zplTLF/m/n' will be
+(Font)              scaled to size 5.5pt on input line 118.
+LaTeX Font Info:    Font shape `T1/zplTLF/b/n' will be
+(Font)              scaled to size 7.0pt on input line 120.
+ [13
+pdfTeX warning (ext4): destination with the same identifier (name{table.3.1}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.150 
+      ]) (./Chapters/chapter4.tex
+NT FILE chapter4.tex
+[14]) [15
 
 ]
 
@@ -2405,11 +2424,11 @@ Overfull \hbox (17.0pt too wide) in paragraph at lines 236--236
 []$[]$ 
  []
 
-[9
+[16
 
 ]
-TIME process mainmatter=184609
-<NOVAthesisFiles/Schools/nova/fct/Images//nova-fct-msc-cover-back.pdf, id=196, 
+TIME process mainmatter=174751
+<NOVAthesisFiles/Schools/nova/fct/Images//nova-fct-msc-cover-back.pdf, id=239, 
 597.50829pt x 845.0471pt>
 File: NOVAthesisFiles/Schools/nova/fct/Images//nova-fct-msc-cover-back.pdf Grap
 hic file (type pdf)
@@ -2428,7 +2447,7 @@ l.246 \ntprint{backcover}
 
 
  <./NOVAthesisFiles/Schools/nova/fct/Images//nova-fct-msc-cover-back.pdf>]
-TIME process process backcover=189251
+TIME process process backcover=178171
 \tf@toc=\write10
 \openout10 = `template.toc'.
 
@@ -2444,13 +2463,13 @@ Package logreq Info: Writing requests to 'template.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 56735 strings out of 476025
- 1127774 string characters out of 5790017
- 2080284 words of memory out of 5000000
- 75905 multiletter control sequences out of 15000+600000
- 647945 words of font info for 318 fonts, out of 8000000 for 9000
+ 56836 strings out of 476025
+ 1129638 string characters out of 5790017
+ 2093909 words of memory out of 5000000
+ 75958 multiletter control sequences out of 15000+600000
+ 663019 words of font info for 352 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 124i,21n,145p,2300b,4235s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 124i,21n,145p,2300b,4372s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/arkandis/gillius/GilliusADFNo
 2-Bold.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/arkandis/gillius/Gil
 liusADFNo2-Italic.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/arkandis/
@@ -2459,10 +2478,10 @@ e1/public/newpx/pxsys.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/publi
 c/txfonts/t1xtt.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newp
 x/zplb.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newpx/zplr.pf
 b></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newpx/zplri.pfb>
-Output written on template.pdf (19 pages, 856553 bytes).
+Output written on template.pdf (26 pages, 889708 bytes).
 PDF statistics:
- 367 PDF objects out of 1000 (max. 8388607)
- 308 compressed objects within 4 object streams
- 62 named destinations out of 1000 (max. 500000)
- 148249 words of extra memory for PDF output out of 154059 (max. 10000000)
+ 418 PDF objects out of 1000 (max. 8388607)
+ 352 compressed objects within 4 object streams
+ 78 named destinations out of 1000 (max. 500000)
+ 156457 words of extra memory for PDF output out of 184870 (max. 10000000)
 
