@@ -21,16 +21,15 @@ Since the use of DLTs is recently new there is a lack of tools for the testing a
 validation of these protocols, which means that problems with the logic of the algorithm or vulnerabilities are often discovered in live
 applications.
 
-One of these tools is MOBS(meter referência), which stands for Modular Blockchain Simulator, a simulator built with the extensibility and
+One of these tools is MOBS \url{https://github.com/mce-alves/MOBS}, Modular Blockchain Simulator, a simulator built with the extensibility and
 modularity in mind, allowing users to simulate any family of protocols as well as parametrize multiple scenarios for their study.
 These parameterizations include bandwidth limits, byzantine behavior of the participant nodes and adversarial behavior. After the execution
 the desired statistics and information needed to validate the execution of the protocols can also be parametrized.
 
 The goal of this dissertation is twofold we propose an extension to this tool to better allow the simulator to provide different sets of execution environments by
-allowing parameterization of the network layer of the simulator. This will allow for the definition of membership protocols in which this 
-layer will be built, either with structured or unstructured overlays or with the help network optimization algorithms, we propose Chord,
-HyParView and X-BOT respectively. We also propose the implementation of tools that will allow us to validate the correctness of the
-implemented protocols through the logs of the simulator.
+allowing parameterization of the network layer of the simulator we propose Chord, HyParView and X-BOT since they are diverse protocols and very different from each other.
+Secondly also propose the implementation of tools that will allow us to validate the correctness of the implemented consensus protocols through the logs of the simulator,
+allowing for better qualitative results to be extracted and evaluated.
 
 % Palavras-chave do resumo em Inglês
 % \begin{keywords}
@@ -38,5 +37,9 @@ implemented protocols through the logs of the simulator.
 % \end{keywords}
 \keywords{
   Distributed Ledger Technology,
-  Blockchain
+  Blockchain,
+  Networking,
+  Consensus,
+  Simulation,
+  Validation of protocol properties
 }

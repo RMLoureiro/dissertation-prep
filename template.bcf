@@ -2362,6 +2362,33 @@
     <bcf:datasource type="file" datatype="bibtex" glob="false">Bibliography/bibliography.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
+    <bcf:citekey order="1" intorder="1">tezos</bcf:citekey>
+    <bcf:citekey order="2" intorder="1">ethereum</bcf:citekey>
+    <bcf:citekey order="3" intorder="1">ethereum_analysis</bcf:citekey>
+    <bcf:citekey order="4" intorder="1">chord</bcf:citekey>
+    <bcf:citekey order="5" intorder="1">pastry</bcf:citekey>
+    <bcf:citekey order="6" intorder="1">swim</bcf:citekey>
+    <bcf:citekey order="7" intorder="1">hyparview</bcf:citekey>
+    <bcf:citekey order="8" intorder="1">hyparview</bcf:citekey>
+    <bcf:citekey order="9" intorder="1">tman</bcf:citekey>
+    <bcf:citekey order="10" intorder="1">xbot</bcf:citekey>
+    <bcf:citekey order="11" intorder="1">distributed_systems_concepts</bcf:citekey>
+    <bcf:citekey order="12" intorder="1">chandra</bcf:citekey>
+    <bcf:citekey order="13" intorder="1">paxos</bcf:citekey>
+    <bcf:citekey order="14" intorder="1">blockchain_consensus</bcf:citekey>
+    <bcf:citekey order="15" intorder="1">babel</bcf:citekey>
+    <bcf:citekey order="16" intorder="1">babel</bcf:citekey>
+    <bcf:citekey order="17" intorder="1">paxos</bcf:citekey>
+    <bcf:citekey order="18" intorder="1">networkx</bcf:citekey>
+    <bcf:citekey order="19" intorder="1">vibes</bcf:citekey>
+    <bcf:citekey order="20" intorder="1">blocksim1</bcf:citekey>
+    <bcf:citekey order="21" intorder="1">blocksim2</bcf:citekey>
+    <bcf:citekey order="22" intorder="1">simblock</bcf:citekey>
+    <bcf:citekey order="23" intorder="1">vibes</bcf:citekey>
+    <bcf:citekey order="24" intorder="1">blocksim1</bcf:citekey>
+    <bcf:citekey order="25" intorder="1">blocksim2</bcf:citekey>
+    <bcf:citekey order="26" intorder="1">simblock</bcf:citekey>
+    <bcf:citekey order="27" intorder="1">ethereum_analysis</bcf:citekey>
   </bcf:section>
   <!-- SECTION 1 -->
   <bcf:bibdata section="1">

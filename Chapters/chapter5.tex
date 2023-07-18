@@ -1,0 +1,140 @@
+%!TEX root = ../template.tex
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% chapter5.tex
+%% NOVA thesis document file
+%%
+%% Chapter with a short latex tutorial and examples
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\typeout{NT FILE chapter5.tex}%
+
+\chapter{Work to be developed}
+\label{cha:work_to_be_developed}
+
+This chapter will describe the work that will be developed to address the
+problems presented in \ref{sub:problem} making use of the tools and information
+presented in \ref{cha:related_work} and \ref{cha:mobs}.
+
+\section{Proposed work}
+\label{sub:sub_proposed_work}
+
+The work will be divided in two sections, enhancing MOBs' network layer,
+and the extending the logs and statistics module to allow for better qualitative
+information about the implemented protocols at the node level.
+
+\subsection{Network Layer Enhancement}
+\label{subsec:network_layer_enchancement}
+
+In this section we will present the proposed enhancements to the Network layer of
+MOBs. For this, we propose the following work to be conducted:
+
+\begin{itemize}
+  \item \textbf{Modular Network Layer:} The goal is to make the network layer
+modular and allow for the implementation of diverse membership protocols. This
+will allow for a more diverse set of parametrizations and network environments
+when testing the already implemented.
+  \item \textbf{Network Module Parametrization:} Here we want to expand the already
+provided parametrizations of this module, allowing for the parametrization of events
+such as, allowing nodes to join the network after the simulation already started,
+allowing a random amount of nodes to fail at a random point during execution and
+simulate periodic bandwidth slowdowns between certain nodes.
+\end{itemize}
+
+These enhancements to the Network module will allow not only for the advantages
+described above, but also allow for the network itself to restructure in case of
+node failures and a closer replication of real-life conditions, since right now the
+overlay layout is static, besides being able to parametrize nodes to be offline after
+a certain amount of time. In the real world if this happens the network will restructure
+and initiate protocols to keep its integrity and correctness, which depends on the
+protocol that was implemented, for Chord we would try to re-structure back to a cyclic
+ring formation, for HyParView we would populate each node's active vies to go back to the
+parametrized size.
+
+For this we propose the implementation of three membership overlay protocols, Chord,
+HyParView and X-BOT. These three protocols were chosen so that we can have a
+structured overlay protocol, an unstructured protocol and a partially-structured
+respectively.
+
+We also propose a small upgrade to the GUI, allowing users to select the network
+protocol that they desire their simulation to run on alongside with the option for
+a validation script to be run after to check the network's correctness and integrity.
+These two extensions will allow users to either check the validation of a network
+protocol if they choose to implement a new one, or make sure of the integrity of
+the network overlay when studying the logs from the protocols that run on top of it.
+
+We propose to evaluate this work in the following way:
+
+\begin{itemize}
+  \item After implementation of these protocols a script in Python with the aid of
+the NetworkX package should be written in order to validate the overlay's properties.
+The script should be able to generate a graph from the logs provided by MOBs.
+The values of their properties and the metrics we can extract the overlay should be
+comparable to the ones presented in protocol's paper and other tests that were conducted
+on them.
+  \item After validation of each of these protocols run the already implemented
+consensus and blockchain protocols, and we should see similar results to the ones obtained
+when testing with the current Network layer. We should expect some variance in the 
+performance of the protocols implemented at the Node module since one of the
+goals of this enhancement is to study their performance using different overlays.
+  \item The enhancements to the GUI should be seamless and work for existing scenarios
+while now giving the ability to select which network protocol to run, the validation
+script for said protocol and show the results given by that script.
+\end{itemize}
+
+\subsection{Improve qualitative data}
+\label{subsec:improve_qualitative_data}
+
+In a first step to better understand what information we can extract and how
+we can leverage the simulator to evaluate Blockchain protocols, we will first implement
+simpler consensus protocols, namely Chandra-Toueg, Paxos and MultiPaxos described in \ref{sec:consensus}.
+
+Implementing these protocols will allow us to better understand and see if changes
+need to be done to the current log and statistics modules in order to obtain better qualitative
+data, needed to evaluate these protocols. For this further study needs to be done
+in order to evaluate what data and properties we need.
+
+After these implementations and validations we will move to blockchain protocols and see
+if we can qualitativly evaluate these protocols, specifically we will try to
+replicate the vulnerabilities found in Ethereum in \cite{ethereum_analysis}.
+
+\section{Work Plan}
+\label{sub:work_plan}
+
+In this section we present the work plan for the elaboration of this work.
+We will divide the work into six phases. The enhancement of the network layer,
+study of the values and parameters needed for the validation of consensus protocols,
+implementation of consensus protocols and their validation, implementation of blockchain
+protocols and their validation, writing an article detailing the work conducted and
+finally writing of the final thesis document.
+
+\begin{table}[ht]
+\centering
+\caption{Schedule}
+\label{tab:schedule}
+\begin{tabular}{lccc}
+  \toprule
+  \multicolumn{1}{c}{\textbf{Task}}					& \textbf{Start Date} & \textbf{End Date} & \textbf{Weeks}	\\ 
+  \midrule
+  \textbf{Enhancement of the network layer}					& 1 August            & 11 September          & 6             	\\
+  \quad Implementation 								&                     &                   &                	\\ 
+  \quad Testing and Validation 								&                     &                   &                	\\
+  \midrule
+  \textbf{Study of needed parameters for evaluation}						& 11 September            & 25 September       & 2         	\\
+  \midrule
+  \textbf{Consensus protocols}						& 25 September             & 23 October       & 4              	\\
+  \quad Implementation 								&                     &                   &                	\\ 
+  \quad Testing and Validation								&                     &                   &                	\\ 
+  \midrule
+  \textbf{Blockchain protocols}						& 23 October             & 20 November       & 4          	\\
+  \quad Implementation 								&                     &                   &                	\\ 
+  \quad Testing and Validation								&                     &                   &                	\\ 
+  \midrule
+  \textbf{Article}							& 20 November             & 11 December         & 4             	\\ 
+  \midrule
+  \textbf{Thesis}									& 11 December           & 15 January      & 6          	  	\\   
+  \bottomrule
+\end{tabular}
+\end{table}
+
+On our planning we are leaving about 2 months as a buffer in case any of the
+phases of work becomes more troublesome than expected.

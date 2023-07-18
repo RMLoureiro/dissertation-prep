@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.4.25)  11 JUL 2023 18:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.4.25)  12 JUL 2023 23:09
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1583,49 +1583,48 @@ NT ADDTOLIST [file] [quote] [mscplan] [quote]
 \c@/@nt/file/quote/@names/@sizecnt=\count660
 \c@/@nt/file/quote/@paths/@sizecnt=\count661
 \c@/@nt/file/quote/mscplan/@sizecnt=\count662
-NT ADDTOLIST [file] [abstract] [pt] [abstract-pt]
+NT ADDTOLIST [file] [abstract] [en] [abstract-en]
 \c@/@nt/file/abstract/@names/@sizecnt=\count663
 \c@/@nt/file/abstract/@paths/@sizecnt=\count664
-\c@/@nt/file/abstract/pt/@sizecnt=\count665
-NT ADDTOLIST [file] [abstract] [en] [abstract-en]
-\c@/@nt/file/abstract/en/@sizecnt=\count666
+\c@/@nt/file/abstract/en/@sizecnt=\count665
 NT ADDTOLIST [file] [glossaries] [glossary] [glossary]
-\c@/@nt/file/glossaries/@names/@sizecnt=\count667
-\c@/@nt/file/glossaries/@paths/@sizecnt=\count668
-\c@/@nt/file/glossaries/glossary/@sizecnt=\count669
+\c@/@nt/file/glossaries/@names/@sizecnt=\count666
+\c@/@nt/file/glossaries/@paths/@sizecnt=\count667
+\c@/@nt/file/glossaries/glossary/@sizecnt=\count668
 NT ADDTOLIST [file] [glossaries] [acronym] [acronyms]
-\c@/@nt/file/glossaries/acronym/@sizecnt=\count670
+\c@/@nt/file/glossaries/acronym/@sizecnt=\count669
 NT ADDTOLIST [file] [glossaries] [symbols] [symbols]
-\c@/@nt/file/glossaries/symbols/@sizecnt=\count671
+\c@/@nt/file/glossaries/symbols/@sizecnt=\count670
 NT ADDTOLIST [file] [chapter] [mscplan] [chapter1]
-\c@/@nt/file/chapter/@names/@sizecnt=\count672
-\c@/@nt/file/chapter/@paths/@sizecnt=\count673
-\c@/@nt/file/chapter/mscplan/@sizecnt=\count674
+\c@/@nt/file/chapter/@names/@sizecnt=\count671
+\c@/@nt/file/chapter/@paths/@sizecnt=\count672
+\c@/@nt/file/chapter/mscplan/@sizecnt=\count673
 NT ADDTOLIST [file] [chapter] [mscplan] [chapter2]
 NT ADDTOLIST [file] [chapter] [mscplan] [chapter3]
 NT ADDTOLIST [file] [chapter] [mscplan] [chapter4]
+NT ADDTOLIST [file] [chapter] [mscplan] [chapter5]
 NT ADDTOLIST [file] [appendix] [mscplan] [appendix1]
-\c@/@nt/file/appendix/@names/@sizecnt=\count675
-\c@/@nt/file/appendix/@paths/@sizecnt=\count676
-\c@/@nt/file/appendix/mscplan/@sizecnt=\count677
+\c@/@nt/file/appendix/@names/@sizecnt=\count674
+\c@/@nt/file/appendix/@paths/@sizecnt=\count675
+\c@/@nt/file/appendix/mscplan/@sizecnt=\count676
 NT ADDTOLIST [file] [appendix] [mscplan] [appendix2]
 NT ADDTOLIST [file] [annex] [mscplan] [annex1]
-\c@/@nt/file/annex/@names/@sizecnt=\count678
-\c@/@nt/file/annex/@paths/@sizecnt=\count679
-\c@/@nt/file/annex/mscplan/@sizecnt=\count680
+\c@/@nt/file/annex/@names/@sizecnt=\count677
+\c@/@nt/file/annex/@paths/@sizecnt=\count678
+\c@/@nt/file/annex/mscplan/@sizecnt=\count679
 )
-\c@/@nt/print/frontmatter/@sizecnt=\count681
-\c@/@ntcoveropts/@searchalso/@sizecnt=\count682
-\c@/@ntcoveropts/@names/@sizecnt=\count683
-\c@/@ntcoveropts/@paths/@sizecnt=\count684
-\c@/@ntcoveropts/height/@names/@sizecnt=\count685
-\c@/@ntcoveropts/height/@paths/@sizecnt=\count686
-\c@/@ntcoveropts/vspace/@names/@sizecnt=\count687
-\c@/@ntcoveropts/vspace/@paths/@sizecnt=\count688
-\c@/@ntcoveropts/vspace/phd/@names/@sizecnt=\count689
-\c@/@ntcoveropts/vspace/phd/@paths/@sizecnt=\count690
-\c@/@ntcoveropts/vspace/msc/@names/@sizecnt=\count691
-\c@/@ntcoveropts/vspace/msc/@paths/@sizecnt=\count692
+\c@/@nt/print/frontmatter/@sizecnt=\count680
+\c@/@ntcoveropts/@searchalso/@sizecnt=\count681
+\c@/@ntcoveropts/@names/@sizecnt=\count682
+\c@/@ntcoveropts/@paths/@sizecnt=\count683
+\c@/@ntcoveropts/height/@names/@sizecnt=\count684
+\c@/@ntcoveropts/height/@paths/@sizecnt=\count685
+\c@/@ntcoveropts/vspace/@names/@sizecnt=\count686
+\c@/@ntcoveropts/vspace/@paths/@sizecnt=\count687
+\c@/@ntcoveropts/vspace/phd/@names/@sizecnt=\count688
+\c@/@ntcoveropts/vspace/phd/@paths/@sizecnt=\count689
+\c@/@ntcoveropts/vspace/msc/@names/@sizecnt=\count690
+\c@/@ntcoveropts/vspace/msc/@paths/@sizecnt=\count691
  (./NOVAthesisFiles/ChapStyles/bar.ldf
 NT FILE ChapterStyle/bar.ldf
 LaTeX Font Info:    Trying to load font information for T1+cmss on input line 1
@@ -1658,7 +1657,7 @@ LaTeX Font Info:    Setting zplLF sub-encoding to TS1/0 on input line 24.
 LaTeX Font Info:    Setting zplTLF sub-encoding to TS1/0 on input line 24.
 LaTeX Font Info:    Setting zplOsF sub-encoding to TS1/0 on input line 24.
 LaTeX Font Info:    Setting zplTOsF sub-encoding to TS1/0 on input line 24.
-\zpl@cnt=\count693
+\zpl@cnt=\count692
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/fontaxes/fontaxes.sty
 Package: fontaxes 2020/07/21 v1.0e Font selection axes
@@ -1688,7 +1687,7 @@ Package: centernot 2016/05/16 v1.4 Centers the not symbol horizontally (HO)
 \px@tA=\toks59
 \px@tB=\toks60
 \px@su=\read6
-\px@Isdigit=\count694
+\px@Isdigit=\count693
 LaTeX Font Info:    Redeclaring symbol font `operators' on input line 211.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> OT1/zplTLF/m/n on input line 211.
@@ -1770,8 +1769,8 @@ LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
 LaTeX Font Info:    Overwriting symbol font `largesymbolsPXA' in version `bold'
 
 (Font)                  U/npxexa/m/n --> U/npxexa/b/n on input line 334.
-\px@cntz=\count695
-\px@IsAlNum=\count696
+\px@cntz=\count694
+\px@IsAlNum=\count695
 \px@sbptoks=\toks61
 LaTeX Font Info:    Redeclaring math delimiter \lfloor on input line 489.
 LaTeX Font Info:    Redeclaring math delimiter \rfloor on input line 490.
@@ -1853,7 +1852,7 @@ LaTeX Font Info:    Font shape `T1/zplTLF/m/n' will be
 NT FILE Config/5_packages.tex
 (/usr/local/texlive/2023/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count697
+\c@float@type=\count696
 \float@exts=\toks62
 \float@box=\box78
 \@float@everytoks=\toks63
@@ -1862,7 +1861,7 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 (/usr/local/texlive/2023/texmf-dist/tex/latex/wrapfig/wrapfig.sty
 \wrapoverhang=\dimen313
 \WF@size=\dimen314
-\c@WF@wrappedlines=\count698
+\c@WF@wrappedlines=\count697
 \WF@box=\box80
 \WF@everypar=\toks64
 Package: wrapfig 2003/01/31  v 3.6
@@ -1882,9 +1881,9 @@ LaTeX Info: Redefining \LaTeXe on input line 219.
 Package: l3keys2e 2023-02-02 LaTeX2e option processing using LaTeX3 keys
 )
 Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
-\g__lipsum_par_int=\count699
-\l__lipsum_a_int=\count700
-\l__lipsum_b_int=\count701
+\g__lipsum_par_int=\count698
+\l__lipsum_a_int=\count699
+\l__lipsum_b_int=\count700
 (/usr/local/texlive/2023/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex))
 \twemojiDefaultHeight=\skip287
 
@@ -1906,23 +1905,23 @@ File: tikzlibrarypositioning.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
 (/usr/local/texlive/2023/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count702
-\calc@Bcount=\count703
+\calc@Acount=\count701
+\calc@Bcount=\count702
 \calc@Adimen=\dimen315
 \calc@Bdimen=\dimen316
 \calc@Askip=\skip292
 \calc@Bskip=\skip293
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count704
+\calc@Ccount=\count703
 \calc@Cskip=\skip294
 )
-\c@@todonotes@numberoftodonotes=\count705
+\c@@todonotes@numberoftodonotes=\count704
 )
 (/usr/local/texlive/2023/texmf-dist/tex/latex/makecell/makecell.sty
 Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
 \rotheadsize=\dimen317
-\c@nlinenum=\count706
+\c@nlinenum=\count705
 \TeXr@lab=\toks69
 )
 (/usr/local/texlive/2023/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
@@ -1938,9 +1937,9 @@ Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 \tcb@upperbox=\box82
 \tcb@lowerbox=\box83
 \tcb@phantombox=\box84
-\c@tcbbreakpart=\count707
-\c@tcblayer=\count708
-\c@tcolorbox@number=\count709
+\c@tcbbreakpart=\count706
+\c@tcblayer=\count707
+\c@tcolorbox@number=\count708
 \tcb@temp=\box85
 \tcb@temp=\box86
 \tcb@temp=\box87
@@ -1948,9 +1947,9 @@ Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 ))
 (./Config/6_list_of.tex
 NT FILE Config/6_list_of.tex
-\c@/@nt/list/@names/@sizecnt=\count710
-\c@/@nt/list/@paths/@sizecnt=\count711
-\c@/@nt/list/listof/@sizecnt=\count712
+\c@/@nt/list/@names/@sizecnt=\count709
+\c@/@nt/list/@paths/@sizecnt=\count710
+\c@/@nt/list/listof/@sizecnt=\count711
 )
 
 ******************************************************
@@ -2024,16 +2023,16 @@ LaTeX Font Info:    ... okay on input line 204.
 
 (/usr/local/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count713
+\scratchcounter=\count712
 \scratchdimen=\dimen318
 \scratchbox=\box89
-\nofMPsegments=\count714
-\nofMParguments=\count715
+\nofMPsegments=\count713
+\nofMParguments=\count714
 \everyMPshowfont=\toks70
-\MPscratchCnt=\count716
+\MPscratchCnt=\count715
 \MPscratchDim=\dimen319
-\MPnumerator=\count717
-\makeMPintoPDFobject=\count718
+\MPnumerator=\count716
+\makeMPintoPDFobject=\count717
 \everyMPtoPDFconversion=\toks71
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -2045,16 +2044,16 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 (/usr/local/texlive/2023/texmf-dist/tex/latex/catoptions/catoptions.sty
-\m@one=\count719
+\m@one=\count718
 \z@pt=\dimen320
 Package: catoptions 2014/08/29 v0.2.7h Securing catcodes and parsing options (A
 M)
-\cpt@csvdepth=\count720
-\cpt@optdepth=\count721
-\cpt@cnta=\count722
-\indrisdepth=\count723
-\cpt@foreachdepth=\count724
-\cpt@exprcnt=\count725
+\cpt@csvdepth=\count719
+\cpt@optdepth=\count720
+\cpt@cnta=\count721
+\indrisdepth=\count722
+\cpt@foreachdepth=\count723
+\cpt@exprcnt=\count724
 )
 Package hyperref Info: Link coloring ON on input line 204.
 LaTeX Info: Command `\dddot' is already robust on input line 204.
@@ -2116,17 +2115,17 @@ Package biblatex Info: ... file 'template.bbl' found.
 (./template.bbl)
 Package biblatex Info: Reference section=0 on input line 204.
 Package biblatex Info: Reference segment=0 on input line 204.
-\c@mv@tabular=\count726
-\c@mv@boldtabular=\count727
-\c@subfigure=\count728
+\c@mv@tabular=\count725
+\c@mv@boldtabular=\count726
+\c@subfigure=\count727
 \cftbeforesubfigureskip=\skip295
 \cftsubfigureindent=\skip296
 \cftsubfigurenumwidth=\skip297
 
-TIME class loading=132173
-\c@/@nt/hook/mainmatter/@names/@sizecnt=\count729
-\c@/@nt/hook/mainmatter/@paths/@sizecnt=\count730
-\c@/@nt/hook/mainmatter/pre/@sizecnt=\count731
+TIME class loading=123285
+\c@/@nt/hook/mainmatter/@names/@sizecnt=\count728
+\c@/@nt/hook/mainmatter/@paths/@sizecnt=\count729
+\c@/@nt/hook/mainmatter/pre/@sizecnt=\count730
 \@cover@bgcolor@box=\box90
 \@cover@image@box=\box91
 <NOVAthesisFiles/Schools/nova/fct/Images//nova-fct-msc-cover.pdf, id=7, 597.508
@@ -2257,7 +2256,7 @@ l.215 \typeout
 
  <./NOVAthesisFiles/Schools/nova/Images//nova-insignia.pdf> <./NOVAthesisFiles/
 Schools/nova/fct/Images//nova-fct-logo.pdf>]
-TIME process covers=151613
+TIME process covers=141371
 LaTeX Font Info:    Font shape `T1/zplTLF/m/n' will be
 (Font)              scaled to size 24.88pt on input line 216.
 LaTeX Font Info:    Font shape `T1/GilliusADFNoTwo-LF/m/n' will be
@@ -2270,8 +2269,26 @@ LaTeX Font Info:    Font shape `T1/zplTLF/m/sc' will be
 (Font)              scaled to size 20.74pt on input line 216.
 (./Chapters/abstract-en.tex
 NT FILE abstrac-en.tex
+LaTeX Font Info:    Trying to load font information for T1+npxtt on input line 
+24.
+(/usr/local/texlive/2023/texmf-dist/tex/latex/newpx/t1npxtt.fd
+File: t1npxtt.fd 2000/12/14 v1.0
+)
+LaTeX Font Info:    Font shape `T1/npxtt/m/n' will be
+(Font)              scaled to size 10.95pt on input line 24.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `npxtt' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
+Overfull \hbox (7.85902pt too wide) in paragraph at lines 24--28
+[]\T1/zplTLF/m/n/10.95 (-10) One of these tools is MOBS [][]$\T1/npxtt/m/n/10.9
+5 https : / / github . com / mce-[]alves / MOBS$[][]\T1/zplTLF/m/n/10.95 (-10) 
+, Mod-u-lar Blockchain
+ []
+
 LaTeX Font Info:    Font shape `T1/zplTLF/b/n' will be
-(Font)              scaled to size 10.95pt on input line 42.
+(Font)              scaled to size 10.95pt on input line 45.
 ) [1
 
 
@@ -2282,25 +2299,16 @@ LaTeX Font Info:    Font shape `T1/zplTLF/b/n' will be
 
 {/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf-pc.enc}{/u
 sr/local/texlive/2023/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}]
-(./Chapters/abstract-pt.tex
-NT FILE abstrac-pt.tex
-)
-Underfull \vbox (badness 3536) has occurred while \output is active []
-
- [2
+(./template.toc [2
 
 
-]
-[3] (./template.toc [4
+]) [3] (./template.lof) [4
 
-
-]) [5] (./template.lof) [6
-
-] (./template.lot) [7
+] (./template.lot) [5
 
 ]
 (./template.gls) (./template.acr) (./template.sls)
-TIME process frontmatter=159299
+TIME process frontmatter=146468
 (./Chapters/chapter1.tex
 NT FILE chapter1.tex
 LaTeX Font Info:    Font shape `T1/zplTLF/m/n' will be
@@ -2314,23 +2322,27 @@ LaTeX Font Info:    Font shape `T1/zplTLF/b/n' will be
 
 
 ]
-Overfull \hbox (5.71942pt too wide) in paragraph at lines 71--75
+Overfull \hbox (5.71942pt too wide) in paragraph at lines 74--78
 \T1/zplTLF/m/n/10.95 (-10) With the dif-fer-ent prop-er-ties that dif-fer-ent n
 et-work over-lays pro-vide be-sides the parametriza-
  []
 
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 LaTeX Font Info:    Font shape `T1/zplTLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 75.
+(Font)              scaled to size 10.0pt on input line 78.
 LaTeX Font Info:    Font shape `T1/zplTLF/m/sc' will be
-(Font)              scaled to size 10.0pt on input line 75.
-[2]
+(Font)              scaled to size 10.0pt on input line 78.
+ [2]
 LaTeX Font Info:    Trying to load font information for TS1+zplTLF on input lin
-e 78.
- (/usr/local/texlive/2023/texmf-dist/tex/latex/newpx/ts1zpltlf.fd
+e 81.
+
+(/usr/local/texlive/2023/texmf-dist/tex/latex/newpx/ts1zpltlf.fd
 File: ts1zpltlf.fd 2021/11/24 v1.0 fd file for TS1/zplTLF
 )
 LaTeX Font Info:    Font shape `TS1/zplTLF/m/n' will be
-(Font)              scaled to size 10.95pt on input line 78.
+(Font)              scaled to size 10.95pt on input line 81.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `zplTLF' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
@@ -2340,54 +2352,136 @@ Package microtype Info: Loading generic protrusion settings for font family
 Package microtype Warning: I cannot find a spacing list for font
 (microtype)                `TS1/zplTLF/m/n/10.95' (context: `nonfrench'). Switc
 hing off
-(microtype)                spacing for this font on input line 78.
+(microtype)                spacing for this font on input line 81.
 
 ) (./Chapters/chapter2.tex
 NT FILE chapter2.tex
 [3{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/newpx/zpl_TOsF.enc}]
 LaTeX Font Info:    Font shape `T1/zplTLF/m/n' will be
-(Font)              scaled to size 12.0pt on input line 33.
+(Font)              scaled to size 12.0pt on input line 32.
 LaTeX Font Info:    Font shape `T1/zplTLF/b/n' will be
-(Font)              scaled to size 12.0pt on input line 33.
+(Font)              scaled to size 12.0pt on input line 32.
 LaTeX Font Info:    Font shape `T1/zplTLF/m/it' will be
-(Font)              scaled to size 10.95pt on input line 38.
+(Font)              scaled to size 10.95pt on input line 37.
 
 [4
 
-] [5] [6{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.e
-nc}]
+] [5]
+Overfull \hbox (0.58707pt too wide) in paragraph at lines 145--148
+\T1/zplTLF/m/n/10.95 (-10) SWIM [[][][]7[][]] stands for \T1/zplTLF/b/n/10.95 (
+-10) S\T1/zplTLF/m/n/10.95 (-10) calable \T1/zplTLF/b/n/10.95 (-10) W\T1/zplTLF
+/m/n/10.95 (-10) eakly-consistent \T1/zplTLF/b/n/10.95 (-10) I\T1/zplTLF/m/n/10
+.95 (-10) nfection-style Pro-cess Group \T1/zplTLF/b/n/10.95 (-10) M\T1/zplTLF/
+m/n/10.95 (-10) embership
+ []
+
+[6{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [7]
-[8] [9]) (./Chapters/chapter3.tex
+[8] [9] [10] [11]
+<Chapters/Figures//pow.jpg, id=273, 361.35pt x 143.26088pt>
+File: Chapters/Figures//pow.jpg Graphic file (type jpg)
+<use Chapters/Figures//pow.jpg>
+Package pdftex.def Info: Chapters/Figures//pow.jpg  used on input line 419.
+(pdftex.def)             Requested size: 325.215pt x 128.93578pt.
+<Chapters/Figures//pos.jpg, id=274, 377.9785pt x 120.87637pt>
+File: Chapters/Figures//pos.jpg Graphic file (type jpg)
+<use Chapters/Figures//pos.jpg>
+Package pdftex.def Info: Chapters/Figures//pos.jpg  used on input line 433.
+(pdftex.def)             Requested size: 325.215pt x 104.00513pt.
+ [12 <./Chapters/Figures//pow.jpg> <./Chapters/Figures//pos.jpg>]
+<Chapters/Figures//dpos.jpg, id=281, 377.9785pt x 188.66946pt>
+File: Chapters/Figures//dpos.jpg Graphic file (type jpg)
+<use Chapters/Figures//dpos.jpg>
+Package pdftex.def Info: Chapters/Figures//dpos.jpg  used on input line 445.
+(pdftex.def)             Requested size: 325.215pt x 162.33604pt.
+<Chapters/Figures//pbft.jpg, id=282, 216.81pt x 114.48079pt>
+File: Chapters/Figures//pbft.jpg Graphic file (type jpg)
+<use Chapters/Figures//pbft.jpg>
+Package pdftex.def Info: Chapters/Figures//pbft.jpg  used on input line 458.
+(pdftex.def)             Requested size: 325.215pt x 171.74345pt.
+) (./Chapters/chapter3.tex
 NT FILE chapter3.tex
-[10] [11
+[13 <./Chapters/Figures//dpos.jpg> <./Chapters/Figures//pbft.jpg>] [14
 
-] [12]
+])
+(./Chapters/chapter4.tex
+NT FILE chapter4.tex
+[15]
+<Chapters/Figures//modules_mobs.png, id=302, 598.235pt x 532.99126pt>
+File: Chapters/Figures//modules_mobs.png Graphic file (type png)
+<use Chapters/Figures//modules_mobs.png>
+Package pdftex.def Info: Chapters/Figures//modules_mobs.png  used on input line
+ 39.
+(pdftex.def)             Requested size: 325.215pt x 289.7466pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[16
+
+]
+<Chapters/Figures//mobs_parameters.png, id=309, 667.49374pt x 528.97626pt>
+File: Chapters/Figures//mobs_parameters.png Graphic file (type png)
+<use Chapters/Figures//mobs_parameters.png>
+Package pdftex.def Info: Chapters/Figures//mobs_parameters.png  used on input l
+ine 84.
+(pdftex.def)             Requested size: 325.215pt x 257.73161pt.
+ [17 <./Chapters/Figures//modules_mobs.png>]
+<Chapters/Figures//topology.png, id=317, 657.45625pt x 383.4325pt>
+File: Chapters/Figures//topology.png Graphic file (type png)
+<use Chapters/Figures//topology.png>
+Package pdftex.def Info: Chapters/Figures//topology.png  used on input line 101
+.
+(pdftex.def)             Requested size: 325.215pt x 189.66803pt.
+<Chapters/Figures//visualizer.png, id=318, 405.515pt x 212.795pt>
+File: Chapters/Figures//visualizer.png Graphic file (type png)
+<use Chapters/Figures//visualizer.png>
+Package pdftex.def Info: Chapters/Figures//visualizer.png  used on input line 1
+11.
+(pdftex.def)             Requested size: 325.215pt x 170.66158pt.
+ [18 <./Chapters/Figures//mobs_parameters.png> <./Chapters/Figures//topology.pn
+g>]
 LaTeX Font Info:    Font shape `T1/zplTLF/m/n' will be
-(Font)              scaled to size 7.0pt on input line 116.
+(Font)              scaled to size 7.0pt on input line 138.
 LaTeX Font Info:    Font shape `OT1/zplTLF/m/n' will be
-(Font)              scaled to size 7.3pt on input line 118.
+(Font)              scaled to size 7.3pt on input line 140.
 LaTeX Font Info:    Font shape `OT1/zplTLF/m/n' will be
-(Font)              scaled to size 5.5pt on input line 118.
+(Font)              scaled to size 5.5pt on input line 140.
 LaTeX Font Info:    Font shape `T1/zplTLF/b/n' will be
-(Font)              scaled to size 7.0pt on input line 120.
- [13
-pdfTeX warning (ext4): destination with the same identifier (name{table.3.1}) h
+(Font)              scaled to size 7.0pt on input line 142.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[19 <./Chapters/Figures//visualizer.png>] [20
+pdfTeX warning (ext4): destination with the same identifier (name{table.4.1}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.150 
-      ]) (./Chapters/chapter4.tex
-NT FILE chapter4.tex
-[14]) [15
+l.198   \item \textbf
+                     {UpdateSuccessor: } This event is only used when a node...
+] [21]) (./Chapters/chapter5.tex
+NT FILE chapter5.tex
+[22] [23
 
+] [24]) [25
+pdfTeX warning (ext4): destination with the same identifier (name{table.5.1}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.236 \ntprint{mainmatter}
+                                % The default order is listed below, but can...
 ]
+LaTeX Font Info:    Font shape `T1/zplTLF/m/sc' will be
+(Font)              scaled to size 10.95pt on input line 236.
+ [26
 
-LaTeX Warning: Empty bibliography on input line 236.
 
-\blx@maxsegment@1=\count732
-\blx@sectionciteorder@1=\count733
+] [27]
+\blx@maxsegment@1=\count731
+\blx@sectionciteorder@1=\count732
 Package biblatex Info: Reference section=1 on input line 236.
 Package biblatex Info: Setting label 'refsection:1' on input line 236.
 LaTeX Font Info:    Font shape `T1/GilliusADFNoTwo-LF/m/n' will be
@@ -2407,28 +2501,17 @@ LaTeX Font Info:    Font shape `T1/GilliusADFNoTwo-LF/m/it' will be
 (Font)              scaled to size 0.00949pt on input line 236.
 LaTeX Font Info:    Font shape `T1/GilliusADFNoTwo-LF/m/it' will be
 (Font)              scaled to size 0.00693pt on input line 236.
-LaTeX Font Info:    Trying to load font information for T1+npxtt on input line 
-236.
-(/usr/local/texlive/2023/texmf-dist/tex/latex/newpx/t1npxtt.fd
-File: t1npxtt.fd 2000/12/14 v1.0
-)
 LaTeX Font Info:    Font shape `T1/npxtt/m/n' will be
 (Font)              scaled to size 0.01pt on input line 236.
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `npxtt' (encoding: T1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
 Package biblatex Info: Reference section=0 on input line 236.
 
 Overfull \hbox (17.0pt too wide) in paragraph at lines 236--236
 []$[]$ 
  []
 
-[16
-
-]
-TIME process mainmatter=174751
-<NOVAthesisFiles/Schools/nova/fct/Images//nova-fct-msc-cover-back.pdf, id=239, 
+[28]
+TIME process mainmatter=205917
+<NOVAthesisFiles/Schools/nova/fct/Images//nova-fct-msc-cover-back.pdf, id=445, 
 597.50829pt x 845.0471pt>
 File: NOVAthesisFiles/Schools/nova/fct/Images//nova-fct-msc-cover-back.pdf Grap
 hic file (type pdf)
@@ -2447,7 +2530,7 @@ l.246 \ntprint{backcover}
 
 
  <./NOVAthesisFiles/Schools/nova/fct/Images//nova-fct-msc-cover-back.pdf>]
-TIME process process backcover=178171
+TIME process process backcover=208884
 \tf@toc=\write10
 \openout10 = `template.toc'.
 
@@ -2463,13 +2546,13 @@ Package logreq Info: Writing requests to 'template.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 56836 strings out of 476025
- 1129638 string characters out of 5790017
- 2093909 words of memory out of 5000000
- 75958 multiletter control sequences out of 15000+600000
- 663019 words of font info for 352 fonts, out of 8000000 for 9000
+ 57174 strings out of 476025
+ 1137935 string characters out of 5790017
+ 2096225 words of memory out of 5000000
+ 76197 multiletter control sequences out of 15000+600000
+ 671883 words of font info for 375 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 124i,21n,145p,2300b,4372s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 124i,21n,145p,2300b,4332s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/arkandis/gillius/GilliusADFNo
 2-Bold.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/arkandis/gillius/Gil
 liusADFNo2-Italic.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/arkandis/
@@ -2478,10 +2561,10 @@ e1/public/newpx/pxsys.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/publi
 c/txfonts/t1xtt.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newp
 x/zplb.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newpx/zplr.pf
 b></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newpx/zplri.pfb>
-Output written on template.pdf (26 pages, 889708 bytes).
+Output written on template.pdf (36 pages, 1508798 bytes).
 PDF statistics:
- 418 PDF objects out of 1000 (max. 8388607)
- 352 compressed objects within 4 object streams
- 78 named destinations out of 1000 (max. 500000)
- 156457 words of extra memory for PDF output out of 184870 (max. 10000000)
+ 653 PDF objects out of 1000 (max. 8388607)
+ 563 compressed objects within 6 object streams
+ 135 named destinations out of 1000 (max. 500000)
+ 161153 words of extra memory for PDF output out of 184870 (max. 10000000)
 

@@ -33,9 +33,9 @@ to serve as a distributed ledger for cryptocurrency transactions. The main diffe
 the log of records is created in blocks, each blocked is closed by a hash and the next beginning with the closing hash of the previous.
 
 These protocols are not static, being because vulnerabilities or flaws need to be correct or due to the very nature of the protocol itself.
-One of these dynamic protocols is Tezos(reference miguels thesis), which relies on the stake-holders that participate in the system to propose and
-agree on changes and upgrades to the protocol. Another example is Ethereum(reference see miguels thesis) that uses a blockchain protocol based on proof
-of work and their current goal is to migrate towards an implementation based solely on proof of stake for Ethereum2 (reference see miguels thesis).
+One of these dynamic protocols is Tezos \cite{tezos}, which relies on the stake-holders that participate in the system to propose and
+agree on changes and upgrades to the protocol. Another example is Ethereum \cite{ethereum} that uses a blockchain protocol based on proof
+of work and their current goal is to migrate towards an implementation based solely on proof of stake for Ethereum2.
 This opens a necessity for tools that aid in support these evolutions in a faster, more seamless, secure fashion.
 
 Blockchain protocols operate on top of membership layers that dictate how the topology of the network is configured.
@@ -44,7 +44,7 @@ specific nodes and a pre-defined and predictable structure to the network. Non-s
 new nodes are introduced or existing ones leave, albeit by choice or failure. And overlays that operate by building a partially structured
 overlays allow for the benefits of a non-structured overlay at the cost of slower re-structuration since optimization
 procedures are regularly executed to improve routing and lookup operations. The trade-offs and some of these protocols will be further
-explained in Chapter 2.
+explained in Chapter \ref{cha:Background}.
 
 This motivated the development of MOBs, a modular and extensible simulator that provides the ability to simulate different families of protocols, 
 parameterizable, a well-defined structure and a qualitative evaluation for the study of implemented protocols. But this simulator can be further 
@@ -54,8 +54,10 @@ behavior of these protocols in different scenarios and abstracted from the intri
 \section{Problem}
 \label{sub:problem}
 Consensus protocols are not trivial to define or understand correctly and in blockchain systems, where the behavior is dynamic and mostly 
-financial transactions are dealt with, their correctness is crucial and errors can be costly. To help with this MOBs was developed giving
-the ability to test and validate these protocols under different conditions and settings by changing the execution parameters.
+financial transactions are dealt with, their correctness is crucial and errors can be costly. One example of this is Ethereum moving from 
+Proof of Work to a Proof of Stake consensus, this opened the protocol to vulnerabilities to bouncing attacks on liveness \cite{ethereum_analysis}. 
+To help with this MOBs was developed giving the ability to test and validate these protocols under different conditions and settings by 
+changing the execution parameters, aiming to catch these vulnerabilities or even logic errors before deploying changes to these protocols.
 
 Right now the parameters to the network are set before the execution of the simulation, and regarding the network behavior we can
 set the network topology, how many nodes will fail and when. In the real world a network's topology is dynamic, new nodes can enter
@@ -64,6 +66,7 @@ can suffer changes to its topology as a result of optimizations performed by thi
 
 The simulation of how this layer behaves and the parametrization of the different protocols that can be used as its basis are the
 problems that we aim to address with this thesis.
+
 
 \section{Goal}
 \label{sub:goal}
@@ -85,9 +88,14 @@ The goal of this thesis is to improve the networking layer of MOBs by making it 
 
 The remainder of this document is organized in the following manner:
 
-Chapter 2 studies related work: in particular we will cover several membership protocols and some implementations;
-Babel which is a framework for implemented distributed system protocols;
+Chapter \ref{cha:Background} studies related work: in particular we will cover several membership protocols and some implementations;
+Some simple consensus protocols; Overview of the types of blockchain consensus;
 
 
-Chapter 3 describes in more detail the work that has already been conducted and the
-proposed work, including an evaluation and work plan
+Chapter \ref{cha:related_work} we show Babel which is a framework for implemented distributed system protocols; And NetworkX,
+a package in Python that provides network analysis tools-
+
+Chapter \ref{cha:mobs} studies the MOBs implementation.
+
+Chapter \ref{cha:work_to_be_developed} we will talk about the proposed work to address the problem
+introduced in this chapter.

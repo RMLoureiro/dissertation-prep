@@ -8,8 +8,8 @@
 
 \typeout{NT FILE chapter2.tex}%
 
-\chapter{Related work}
-\label{cha:related_work}
+\chapter{Background}
+\label{cha:Background}
 
 In this chapter we will discuss relevant work considering the goals of the work
 to be conducted in this thesis. In particular, we will focus on the following topics:
@@ -17,11 +17,10 @@ to be conducted in this thesis. In particular, we will focus on the following to
 In section \ref{sec:membership_protocols} we discuss the differences between
 the different kinds of membership systems as well as some implementations.
 
-In section \ref{sec:babel} we will discuss Babel(insert reference), a framework
-to develop distributed protocols.
+In section \ref{sec:consensus} we will discuss some consensus protocols.
 
-In section \ref{sec:protocol_analysis_tools} we will present and compare some 
-protocol analysis tools and compare them to MOBs.
+In section \ref{sec:blockchain} we will discuss some different types of
+blockchain protocols.
 
 \section{Membership Protocols}
 \label{sec:membership_protocols}
@@ -80,7 +79,7 @@ scenarios.
 \subsubsection{Chord}
 \label{subsec:chord}
 
-Consistent Hashing and Random Trees, or Chord(referencia) is a Distributed Hash
+Consistent Hashing and Random Trees, or Chord \cite{chord} is a Distributed Hash
 Table based algorithm where each node is assigned a unique identifier based on
 the output of a hash function. Usually this has is based on the IP address of
 the node since this is unique for every node of the network, and making it so
@@ -107,7 +106,7 @@ accordingly as well as updating the entries on the finger table.
 \subsubsection{Pastry}
 \label{subsec:pastry}
 
-Pastry(insert reference), similarly to Chord is a structured overlay protocol that
+Pastry \cite{pastry}, similarly to Chord is a structured overlay protocol that
 defines a distributed hash table. A Pastry system is a self-organizing overlay
 network of nodes where every node has a 128-bit identifier. This identifier
 is assigned randomly when a node joins the system and is used to indicate a
@@ -143,7 +142,7 @@ itself is fairly low.
 \subsubsection{SWIM}
 \label{subsec:swim}
 
-SWIM(referencia) stands for \textbf{S}calable \textbf{W}eakly-consistent \textbf{I}nfection-style
+SWIM \cite{swim} stands for \textbf{S}calable \textbf{W}eakly-consistent \textbf{I}nfection-style
 Process Group \textbf{M}embership Protocol. This protocol is composed of two distinct
 components, a failure detector and a dissemination component.
 
@@ -170,7 +169,7 @@ failure detection procedure.
 \subsubsection{HyParView}
 \label{subsec:hyparview}
 
-HyParView (referencia) is a gossip based membership protocol that offers high
+HyParView \cite{hyparview} is a gossip based membership protocol that offers high
 resilience and high delivery reliability of messages while being highly scalable.
 It relies on a hybrid approach by maintaining, besides the active view that is 
 used by the nodes to maintain the communication overlay, a passive view, in case
@@ -201,7 +200,7 @@ detector. Since all members are tested at each step of the gossip protocol, fail
 do not stay unnoticed for long. This way, HyParView provides with fast self-healing
 properties that are characteristic of gossip protocols.
 
-Tests done in (referencia hyparview) show that the algorithm is able to recover from as much as 80\%
+Tests done in \cite{hyparview} show that the algorithm is able to recover from as much as 80\%
 node failure, as long as the overlay stays connected. By being able quickly react to failures
 in the system, the protocol was shown to be able to maintain 100\% reliability 
 for message dissemination.
@@ -218,7 +217,7 @@ efficient search and application level routing.
 \subsubsection{T-MAN}
 \label{subsec:t-man}
 
-T-MAN (referencia) was created with the motivation to give
+T-MAN \cite{tman} was created with the motivation to give
 the ability of taking some random overlay, and \textit{evolve} it into another one.
 
 The logic behind the algorithm is giving each node a ranking value that every node can
@@ -228,7 +227,7 @@ immediate neighbors, much like the HyParView overlay described in \ref{subsec:hy
 Periodically each node exchanges its partial view with the first node in its active view,
 according to the ranking
 values which depends on the target overlay. The receiver will execute the same procedure
-as the sender so they can later merge their local views and apply the ranking function.
+as the sender, so they can later merge their local views and apply the ranking function.
 Using their peers' views to improve their own the overlay will gradually become closer
 the desired overlay.
 
@@ -242,7 +241,7 @@ or after the procedure
 \subsubsection{X-BOT}
 \label{subsec:x-bot}
 
-X-BOT (referencia) stands for \textbf{B}ias the \textbf{O}verlay \textbf{T}opology
+X-BOT \cite{xbot} stands for \textbf{B}ias the \textbf{O}verlay \textbf{T}opology
 according to some targeting criteria \textbf{X}. This protocol is completely decentralized,
 and the nodes do not require any prior knowledge of where they will end up in the final topology. 
 This protocol strives to preserve the degree of the nodes that participate in the 4-node coordinated
@@ -268,57 +267,195 @@ These nodes are always selected based upon the link cost values provided by the 
 ensuring that every time the optimization procedure is called the network increases its
 efficiency
 
-\section{Babel}
-\label{sec:babel}
+\section{Consensus Protocols}
+\label{sec:consensus}
 
-In this section we will discuss Babel (referência), a framework that simplifies the
-development of distributed protocols within a process that executes in real hardware.
-Babel simplifies the development process by abstracting the developer from the
-low level complexities associated with typical distributed systems implementations like
-interactions with other protocols, communication details, handling timers and concurrency control.
-The communication comlpexities are hidden behind abstractions called \textit{channels}
-that can be extended by the developer. The Babel framework is composed by three main components:
-
+Consensus protocols solve the problem of in a system of participants reaching
+an agreement on a given value. These algorithms must ensure an agreement is reached
+even in the presence of faulty nodes in the network. Consensus protocols must ensure
+they satisfy the following properties \cite{distributed_systems_concepts}:
 \begin{itemize}
-  \item \textbf{Protocols:} This is the component the developer implements encoding
-the behavior of the distributed system being designed. Protocols are modeled as
-state machines whose state changes by action of external events, for this purpose
-each protocol contains an event queue that keeps track of these events.
-  \item \textbf{Core:} This is the central component that coordinates the
-execution of all protocols and mediates all interactions within the framework.
-Core also keeps track of timers setup by the protocols and delivers an event to the
-correct protocol when the timer is up.
-  \item \textbf{Network:} This component handle the channel abstraction that was
-mentioned previously. Protocols can interact with channels by opening and closing connections
-and sending messages as well as receiving relevant events for the protocol.
+  \item \textbf{Termination:} Eventually, every correct process decides some value.
+  \item \textbf{Validity:} If all the correct processes propose the same value,
+then any correct process must agree on that value.
+  \item \textbf{Integrity:} No process decides more than one value
+  \item \textbf{Agreement:} Every correct process must agree on the same value.
 \end{itemize}
 
-Babel is provided as a java library and the developer can implement a protocol
-by extending the abstract class \textit{GenericProtocol} that provides the needed
-methods to generate events, register callbacks to process received events and 
-the initial behavior for a node for the protocol that is being implemented.
-The provided API can be split into three categories:
+We will now look at some algorithms that solve consensus.
 
+\subsection{Chandra-Toueg}
+\label{sub:chandra-toueg}
+
+The Chandra-Toueg consensus algorithm \cite{chandra} for solving consensus in a network of
+unreliable processes equipped with an eventually strong failure detector.
+This failure detector is an abstract version of timeouts signaling each
+process when other processes may have crashed.
+An eventually strong failure detector is defined with the two following properties:
 \begin{itemize}
-  \item \textbf{Timers:} This allows for the execution of periodic actions.
-  \item \textbf{Inter-protocol communication:} Babel supports multiple protocols
-executing concurrently in the same process so mechanisms for these protocols
-to interact with each other exist. These mechanisms take the form of requests and
-notifications.
-  \item \textbf{Networking:} Babel offers different network channels with different
-capabilities but keeping the same model of interactions between protocols and the
-different channel implementations.
+  \item Eventually every process that crashes is permanently suspected by every
+correct process.
+  \item There is a time after which correct processes are not suspected by analysis
+correct process, meaning that if they become suspects a one point but do not crash,
+the other correct processes will stop suspecting them eventually.
 \end{itemize}
 
-Evaluation testing in (referencia) show that Babel can reduce the effort for programmers
-in creating prototypes of distributed protocols, comparing the number of lines programmed
-using Babel and standalone versions of the same protocols in java. This is achieved
-mostly by the logic that is covered in the network and core layers, relieving the developer
-from having to worry about handling timers, message ordering and most communication besides events.
+The algorithm assumes that the number of faulty processes is always less than half
+of the number of total nodes in the system. It operates in rounds using a rotating
+coordinator and each round the logic is as follows:
 
-Regarding performance tests conducted by implementing MultiPaxos (referencia no artigo do babel) with the framework
-when comparing to standalone implementations, the implementation using Babel showed comparable performance
-with less implementation overhead.
+\begin{enumerate}
+  \item All processes send their preference to the coordinator.
+  \item The coordinator waits to receive messages from at least half of the processes,
+including itself and chooses the preference with most recent timestamp.
+  \item The coordinator sends the chosen preference to all nodes.
+  \item Each process waits to receive the chosen preference from the coordinator
+or wait for its failure detector to identify the coordinator as crashed.
+  \begin{itemize}
+    \item In the first case it sets its preference to be the same as the coordinator
+and replies with an ack (acknowledge).
+    \item In the second case it responds with a nack (not acknowledge).
+  \end{itemize}
+  \item The coordinator waits to receive acks from a majority of processes, after
+it sends a decide message to all processes.
+  \item Any processes that received the decide message for the first time it
+broadcasts it to all processes.
+  \item The processes decides on the coordinator chosen preference and terminates.
+\end{enumerate}
 
-\section{Protocol Analysis Tools}
-\label{sec:protocol_analysis_tools}
+\subsection{Paxos}
+\label{sub:paxos}
+
+Paxos \cite{paxos} is a family of protocols for solving consensus, for this example we will take
+a look at what is commonly referred as basic Paxos, that decides on a single value, 
+and after take a look at MultiPaxos which gives a constant streem of agreed values. 
+For this algorithm we make the following assumptions regarding processors:
+\begin{itemize}
+  \item Operate at arbitrary seed.
+  \item May experience failures.
+  \item Have stable storage and may re-join the protocol after failures.
+  \item Byzantine failures do not occur.
+  \item The maximum number of failing processors is less than half of the total processors.
+\end{itemize}
+And the following assumptions regarding the network:
+\begin{itemize}
+  \item Processors can send messages to any other processor.
+  \item Messages are asynchronous and take an arbitrary time to deliver.
+  \item Messages may be lost, re-ordered or duplicate.
+  \item Messages when delivered are delivered without corruption.
+\end{itemize}
+
+Each participant can act as a Proposer, an Acceptor and a Learner. Each execution 
+of basic Paxos decides on a single value and operates in two phases, each with two
+secondary phases.
+
+\begin{itemize}
+  \item \textbf{Phase 1}
+  \begin{enumerate}
+    \item \textbf{Prepare:} A Proposer creates a message which we call Prepare identified
+with a number \textit{n}, this works as an identifier and has to be greater than
+any previous number used in previous Prepare messages. The Prepare message does
+not contain the proposed value. This message is sent to a quorum of acceptors, and
+a proposer shouldn't initiate Paxos if it cannot communicate with a quorum of acceptors.
+    \item \textbf{Promise:} Acceptors wait for a Prepare message from any of the proposers,
+if they receive a message, depending on the value of \textit{n} two flows can happen:
+    \begin{enumerate}
+      \item If \textit{n} is higher than every previous proposal received from any Proposer
+the Acceptor returns a Promise message and ignores all future proposals with a value
+less than \textit{n}, if a proposal was accepted at some point in the past, the message
+includes the previous \textit{n} value and the corresponding accepted value.
+      \item Otherwise, the Acceptor can ignore the Prepare message or sending a not
+acknowledge to tell the Proposer to stop its attempt to create the Proposal.
+    \end{enumerate}
+  \end{enumerate}
+
+  \item \textbf{Phase 2}
+  \begin{enumerate}
+    \item \textbf{Accept:} If the Proposer receives Promises from a Quorum of Acceptors,
+it sets a value for its proposal. If any Acceptors that accepted a previous proposal
+they would have sent the previous accepted value, the Proposer will agree on the return
+value sent by the Acceptors with the highest \textit{n}. In none of the acceptors had
+previously accepted a value then the Proposer chooses the value it initially wanted to propose.
+The proposer sends an Accept message with the chosen value and the \textit{n} value.
+  \item \textbf{Accept:} If an Acceptor receives and Accept message from a Proposer,
+it must accept if it hasn't proposed previously Proposals with an identifier grater than
+\textit{n}. If the value is accepted, an Accepted message is sent to every proposer and Learner.
+Learners will only learn the decided value after receiving Accepted messages from a majority
+of Acceptors.
+  \end{enumerate}
+\end{itemize}
+
+Mulipaxos is another algorithm in the Paxos family and is used when a
+continuous stream of agreed values is needed.
+If the leader is relatively stable phase 1 becomes unnecessary. To achieve this
+we include the round number along with each value which is incremented in each round
+by the same leader. We still need the phase 1 for the first round but in
+consequent rounds if the Leader does not change nor fails we can skip it, reducing
+the overhead for each round
+
+\section{Blockchain Protocols}
+\label{sec:blockchain}
+
+Blockchain is the core technology of many cryptocurrencies as a distributed
+ledger technology. This technology combines cryptography, distributed system
+technology, peer-to-peer networking and many more. Different blockchain
+protocols use different consensus protocols to try and balance the trade-offs of
+each, and make sure we use the suitable consensus protocol for the blockchain type
+used by the system. The adopted consensus protocol needs to fit the demands of
+different application scenarios. In this section we will detail some popular
+blockchain consensus protocols that effectively address Byzantine behavior
+in the system, taking basis in the work done in \cite{blockchain_consensus}:
+
+\textbf{PoW (Proof of Work):} PoW is adopted by Bitcoin and Ethereum,
+this consensus protocol selects one node to create a new block 
+each round of consensus by using a computational power competition. In this
+competition node nodes need to solve a cryptographic puzzle, the first node to solve
+this puzzle has the right to create a new block. Nodes need to constantly adjust the
+value of nonce in order to get the correct answer, which requires an enormous amount
+of computational power. PoW guarantees eventual consistency.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=4.5in, angle =0]{pow}
+	\caption{Flow of PoW}
+	\label{fig:pow}
+\end{figure}
+
+\textbf{PoS (Proof of Stake):} In PoS, selecting which node creates a new block
+depends on the held take rather than the computational power. Node till need to solve
+a SHA256 puzzle, but the nonce does not need to be adjusted, instead the key to solve
+the puzzle is the amount of stake. Nxt and Ouroboros adopt PoS and Ethereum plans to
+transition from PoW to PoS. This consensus protocol guarantees like
+PoW eventual consistency. 
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=4.5in, angle =0]{pos}
+	\caption{Flow of PoS}
+	\label{fig:pos}
+\end{figure}
+
+
+\textbf{DPoS (Delegated Proof of Stake):} The principle here is to let nodes who
+hold stake to vote to elect block creators, this way delegating the job of creating
+the blocks and reducing computational consumption. This is adopted by BitShares and EOS.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=4.5in, angle =0]{dpos}
+	\caption{Flow of DPoS}
+	\label{fig:dpos}
+\end{figure}
+
+\textbf{PBFT (Practical Byzantine Fault Tolerance):} BFT is a Byzantine Fault 
+Tolerance protocol with low algorithmic complexity, it contains five phases: request,
+pre-prepare, prepare, commit and reply. PBFT guarantees nodes maintain a common state and take
+a consistent action in each round. PBFT guarantees strong consistency and is adopted by
+EOS to validate blocks while using DPoS for creation.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=4.5in, angle =0]{pbft}
+	\caption{Flow of PBFT}
+	\label{fig:pbft}
+\end{figure}

@@ -4,9 +4,16 @@
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
-\babel@toc {portuguese}{}\relax 
-\babel@toc {english}{}\relax 
 \addvspace {10pt}
 \addvspace {10pt}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Flow of PoW}}{12}{figure.2.1}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Flow of PoS}}{12}{figure.2.2}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Flow of DPoS}}{13}{figure.2.3}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Flow of PBFT}}{13}{figure.2.4}%
 \addvspace {10pt}
+\addvspace {10pt}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Ilustration of top-level module interactions}}{17}{figure.4.1}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Parameters window}}{18}{figure.4.2}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Topology window and possible parametrizations for each individual node}}{18}{figure.4.3}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Timelapse in the Visualizer window}}{19}{figure.4.4}%
 \addvspace {10pt}

@@ -3,150 +3,83 @@
 %% chapter3.tex
 %% NOVA thesis document file
 %%
-%% Chapter with a short latex tutorial and examples
+%% Chapter with the template manual
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \typeout{NT FILE chapter3.tex}%
 
-\chapter{MOBs}
-\label{cha:mobs}
+\chapter{Related work}
+\label{cha:related_work}
 
-\section{Overview}
-\label{sub:overview}
+\section{Babel}
+\label{sec:babel}
 
-MOBs standing for Modular Blockchain Simulator is divided into two main components,
-the simulator a and the graphical user interface, we will look into them seperatly.
+In this section we will discuss Babel \cite{babel}, a framework that simplifies the
+development of distributed protocols within a process that executes in real hardware.
+Babel simplifies the development process by abstracting the developer from the
+low level complexities associated with typical distributed systems implementations like
+interactions with other protocols, communication details, handling timers and concurrency control.
+The communication comlpexities are hidden behind abstractions called \textit{channels}
+that can be extended by the developer. The Babel framework is composed by three main components:
 
-\subsection{Simulator}
-\label{subsec:simulator}
-
-The simulator makes use of OCaml's \textit{modules} and \textit{functors} to
-provide modularity and extensibility. MOBs adopts a \textit{Discrete-Event Simulation Model}
-making the state of the system only change in discrete points in time when events occur.
-These events are stored in a queue ordered with two main values:
 \begin{itemize}
-  \item \textbf{Timestamp:} This value dictates the order in which the events are
-stored in the queue and is based on the simulator's internal clock. When getting
-a new event the simulator will fetch from the queue the one with the smallest timestamp
-and move its internal clock to match that event's timestamp.
-  \item \textbf{Target:} The entity that should process this event.
-\end{itemize}
-Events are fetched from the queue until no more events remain or a predefined
-stopping condition is reached.
-
-The simulator is built in a module based architecture, Figure (referencia) illustrates
-how the different modules interact. These modules are:
-\begin{itemize}
-  \item \textbf{Main:} Entry point for the simulator, manages the execution of
-protocols.
-  \item \textbf{Protocol:} Top-level loop of the simulation, initializes the different
-nodes, network topology, event queue and performs event handling and delegation.
-  \item \textbf{Node:} This is a user defined module that describes the behaviour
-of an entity in the simulated protocol.
-  \item \textbf{Abstractions:} This module provides primitives to aid in the
-development of new simulation such as proof of stake sortation, proof of work mining,
-timers, alarms and message exchanges.
-  \item \textbf{Statistics and Logging:}  Extract metrics and values from the execution
-to be processed by the GUI.
+  \item \textbf{Protocols:} This is the component the developer implements encoding
+the behavior of the distributed system being designed. Protocols are modeled as
+state machines whose state changes by action of external events, for this purpose
+each protocol contains an event queue that keeps track of these events.
+  \item \textbf{Core:} This is the central component that coordinates the
+execution of all protocols and mediates all interactions within the framework.
+Core also keeps track of timers setup by the protocols and delivers an event to the
+correct protocol when the timer is up.
+  \item \textbf{Network:} This component handle the channel abstraction that was
+mentioned previously. Protocols can interact with channels by opening and closing connections
+and sending messages as well as receiving relevant events for the protocol.
 \end{itemize}
 
-\subsection{Graphical User Interface}
-\label{subsec:grafical_user_interface}
+Babel is provided as a java library and the developer can implement a protocol
+by extending the abstract class \textit{GenericProtocol} that provides the needed
+methods to generate events, register callbacks to process received events and 
+the initial behavior for a node for the protocol that is being implemented.
+The provided API can be split into three categories:
 
-The graphical user interface was implemented in NodeJs, Vue3 and ElectronJS.
-The choice for web technologies enables the future deployement of simulator as
-a web application. The GUI was developed with the goal of allowing the users
-to use it with their own custom simulators as long as the following conditions are met:
+\begin{itemize}
+  \item \textbf{Timers:} This allows for the execution of periodic actions.
+  \item \textbf{Inter-protocol communication:} Babel supports multiple protocols
+executing concurrently in the same process so mechanisms for these protocols
+to interact with each other exist. These mechanisms take the form of requests and
+notifications.
+  \item \textbf{Networking:} Babel offers different network channels with different
+capabilities but keeping the same model of interactions between protocols and the
+different channel implementations.
+\end{itemize}
 
-\begin{enumerate}
-  \item The simulator uses a parameters.json as an input with three categories,
-General, Network and Protocol, the actual parameters inside each category are user defined.
-  \item The output of the simulator produces log with two top-level entries, kind and content.
-Kind can be one of ten values, each with their specific content, \textit{parameters, 
-add-node, add-link, flow-message, add-block, node-committee, node-proposer, create-block,
-statistics} and \textit{per-node-statistics}.
-\end{enumerate}
+Evaluation testing in \cite{babel} show that Babel can reduce the effort for programmers
+in creating prototypes of distributed protocols, comparing the number of lines programmed
+using Babel and standalone versions of the same protocols in java. This is achieved
+mostly by the logic that is covered in the network and core layers, relieving the developer
+from having to worry about handling timers, message ordering and most communication besides events.
 
-The GUI is composed of 4 pages, described in the following sections.
+Regarding performance tests conducted by implementing MultiPaxos \cite{paxos} with the framework
+when comparing to standalone implementations, the implementation using Babel showed comparable performance
+with less implementation overhead.
 
-\subsubsection{Parametrization}
-\label{subsubsec:parametrization}
+\section{NetworkX}
+\label{sec:networkx}
 
-(referencia)
+NetworkX \cite{networkx} is a network analysis Python package that allows for the analysis of
+networks and network algorithms. This package provides data structures for representing
+several types of graphs such as simple graphs, directed graphs and graphs with parallel
+edges and self-loops. In addition to the basic data structures, there are also
+graph algorithms implemented for calculation network properties and structure measures
+such as node connectivity, clustering coefficient, average shortest path.
 
-The Parameters window parses the parameters.json file and produces a form
-where the user can customize the values or ranges of values for every parameter.
+For NetworkX nodes can be any time of hashable object such as strings, numbers,
+files or even functions. Edges or links are represented as a tuple of nodes. The
+standard ways of representing graphs are edge lists, adjacency matrices and adjacency
+lists. Functions to manipulate graphs are also provided, simple functions come as class
+methods, like adding or removing nodes or edges and complex statistics and algorithms
+are provided as package functions such as clustering, shortest path and visualization.
 
-\subsubsection{Topology Specification}
-\label{subsubsec:topology_specification}
-
-The GUI also allows user to specify the topology of the network without needing
-to manually write the JSON file. The Topology window offers a canvas to construct a network
-topology as well as set individual parameters for each node.
-
-(referencia imagens de topology window e parametrizations)
-
-\subsubsection{Visualizer}
-\label{subsubsec:visualizer}
-
-(referencia imagiem de timelapse e informação dos nos)
-
-The Visualizer window allows user to play the state of each node in a time-lapse manner
-and visualize exchanged messages.
-
-\subsubsection{Statistical Analysis}
-\label{subsubsec:statistical_analysis}
-
-The Statistics window aids in the analysis of the metrics produced by the simulator.
-The GUI will parse the output.json file and display it in an easy to read format.
-These formats can come as graphs, displaying minimum and maximum values observed
-for each metric that was produced and a graph with per node statistics.
-
-\section{Critical Analysis}
-\label{sub:membership_protocols}
-
-In (referencia tese) we can see a detailed state-of-the-art study on other simulator
-tools for Blockchain protocols. In this study it is noted that each of the tools
-studied is mostly built with a specific purpose and not in being modular or extensible
-to allow for the study of new scenarios and protocols,
-nor in wide parametrization for different testing scenarios. The table bellow shows an
-overview of the functionalities that each existing simulator and MOBs offer.
-
-\begin{table}[h]
-  \tiny
-  \centering
-  \begin{tabular}{|c|c|c|c|c|c|c|c|}
-    \hline
-    & \textbf{\begin{tabular}[c]{@{}c@{}}Adversarial\\ Behavior\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Offline \\ Nodes\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Bandwidth\\  Limits\end{tabular}}                      & \textbf{\begin{tabular}[c]{@{}c@{}}Network \\ Topology\end{tabular}}   & \textbf{Proof of Stake}                                   & \textbf{Proof of Work}                                                   & \textbf{GUI} \\ \hline
-    \textbf{VIBES}    & yes                                                                     & \begin{tabular}[c]{@{}c@{}}not \\ modeled\end{tabular}            & \begin{tabular}[c]{@{}c@{}}not\\ modeled\end{tabular}                                     & \begin{tabular}[c]{@{}c@{}}generated \\ via \\ parameters\end{tabular} & \begin{tabular}[c]{@{}c@{}}not \\ modeled\end{tabular}    & bitcoin                                                                  & yes          \\ \hline
-    \textbf{BlockSim} & \begin{tabular}[c]{@{}c@{}}not\\ modeled\end{tabular}                   & \begin{tabular}[c]{@{}c@{}}not \\ modeled\end{tabular}            & \begin{tabular}[c]{@{}c@{}}Throughput \\ calculated \\ from \\ distributionn\end{tabular} & \begin{tabular}[c]{@{}c@{}}fully \\ linked\end{tabular}                & \begin{tabular}[c]{@{}c@{}}not \\ modeled\end{tabular}    & \begin{tabular}[c]{@{}c@{}}bitcoin \\ ethereum\end{tabular}              & no           \\ \hline
-    \textbf{BlockSim} & \begin{tabular}[c]{@{}c@{}}not\\ modeled\end{tabular}                   & \begin{tabular}[c]{@{}c@{}}not \\ modeled\end{tabular}            & \begin{tabular}[c]{@{}c@{}}not \\ modeled\end{tabular}                                    & \begin{tabular}[c]{@{}c@{}}fully \\ linked\end{tabular}                & \begin{tabular}[c]{@{}c@{}}not \\ modeled\end{tabular}    & \begin{tabular}[c]{@{}c@{}}bitcoin \\ ethereum\end{tabular}              & no           \\ \hline
-    \textbf{SimBlock} & \begin{tabular}[c]{@{}c@{}}not \\ modeled\end{tabular}                  & \begin{tabular}[c]{@{}c@{}}not \\ modeled\end{tabular}            & \begin{tabular}[c]{@{}c@{}}specify \\ expected \\ available \\ bandwidth\end{tabular}     & \begin{tabular}[c]{@{}c@{}}generated \\ via \\ params\end{tabular}     & \begin{tabular}[c]{@{}c@{}}simple \\ example\end{tabular} & \begin{tabular}[c]{@{}c@{}}bitcoin \\ dogecoin \\ litecoin\end{tabular}  & yes          \\ \hline
-    \textbf{MOBs}     & yes                                                                     & yes                                                               & parameterizable                                                                           & \begin{tabular}[c]{@{}c@{}}generated \\ via \\ params\end{tabular}     & tenderbake                                                & \begin{tabular}[c]{@{}c@{}}bitcoin \\ algorand \\ ouroboros\end{tabular} & yes          \\ \hline
-    \end{tabular}
-  \caption{Feature comparison between existing blockchain simulators and MOBS.}
-  \label{table:1}
-\end{table}
-
-VIBES (referencia), is scalable, fast and capable of simulating Bitcoin-like
-protocols however, there is a lack of separation between the code that defines the
-simulator and the codes that defines the protocols, which makes implementing new
-protocols difficult and time costly. On the GUI provided this lack of separation
-also exists, having the statistics that are displayed tied to the protocols being
-simulated, which means that if the user wants to implement a new protocol that has
-different metrics/statistics, changes would need to be done to the GUI to support
-them.
-
-Neither BlockSim, BlockSim nor SimBlock support adversarial or byzantine behavior
-of the nodes, making it impossible to test the protocols when the network is not in
-perfect conditions.
-
-VIBEs, BlockSim and BlockSim do not model Proof of Stake protocols which hinders
-their extensibility, since as a result, these simulators don't offer abstractions
-for timers and alarms commonly used in proof of stake.
-
-MOBs addresses these concerns like described above offering a more modular and extensible
-environment, an independent GUI and the ability to simulate different families of protocols.
-
-\section{Initial Exercise}
-\label{sub:initial_exercise}
+Another of the implemented algorithms NetworkX provides is the ability to draw
+a given graph, will be a helpful visual aid to understand the layout of the network
+that a protocol generates.
