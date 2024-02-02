@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.4.25)  12 JUL 2023 23:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.4.25)  19 JUL 2023 15:02
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -2122,7 +2122,7 @@ Package biblatex Info: Reference segment=0 on input line 204.
 \cftsubfigureindent=\skip296
 \cftsubfigurenumwidth=\skip297
 
-TIME class loading=123285
+TIME class loading=112249
 \c@/@nt/hook/mainmatter/@names/@sizecnt=\count728
 \c@/@nt/hook/mainmatter/@paths/@sizecnt=\count729
 \c@/@nt/hook/mainmatter/pre/@sizecnt=\count730
@@ -2256,7 +2256,7 @@ l.215 \typeout
 
  <./NOVAthesisFiles/Schools/nova/Images//nova-insignia.pdf> <./NOVAthesisFiles/
 Schools/nova/fct/Images//nova-fct-logo.pdf>]
-TIME process covers=141371
+TIME process covers=129207
 LaTeX Font Info:    Font shape `T1/zplTLF/m/n' will be
 (Font)              scaled to size 24.88pt on input line 216.
 LaTeX Font Info:    Font shape `T1/GilliusADFNoTwo-LF/m/n' will be
@@ -2308,7 +2308,7 @@ sr/local/texlive/2023/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}]
 
 ]
 (./template.gls) (./template.acr) (./template.sls)
-TIME process frontmatter=146468
+TIME process frontmatter=134208
 (./Chapters/chapter1.tex
 NT FILE chapter1.tex
 LaTeX Font Info:    Font shape `T1/zplTLF/m/n' will be
@@ -2510,7 +2510,7 @@ Overfull \hbox (17.0pt too wide) in paragraph at lines 236--236
  []
 
 [28]
-TIME process mainmatter=205917
+TIME process mainmatter=187490
 <NOVAthesisFiles/Schools/nova/fct/Images//nova-fct-msc-cover-back.pdf, id=445, 
 597.50829pt x 845.0471pt>
 File: NOVAthesisFiles/Schools/nova/fct/Images//nova-fct-msc-cover-back.pdf Grap
@@ -2530,7 +2530,7 @@ l.246 \ntprint{backcover}
 
 
  <./NOVAthesisFiles/Schools/nova/fct/Images//nova-fct-msc-cover-back.pdf>]
-TIME process process backcover=208884
+TIME process process backcover=190628
 \tf@toc=\write10
 \openout10 = `template.toc'.
 
@@ -2561,7 +2561,7 @@ e1/public/newpx/pxsys.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/publi
 c/txfonts/t1xtt.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newp
 x/zplb.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newpx/zplr.pf
 b></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newpx/zplri.pfb>
-Output written on template.pdf (36 pages, 1508798 bytes).
+Output written on template.pdf (36 pages, 1508746 bytes).
 PDF statistics:
  653 PDF objects out of 1000 (max. 8388607)
  563 compressed objects within 6 object streams
