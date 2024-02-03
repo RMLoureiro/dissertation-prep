@@ -10,31 +10,30 @@
 
 \chapter{Introduction}\label{cha:introduction}
 
-This thesis aims to address the practical challenges in designing, implementing and maintaining Distributed
-Ledger Technologies protocols by providing a simulation environment so that results can be extracted and the behavior 
-of the protocols can be verified before going into a live environment. This thesis involves taking MOBs and expanding
-the previously done work to help better test and validate these protocols by providing a wider range of networks and
-a more dynamic and independent network layer.
+This thesis aims to address the practical challenges in designing, implementing and maintaining blockchain and consensus
+protocols by providing a simulation environment to analyse their behaviour and provide empirical metrics of their runtime in
+different environments and conditions. To achieve this we intend to take MOBs and expand
+the previously done work to help better test and validate these protocols by providing a wider range of networks,
+a more dynamic and independent network layer and improve the logging of the application to extract data to validate the
+protocols' properties.
 
 \prependtographicspath{{Chapters/Figures/Covers/}}
 
 \section{Context}\label{sub:context}
-With each passing day the amount of distributed application is increasing, and a subset of these are applications that
-deal with data that requires validation, support transactional operations by validated users and simultaneous access for updating and
+With each passing day the amount of distributed applications increases, and a subset of these are applications
+deal with data that requires validation, transactional operations by validated users and simultaneous access for updating and
 consulting the records. For this specific subset there are a group of protocols that have been created to meet and ensure
-these requirements. Distributed Ledger Technologies allow for simultaneous access, validation and update of records across
+these requirements. Blockchain protocols allow for simultaneous access, validation and update of records across
 a distributed database, each node has its own copy of the ledger that it uses to validate information and reach a consensus
 about its accuracy.
 
-Around 2008 began the rise of a new set of protocols that takes DLTs as their basis. Blockchain protocols appeared with the motivation
-to serve as a distributed ledger for cryptocurrency transactions. The main difference from Blockchains to DLTs is that
-the log of records is created in blocks, each blocked is closed by a hash and the next beginning with the closing hash of the previous.
-
-These protocols are not static, being because vulnerabilities or flaws need to be correct or due to the very nature of the protocol itself.
+Around 2008 blockchain protocols appeared with the motivation
+to serve as a distributed ledger for cryptocurrency transactions. These protocols are not static, being because vulnerabilities 
+or flaws that need to be correct or due to the very nature of the protocol itself.
 One of these dynamic protocols is Tezos~\cite{tezos}, which relies on the stake-holders that participate in the system to propose and
-agree on changes and upgrades to the protocol. Another example is Ethereum~\cite{ethereum} that uses a blockchain protocol based on proof
-of work and their current goal is to migrate towards an implementation based solely on proof of stake for Ethereum2.
-This opens a necessity for tools that aid in support these evolutions in a faster, more seamless, secure fashion.
+agree on changes and upgrades to the protocol. Another example is Ethereum~\cite{ethereum} that started by using a blockchain protocol based on proof
+of work and in 2022 migrated towards an implementation based solely on proof of stake for Ethereum2.
+This opens a necessity for tools that aid in support these evolutions in a faster, more seamless and secure fashion.
 
 Blockchain protocols operate on top of membership layers that dictate how the topology of the network is configured.
 Different membership environments come with different properties and trade-offs. Structured membership overlays allow for faster lookups for
@@ -44,10 +43,13 @@ overlays allow for the benefits of a non-structured overlay at the cost of slowe
 procedures are regularly executed to improve routing and lookup operations. The trade-offs and some of these protocols will be further
 explained in Chapter~\ref{cha:Background}.
 
-This motivated the development of MOBs, a modular and extensible simulator that provides the ability to simulate different families of protocols, 
-parameterizable, a well-defined structure and a qualitative evaluation for the study of implemented protocols. But this simulator can be further 
-improved by giving conditions closer to real life, like a dynamic and parameterizable network layer, allowing for the study and validation of the
-behavior of these protocols in different scenarios and abstracted from the intricacies of the arrangement of the participants.
+The challenges in developing blockchain protocols motivated the development of MOBs, a modular and extensible simulator that provides
+the ability to simulate different families of blockchain and consensus protocols.
+MOBs provides a parametrizable execution of the selected protocols, exhibiting a modular and extensible structure and offers detailed logs for the
+qualitative evaluation for the study of implemented protocols. However, this simulator can be further improved by incorporating conditions closer
+to real life, such as a dynamic and parametrizable network layer and more detailed logs with specific configurations for consensus protocols.
+These enhancements would enable the study and validation of the behaviour of these protocols in various scenarios, abstracted from the intricacies
+of the arrangement of the participants and the validation of the correctness of a wider array or protocols.
 
 \section{Problem}\label{sub:problem}
 Consensus protocols are not trivial to define or understand correctly and in blockchain systems, where the behavior is dynamic and mostly 
@@ -56,7 +58,7 @@ Proof of Work to a Proof of Stake consensus, this opened the protocol to vulnera
 To help with this MOBs was developed giving the ability to test and validate these protocols under different conditions and settings by 
 changing the execution parameters, aiming to catch these vulnerabilities or even logic errors before deploying changes to these protocols.
 
-Right now the parameters to the network are set before the execution of the simulation, and regarding the network behavior we can
+Right now the parameters to the network are set before the execution of the simulation, and regarding the network behaviour we can
 set the network topology, how many nodes will fail and when. In the real world a network's topology is dynamic, new nodes can enter
 as new participants, existing ones can leave, either by choice or by failure, and even when the participants are static the network
 can suffer changes to its topology as a result of optimizations performed by this layer.
@@ -68,14 +70,18 @@ problems that we aim to address with this thesis.
 \section{Goal}\label{sub:goal}
 
 With the different properties that different network overlays provide besides the parametrizations that are already provided by MOBs,
-we can further provide an even more modular simulator that allows for the study of the optimal conditions of executions of the protocols.
-We can also leverage the modularity of this layer to better simulate the behaviour of new participants coming into the system, existing
-ones leaving and how changes to the topology of the network affects their execution.
+we can further provide an even more modular simulator that allows for the study of the behaviour in different membership protocols.
+This will allow us to leverage the modularity of this layer to better simulate the behaviour of new participants coming into the system, existing
+ones leaving and how changes to the network topology of the network affects their execution.
+
+Another aspect we want to improve is the logging module of MOBs, by providing a template for logging of consensus protocols and
+an after execution analysis tool to verify their correction, validate their execution and extract metrics for
+comparison between executions in different environments.
 
 The goal of this thesis is to improve the networking layer of MOBs by making it more modular and therefore giving the following advantages:
 \begin{itemize}
   \item Different environments for more diverse testing scenarios.
-  \item Stronger parametrization regarding the behavior of the network.
+  \item Stronger parametrization regarding the behaviour of the network.
   \item Better qualitative data by providing scenarios that better mimic real world execution.
 \end{itemize}
 
@@ -88,7 +94,7 @@ Some simple consensus protocols; Overview of the types of blockchain consensus;
 
 
 Chapter~\ref{cha:related_work} we show Babel which is a framework for implemented distributed system protocols; And NetworkX,
-a package in Python that provides network analysis tools-
+a package in Python that provides network analysis tools.
 
 Chapter~\ref{cha:mobs} studies the MOBs implementation.
 
