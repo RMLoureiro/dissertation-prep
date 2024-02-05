@@ -8,29 +8,26 @@
 
 \typeout{NT FILE chapter2.tex}%
 
-\chapter{Background}
-\label{cha:Background}
+\chapter{Background}\label{cha:Background}
 
 In this chapter we will discuss relevant work considering the goals of the work
 to be conducted in this thesis. In particular, we will focus on the following topics:
 
-In section \ref{sec:membership_protocols} we discuss the differences between
+In section~\ref{sec:membership_protocols} we discuss the differences between
 the different kinds of membership systems as well as some implementations.
 
-In section \ref{sec:consensus} we will discuss some consensus protocols.
+In section~\ref{sec:consensus} we will discuss some consensus protocols.
 
-In section \ref{sec:blockchain} we will discuss some different types of
+In section~\ref{sec:blockchain} we will discuss some different types of
 blockchain protocols.
 
-\section{Membership Protocols}
-\label{sec:membership_protocols}
+\section{Membership Protocols}\label{sec:membership_protocols}
 
 This section introduces some membership protocols that have been considered to
 part of the work that will be developed.
 
 
-\subsection{Membership}
-\label{sub:membership}
+\subsection{Membership}\label{sub:membership}
 
 A protocol where each node knows every other node in the network might work well
 for small networks, but it is not a scalable solution since each node would need
@@ -39,47 +36,45 @@ amount of nodes in the system, and each node needs to be following any and all
 changes to the system. This is not feasible since the number of links between
 nodes would rise quadratically and networks can easily reach thousands of
 participants. In order to overcome the challenges that arise from large networks,
-we use partial view membership protocols. In these protocols each node only knows
+we usually use partial view membership protocols. In these protocols each node only knows
 and maintains information about a small selection of nodes in the systems,
 making it a more scalable strategy than a total view protocol, since
-the number of connections grow at a logarithmic rate instead.
+the number of connections tend to grow at a logarithmic rate instead.
 
 When maintaining a partial view, protocols usually follow one of two strategies
 when managing their memberships:
 
 \begin{itemize}
-  \item \textbf{Reactive:} With this strategy the partial view only changes when
-the membership suffers changes, usually by a node leaving or joining the membership
+  \item \textbf{Reactive:} Using this strategy, the partial view undergoes alteration solely
+when there are changes in membership, typically occurring when a node joins or leaves the membership.
   \item \textbf{Cyclic:} With this approach, the partial view changes periodically.
-Every \textit{t} seconds nodes exchange information that may lead to changes to the
+Every \textit{t} seconds nodes exchange information that may lead to modifications to the
 partial view.
 \end{itemize}
 
-This membership protocols may be represented by a graph where the vertices represent
-the participants of the networks and the edges represent the communication links.
+This membership protocols are usually represented by a graph where the vertices represent
+the participants of the network and the edges represent the communication links.
 Depending on how the graph ends up we can classify the membership as structured,
 unstructured or partially structured. In the next sections we will go over these
 types of memberships and some implementations.
 
-\subsection{Structured Overlays}
-\label{sub:structured_overlays}
+\subsection{Structured Overlays}\label{sub:structured_overlays}
 
 Structured overlay memberships follow a pre-defined structure by having the nodes
 routed to a specific logical position in the network. This known structure allows
 improvement on search primitives, enabling efficient discovery of data and process.
-This position is usually determined by giving a unique identifier for each node of the
-network.
+The node's position is usually based on a unique identifier for each node of the
+network and different protocols organize the nodes by their identifier by 
 
-However, having a predefined topology come at the cost of more costly re-structuring
-usually by a node leaving the network or a new participant joining. This process
-is usually slow and costly since a change of one node in the membership may affect
+However, having a predefined topology come at the cost of a more costly re-structuration
+of the network every time a there is a change to the membership. This process
+is usually slow and costly since a change of one node may affect
 the network at a global level. This drawback becomes more relevant in high churn rate
 scenarios.
 
-\subsubsection{Chord}
-\label{subsec:chord}
+\subsubsection{Chord}\label{subsec:chord}
 
-Consistent Hashing and Random Trees, or Chord \cite{chord} is a Distributed Hash
+Consistent Hashing and Random Trees, or Chord~\cite{chord} is a Distributed Hash
 Table based algorithm where each node is assigned a unique identifier based on
 the output of a hash function. Usually this has is based on the IP address of
 the node since this is unique for every node of the network, and making it so
@@ -98,15 +93,14 @@ in a more efficient manner.
 The tables maintained by these nodes are automatically updated when a new node joins
 or leaves the system  making it always possible to find a node responsible to a given
 key. However, simultaneous failures may break the overlay since the correctness
-of the membership depends on each node knowing their correct neighbors. In order
+of the membership depends on each node knowing their correct neighbours. In order
 to increase fault tolerance, a periodical stabilization protocol is run in background,
-making sure the neighbors are still active and restructuring the overlay
+making sure the neighbours are still active and restructuring the overlay
 accordingly as well as updating the entries on the finger table.
 
-\subsubsection{Pastry}
-\label{subsec:pastry}
+\subsubsection{Pastry}\label{subsec:pastry}
 
-Pastry \cite{pastry}, similarly to Chord is a structured overlay protocol that
+Pastry~\cite{pastry}, similarly to Chord is a structured overlay protocol that
 defines a distributed hash table. A Pastry system is a self-organizing overlay
 network of nodes where every node has a 128-bit identifier. This identifier
 is assigned randomly when a node joins the system and is used to indicate a
@@ -114,11 +108,11 @@ node's position in a circular space that ranges from 0 to $2^{128}-1$. It is ass
 that the hash function that gives the node's identifier generated a uniform
 distribution of identifiers around the 128-bit space.
 
-Each Pastry node maintains a \textit{routing table}, a \textit{neighborhood set}
+Each Pastry node maintains a \textit{routing table}, a \textit{neighbourhood set}
 and a \textit{leafing set}. The routing table contains the entries based
-on substrings of the own node's identifier. The neighborhood set contains
+on substrings of the own node's identifier. The neighbourhood set contains
 the node identifiers and the corresponding IP address of the \textit{M} the closest
-nodes to the local node, \textit{M} being parameterizable.  The neighborhood
+nodes to the local node, \textit{M} being parametrizable.  The neighbourhood
 set contains the nodes that are used to maintain local properties. The leafing
 set contains the \textit{L}/2 closest large node identifiers and \textit{L}/2
 smallest node identifiers, \textit{L} also being a parametrized value. The
@@ -129,20 +123,18 @@ for another node in the network we check the leaf set, if the node is in range o
 the leaf set we route directly to the destination node, otherwise we check
 the routing table for a node that shares a common prefix with the key.
 
-\subsection{Unstructured Overlays}
-\label{sub:unstructured_overlays}
+\subsection{Unstructured Overlays}\label{sub:unstructured_overlays}
 
 Unstructured overlays place few constrains as on how the nodes chose their
-neighbors. This results in a random graph that is hard to predict and describe.
+neighbours. This results in a random graph that is hard to predict and describe.
 
 By not having a structured overlay these memberships end up being more fault-tolerant
 in high churn rate scenarios due to the cost of the network restructuring
 itself is fairly low.
 
-\subsubsection{SWIM}
-\label{subsec:swim}
+\subsubsection{SWIM}\label{subsec:swim}
 
-SWIM \cite{swim} stands for \textbf{S}calable \textbf{W}eakly-consistent \textbf{I}nfection-style
+SWIM~\cite{swim} stands for \textbf{S}calable \textbf{W}eakly-consistent \textbf{I}nfection-style
 Process Group \textbf{M}embership Protocol. This protocol is composed of two distinct
 components, a failure detector and a dissemination component.
 
@@ -150,8 +142,8 @@ Unlike traditional gossip based overlays that rely on a heartbeat strategy,
 the failure detector in SWIM is independent of the rest of the protocol.
 The failure detector is fully decentralized and is executed in a randomized
 probe-based fashion, the authors later suggest an optimization via a round-robin
-fashion instead. Every \textit{t} seconds, parameterizable value, a random
-node that belongs to the membership is checked to see if its still alive, if
+fashion instead. Every \textit{t} seconds, parametrizable value, a random
+node that belongs to the membership is checked to see if it's still alive, if
 no awnser is received the request is forwarded to \textit{k} other members to
 execute an indirect probe. If the nodes responds to at least one of the indirect
 requests the suspicion is removed and an \textit{alive} message is spread to
@@ -166,10 +158,9 @@ joins or leaves the system by an infection style dissemination protocol. In orde
 make this more efficient, the updates piggyback the messages that are sent during the
 failure detection procedure.
 
-\subsubsection{HyParView}
-\label{subsec:hyparview}
+\subsubsection{HyParView}\label{subsec:hyparview}
 
-HyParView \cite{hyparview} is a gossip based membership protocol that offers high
+HyParView~\cite{hyparview} is a gossip based membership protocol that offers high
 resilience and high delivery reliability of messages while being highly scalable.
 It relies on a hybrid approach by maintaining, besides the active view that is 
 used by the nodes to maintain the communication overlay, a passive view, in case
@@ -192,7 +183,7 @@ information with other nodes regarding the contents of its views. This informati
 is exchanged by means of a shuffle operation with another node from its active view.
 After the exchange, the nodes integrate the new received members in its
 passive views, even if for that, some older members have to be dropped. This
-mechanism helps maintaining a homogeneous overlay in the number of connections
+mechanism helps to maintain a homogeneous overlay in the number of connections
 each node has.
 
 The gossip strategy relies on the use of TCP as a reliable transport protocol and fail
@@ -206,24 +197,22 @@ in the system, the protocol was shown to be able to maintain 100\% reliability
 for message dissemination.
 
 
-\subsection{Partially Structured Overlays}
-\label{sub:partially_structured_overlays}
+\subsection{Partially Structured Overlays}\label{sub:partially_structured_overlays}
 
 Partially structured overlays aim to get the best of both strategies. We can 
 leverage the easy to maintain and fault-tolerant unstructured overlays and
 by applying some optimization procedure to the network we can achieve a more
 efficient search and application level routing.
 
-\subsubsection{T-MAN}
-\label{subsec:t-man}
+\subsubsection{T-MAN}\label{subsec:t-man}
 
-T-MAN \cite{tman} was created with the motivation to give
+T-MAN~\cite{tman} was created with the motivation to give
 the ability of taking some random overlay, and \textit{evolve} it into another one.
 
 The logic behind the algorithm is giving each node a ranking value that every node can
-use to apply a function to determine how desirable a node is as a neighbor.
+use to apply a function to determine how desirable a node is as a neighbour.
 Each node maintains a partial view that contains the addresses of nodes that are not its
-immediate neighbors, much like the HyParView overlay described in \ref{subsec:hyparview}.
+immediate neighbours, much like the HyParView overlay described in \ref{subsec:hyparview}.
 Periodically each node exchanges its partial view with the first node in its active view,
 according to the ranking
 values which depends on the target overlay. The receiver will execute the same procedure
@@ -238,10 +227,9 @@ fault-tolerant as the desired overlay, since T-MAN doesn't aim to maintain a bal
 between the nodes, this might create uneven load balance or even node isolation during
 or after the procedure
 
-\subsubsection{X-BOT}
-\label{subsec:x-bot}
+\subsubsection{X-BOT}\label{subsec:x-bot}
 
-X-BOT \cite{xbot} stands for \textbf{B}ias the \textbf{O}verlay \textbf{T}opology
+X-BOT~\cite{xbot} stands for \textbf{B}ias the \textbf{O}verlay \textbf{T}opology
 according to some targeting criteria \textbf{X}. This protocol is completely decentralized,
 and the nodes do not require any prior knowledge of where they will end up in the final topology. 
 This protocol strives to preserve the degree of the nodes that participate in the 4-node coordinated
@@ -257,7 +245,7 @@ different cost metrics.
 The companion oracle is accessible by all nodes, and its sole purpose is to give the
 link cost from the node that invokes it to a given node.
 
-The 4-node coordinated technique that has been referred above works as follow, a
+The 4-node coordinated technique that has been referred above works as follows, a
 node \textit{i}, the initiator, starts the optimization round selecting a node from
 its passive view. Node \textit{O} is a node from \textit{i}'s active view that
 will be replaced. Node \textit{c}, the candidate, is a node from \textit{i}'s passive
@@ -267,13 +255,12 @@ These nodes are always selected based upon the link cost values provided by the 
 ensuring that every time the optimization procedure is called the network increases its
 efficiency
 
-\section{Consensus Protocols}
-\label{sec:consensus}
+\section{Consensus Protocols}\label{sec:consensus}
 
 Consensus protocols solve the problem of in a system of participants reaching
 an agreement on a given value. These algorithms must ensure an agreement is reached
 even in the presence of faulty nodes in the network. Consensus protocols must ensure
-they satisfy the following properties \cite{distributed_systems_concepts}:
+they satisfy the following properties~\cite{distributed_systems_concepts}:
 \begin{itemize}
   \item \textbf{Termination:} Eventually, every correct process decides some value.
   \item \textbf{Validity:} If all the correct processes propose the same value,
@@ -282,15 +269,14 @@ then any correct process must agree on that value.
   \item \textbf{Agreement:} Every correct process must agree on the same value.
 \end{itemize}
 
-We will now look at some algorithms that solve consensus.
+We will now look at some protocols that solve consensus.
 
-\subsection{Chandra-Toueg}
-\label{sub:chandra-toueg}
+\subsection{Chandra-Toueg}\label{sub:chandra-toueg}
 
-The Chandra-Toueg consensus algorithm \cite{chandra} for solving consensus in a network of
+The Chandra-Toueg consensus protocol~\cite{chandra} for solving consensus in a network of
 unreliable processes equipped with an eventually strong failure detector.
-This failure detector is an abstract version of timeouts signaling each
-process when other processes may have crashed.
+This failure detector is an abstract version of timeout signalling that each
+process preforms when other processes may have crashed.
 An eventually strong failure detector is defined with the two following properties:
 \begin{itemize}
   \item Eventually every process that crashes is permanently suspected by every
@@ -314,21 +300,20 @@ or wait for its failure detector to identify the coordinator as crashed.
   \begin{itemize}
     \item In the first case it sets its preference to be the same as the coordinator
 and replies with an ack (acknowledge).
-    \item In the second case it responds with a nack (not acknowledge).
+    \item In the second case it responds with a \textit{nack} (not acknowledge).
   \end{itemize}
-  \item The coordinator waits to receive acks from a majority of processes, after
+  \item The coordinator waits to receive \textit{acks} from a majority of processes, after
 it sends a decide message to all processes.
   \item Any processes that received the decide message for the first time it
 broadcasts it to all processes.
-  \item The processes decides on the coordinator chosen preference and terminates.
+  \item The processes decide on the coordinator chosen preference and terminates.
 \end{enumerate}
 
-\subsection{Paxos}
-\label{sub:paxos}
+\subsection{Paxos}\label{sub:paxos}
 
-Paxos \cite{paxos} is a family of protocols for solving consensus, for this example we will take
+Paxos~\cite{paxos} is a family of protocols for solving consensus, for this example we will take
 a look at what is commonly referred as basic Paxos, that decides on a single value, 
-and after take a look at MultiPaxos which gives a constant streem of agreed values. 
+and after take a look at MultiPaxos which gives a constant stream of agreed values. 
 For this algorithm we make the following assumptions regarding processors:
 \begin{itemize}
   \item Operate at arbitrary seed.
@@ -385,7 +370,7 @@ of Acceptors.
   \end{enumerate}
 \end{itemize}
 
-Mulipaxos is another algorithm in the Paxos family and is used when a
+MultiPaxos is another algorithm in the Paxos family and is used when a
 continuous stream of agreed values is needed.
 If the leader is relatively stable phase 1 becomes unnecessary. To achieve this
 we include the round number along with each value which is incremented in each round
@@ -393,8 +378,7 @@ by the same leader. We still need the phase 1 for the first round but in
 consequent rounds if the Leader does not change nor fails we can skip it, reducing
 the overhead for each round
 
-\section{Blockchain Protocols}
-\label{sec:blockchain}
+\section{Blockchain Protocols}\label{sec:blockchain}
 
 Blockchain is the core technology of many cryptocurrencies as a distributed
 ledger technology. This technology combines cryptography, distributed system
@@ -403,8 +387,8 @@ protocols use different consensus protocols to try and balance the trade-offs of
 each, and make sure we use the suitable consensus protocol for the blockchain type
 used by the system. The adopted consensus protocol needs to fit the demands of
 different application scenarios. In this section we will detail some popular
-blockchain consensus protocols that effectively address Byzantine behavior
-in the system, taking basis in the work done in \cite{blockchain_consensus}:
+blockchain consensus protocols that effectively address Byzantine behaviour
+in the system, taking basis in the work done in~\cite{blockchain_consensus}:
 
 \textbf{PoW (Proof of Work):} PoW is adopted by Bitcoin and Ethereum,
 this consensus protocol selects one node to create a new block 
@@ -447,10 +431,10 @@ the blocks and reducing computational consumption. This is adopted by BitShares 
 	\label{fig:dpos}
 \end{figure}
 
-\textbf{PBFT (Practical Byzantine Fault Tolerance):} BFT is a Byzantine Fault 
+\textbf{PBFT (Practical Byzantine Fault Tolerance):} PBFT is a Byzantine Fault 
 Tolerance protocol with low algorithmic complexity, it contains five phases: request,
 pre-prepare, prepare, commit and reply. PBFT guarantees nodes maintain a common state and take
-a consistent action in each round. PBFT guarantees strong consistency and is adopted by
+a consistent action in each round, guarantees strong consistency and is adopted by
 EOS to validate blocks while using DPoS for creation.
 
 \begin{figure}[h]

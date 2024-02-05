@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.2.3)  3 FEB 2024 03:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.2.3)  5 FEB 2024 01:13
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -2166,7 +2166,7 @@ Package biblatex Info: Reference segment=0 on input line 204.
 \cftsubfigureindent=\skip296
 \cftsubfigurenumwidth=\skip297
 
-TIME class loading=103683
+TIME class loading=126815
 \c@/@nt/hook/mainmatter/@names/@sizecnt=\count729
 \c@/@nt/hook/mainmatter/@paths/@sizecnt=\count730
 \c@/@nt/hook/mainmatter/pre/@sizecnt=\count731
@@ -2296,7 +2296,7 @@ l.215 \typeout
 
  <./NOVAthesisFiles/Schools/nova/Images/nova-insignia.pdf> <./NOVAthesisFiles/S
 chools/nova/fct/Images/nova-fct-logo.pdf>]
-TIME process covers=121605
+TIME process covers=149597
 LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
 (Font)              scaled to size 24.88pt on input line 216.
 LaTeX Font Info:    Font shape `T1/GilliusADFNoTwo-LF/m/n' will be
@@ -2351,7 +2351,7 @@ sr/local/texlive/2023/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}] [2]
 
 ]
 (./template.gls) (./template.acr) (./template.sls)
-TIME process frontmatter=126469
+TIME process frontmatter=155769
 (./Chapters/chapter1.tex
 NT FILE chapter1.tex
 LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
@@ -2397,16 +2397,22 @@ hing off
 NT FILE chapter2.tex
 [3{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/newpx/zpl_TOsF.enc}]
 LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
-(Font)              scaled to size 12.0pt on input line 32.
+(Font)              scaled to size 12.0pt on input line 30.
 LaTeX Font Info:    Font shape `T1/zpltlf/b/n' will be
-(Font)              scaled to size 12.0pt on input line 32.
+(Font)              scaled to size 12.0pt on input line 30.
 LaTeX Font Info:    Font shape `T1/zpltlf/m/it' will be
-(Font)              scaled to size 10.95pt on input line 37.
+(Font)              scaled to size 10.95pt on input line 34.
 
 [4
 
-] [5]
-Overfull \hbox (0.22572pt too wide) in paragraph at lines 145--148
+]
+Overfull \hbox (1.89609pt too wide) in paragraph at lines 69--74
+[]\T1/zpltlf/m/n/10.95 (-10) However, hav-ing a pre-de-fined topol-ogy come at 
+the cost of a more costly re-structuration
+ []
+
+[5]
+Overfull \hbox (0.22572pt too wide) in paragraph at lines 137--140
 \T1/zpltlf/m/n/10.95 (-10) SWIM [[][][]7[][]] stands for \T1/zpltlf/b/n/10.95 (
 -10) S\T1/zpltlf/m/n/10.95 (-10) calable \T1/zpltlf/b/n/10.95 (-10) W\T1/zpltlf
 /m/n/10.95 (-10) eakly-consistent \T1/zpltlf/b/n/10.95 (-10) I\T1/zpltlf/m/n/10
@@ -2423,23 +2429,23 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 <Chapters/Figures/pow.jpg, id=290, 361.35pt x 143.26088pt>
 File: Chapters/Figures/pow.jpg Graphic file (type jpg)
 <use Chapters/Figures/pow.jpg>
-Package pdftex.def Info: Chapters/Figures/pow.jpg  used on input line 419.
+Package pdftex.def Info: Chapters/Figures/pow.jpg  used on input line 403.
 (pdftex.def)             Requested size: 325.215pt x 128.93578pt.
 <Chapters/Figures/pos.jpg, id=291, 377.9785pt x 120.87637pt>
 File: Chapters/Figures/pos.jpg Graphic file (type jpg)
 <use Chapters/Figures/pos.jpg>
-Package pdftex.def Info: Chapters/Figures/pos.jpg  used on input line 433.
+Package pdftex.def Info: Chapters/Figures/pos.jpg  used on input line 417.
 (pdftex.def)             Requested size: 325.215pt x 104.00513pt.
  [12 <./Chapters/Figures/pow.jpg> <./Chapters/Figures/pos.jpg>]
 <Chapters/Figures/dpos.jpg, id=297, 377.9785pt x 188.66946pt>
 File: Chapters/Figures/dpos.jpg Graphic file (type jpg)
 <use Chapters/Figures/dpos.jpg>
-Package pdftex.def Info: Chapters/Figures/dpos.jpg  used on input line 445.
+Package pdftex.def Info: Chapters/Figures/dpos.jpg  used on input line 429.
 (pdftex.def)             Requested size: 325.215pt x 162.33604pt.
 <Chapters/Figures/pbft.jpg, id=298, 216.81pt x 114.48079pt>
 File: Chapters/Figures/pbft.jpg Graphic file (type jpg)
 <use Chapters/Figures/pbft.jpg>
-Package pdftex.def Info: Chapters/Figures/pbft.jpg  used on input line 458.
+Package pdftex.def Info: Chapters/Figures/pbft.jpg  used on input line 442.
 (pdftex.def)             Requested size: 325.215pt x 171.74345pt.
 ) (./Chapters/chapter3.tex
 NT FILE chapter3.tex
@@ -2554,7 +2560,7 @@ Overfull \hbox (17.0pt too wide) in paragraph at lines 236--236
  []
 
 [29]
-TIME process mainmatter=180496
+TIME process mainmatter=215762
 <NOVAthesisFiles/Schools/nova/fct/Images/nova-fct-msc-cover-back.pdf, id=466, 5
 97.50829pt x 845.0471pt>
 File: NOVAthesisFiles/Schools/nova/fct/Images/nova-fct-msc-cover-back.pdf Graph
@@ -2574,7 +2580,7 @@ l.246 \ntprint{backcover}
 
 
  <./NOVAthesisFiles/Schools/nova/fct/Images/nova-fct-msc-cover-back.pdf>]
-TIME process process backcover=183401
+TIME process process backcover=218745
 \tf@toc=\write10
 \openout10 = `template.toc'.
 
@@ -2594,11 +2600,11 @@ Package logreq Info: Writing requests to 'template.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 57702 strings out of 474228
- 1144050 string characters out of 5746459
+ 57700 strings out of 474228
+ 1144012 string characters out of 5746459
  2129170 words of memory out of 5000000
  78525 multiletter control sequences out of 15000+600000
- 717692 words of font info for 382 fonts, out of 8000000 for 9000
+ 717574 words of font info for 381 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  124i,21n,146p,2390b,4397s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/arkandis/gillius/GilliusADFNo
@@ -2609,7 +2615,7 @@ e1/public/newpx/pxsys.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/publi
 c/txfonts/t1xtt.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newp
 x/zplb.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newpx/zplr.pf
 b></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newpx/zplri.pfb>
-Output written on template.pdf (38 pages, 1512795 bytes).
+Output written on template.pdf (38 pages, 1512980 bytes).
 PDF statistics:
  697 PDF objects out of 1000 (max. 8388607)
  604 compressed objects within 7 object streams

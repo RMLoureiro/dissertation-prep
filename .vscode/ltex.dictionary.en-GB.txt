@@ -1,0 +1,12 @@
+awnser
+HyParView
+Chandra-Toueg
+nack
+acks
+Paxos
+MultiPaxos
+PoS
+Nxt
+DPoS
+BitShares
+PBFT

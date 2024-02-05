@@ -1,13 +1,13 @@
 # Fdb version 4
-["biber template"] 1689196654 "template.bcf" "template.bbl" "template" 1706932074.22211 0
+["biber template"] 1689196654 "template.bcf" "template.bbl" "template" 1707095638.63074 0
   "./Bibliography/bibliography.bib" 1706914927.25752 10724 89b3520499b0ea98c73649074a7c2ace ""
   "./NOVAthesisFiles/fix-bib.bib" 1706914927.70717 323 a5d8b0c6bed5e8b720c3c474f5352354 ""
-  "template.bcf" 1706932074.0652 110387 fa08f0564baea54cdd55cbafe103f887 "pdflatex"
+  "template.bcf" 1707095638.46015 110387 fa08f0564baea54cdd55cbafe103f887 "pdflatex"
   (generated)
   "template.bbl"
   "template.blg"
   (rewritten before read)
-["pdflatex"] 1706932071.17179 "template.tex" "template.pdf" "template" 1706932074.22242 0
+["pdflatex"] 1707095634.95358 "template.tex" "template.pdf" "template" 1707095638.63113 0
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/gillius/gls_4bsedw.enc" 1383613667 2974 5e292c6fb1c6ad48bcd42b94e25a1512 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/newpx/px-lms.enc" 1699652218 3877 2ca811886181a05a861d20a35de75e06 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/newpx/zpl_TOsF.enc" 1694207779 2688 c4453cc5ea1d5eadb4ed2ca5fa23d7e7 ""
@@ -310,7 +310,7 @@
   "Chapters/abstract-en.tex" 1706921918.86213 2877 44bd79466eb41bebcc2274394bc21d03 ""
   "Chapters/acronyms.tex" 1706914927.5077 1078 0959d1658a229a9db40da7f1615ede5a ""
   "Chapters/chapter1.tex" 1706931981.60926 7504 f0028e341356337ddbce123a7635b801 ""
-  "Chapters/chapter2.tex" 1706914927.50884 24296 7f086fd7871017200715a3eb1c5afff9 ""
+  "Chapters/chapter2.tex" 1707094619.36656 24414 0b5637a7ea752b6e29f7a9c114e8c04a ""
   "Chapters/chapter3.tex" 1706914927.50956 5013 7fe5fa94676e4ed7615b376d83a7f053 ""
   "Chapters/chapter4.tex" 1706914927.51102 14421 193fdcdbd52830dbc07bbdc57fe2cc67 ""
   "Chapters/chapter5.tex" 1706914927.5114 7483 67cb5d36b2c290199645604d955dae8a ""
@@ -344,19 +344,19 @@
   "NOVAthesisFiles/nt-version.sty" 1706914927.70987 82 1c11dcab48199d8cefbf97cb8c4d4f14 ""
   "NOVAthesisFiles/options2.sty" 1706914927.71072 50782 6a73db909b17b78e610143b5363fd059 ""
   "novathesis.cls" 1706914927.71156 91943 a021561b5c0183a85118dae7f2250570 ""
-  "template.acn" 1706932072.54937 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "template.acr" 1706932072.47488 0 d41d8cd98f00b204e9800998ecf8427e ""
-  "template.aux" 1706932074.05041 29648 05148e9f0a09066599e0de5ad8378e40 "pdflatex"
+  "template.acn" 1707095636.72549 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "template.acr" 1707095636.61578 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "template.aux" 1707095638.44403 29648 3ea19e36158dccdf8243a3266ea908ed "pdflatex"
   "template.bbl" 1706914927.71714 34868 4691bb93ef188e5f4325f3fcc61ad7c8 "biber template"
-  "template.glo" 1706932072.54914 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "template.gls" 1706932072.39273 0 d41d8cd98f00b204e9800998ecf8427e ""
-  "template.lof" 1706932074.06781 1081 3548306ba0b1a6d7a52990130a4aaf97 "pdflatex"
-  "template.lot" 1706932074.06821 491 99d4bd335e059470a7b74ede2843de7b "pdflatex"
-  "template.run.xml" 1706932074.06689 2431 5bb8aef992e5b41ffd7711d0ecad62f4 "pdflatex"
-  "template.slo" 1706932072.54947 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "template.sls" 1706932072.54837 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "template.glo" 1707095636.72521 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "template.gls" 1707095636.4689 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "template.lof" 1707095638.46156 1081 3548306ba0b1a6d7a52990130a4aaf97 "pdflatex"
+  "template.lot" 1707095638.4616 491 99d4bd335e059470a7b74ede2843de7b "pdflatex"
+  "template.run.xml" 1707095638.46138 2431 5bb8aef992e5b41ffd7711d0ecad62f4 "pdflatex"
+  "template.slo" 1707095636.72562 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "template.sls" 1707095636.72348 0 d41d8cd98f00b204e9800998ecf8427e ""
   "template.tex" 1706914927.73842 8833 cd78ca68531af3c3b578e29cba9cda24 ""
-  "template.toc" 1706932074.06733 4072 dfd9d57026a3f0627ac4d40669101c7e "pdflatex"
+  "template.toc" 1707095638.4615 4072 dfd9d57026a3f0627ac4d40669101c7e "pdflatex"
   (generated)
   "template.acn"
   "template.aux"

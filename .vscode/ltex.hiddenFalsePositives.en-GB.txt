@@ -1,1 +1,2 @@
 {"rule":"ENGLISH_WORD_REPEAT_BEGINNING_RULE","sentence":"^\\QChapter \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q we will talk about the proposed work to address the problem introduced in this chapter.\\E$"}
+{"rule":"ENGLISH_WORD_REPEAT_BEGINNING_RULE","sentence":"^\\QMessages when delivered are delivered without corruption.\\E$"}
