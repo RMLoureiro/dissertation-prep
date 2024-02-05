@@ -32,25 +32,25 @@
 \contentsline {section}{\numberline {3.2}NetworkX}{15}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Simulators}{16}{section.3.3}%
 \contentsline {subsection}{\numberline {3.3.1}VIBES}{16}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}BlockSim}{16}{subsection.3.3.2}%
-\contentsline {subsection}{\numberline {3.3.3}BlockSim}{16}{subsection.3.3.3}%
-\contentsline {subsection}{\numberline {3.3.4}SimBlock}{16}{subsection.3.3.4}%
-\contentsline {subsection}{\numberline {3.3.5}JABS}{16}{subsection.3.3.5}%
-\contentsline {chapter}{\chapternumberline {4}MOBs}{17}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Overview}{17}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Simulator}{17}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Graphical User Interface}{18}{subsection.4.1.2}%
-\contentsline {subsubsection}{\numberline {4.1.2.1}Parametrization}{19}{subsubsection.4.1.2.1}%
-\contentsline {subsubsection}{\numberline {4.1.2.2}Topology Specification}{19}{subsubsection.4.1.2.2}%
-\contentsline {subsubsection}{\numberline {4.1.2.3}Visualizer}{20}{subsubsection.4.1.2.3}%
-\contentsline {subsubsection}{\numberline {4.1.2.4}Statistical Analysis}{20}{subsubsection.4.1.2.4}%
-\contentsline {section}{\numberline {4.2}Critical Analysis}{20}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Initial Exercise}{21}{section.4.3}%
-\contentsline {chapter}{\chapternumberline {5}Work to be developed}{24}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Proposed work}{24}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}Network Layer Enhancement}{24}{subsection.5.1.1}%
-\contentsline {subsection}{\numberline {5.1.2}Improve qualitative data}{25}{subsection.5.1.2}%
-\contentsline {section}{\numberline {5.2}Work Plan}{26}{section.5.2}%
-\contentsline {chapter}{Bibliography}{27}{section*.6}%
+\contentsline {subsection}{\numberline {3.3.2}BlockSim: Blockchain Simulator}{16}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}BlockSim: Extensible simulation tool for blockchain systems}{17}{subsection.3.3.3}%
+\contentsline {subsection}{\numberline {3.3.4}SimBlock:A Blockchain Network Simulator}{18}{subsection.3.3.4}%
+\contentsline {subsection}{\numberline {3.3.5}JABS}{18}{subsection.3.3.5}%
+\contentsline {subsection}{\numberline {3.3.6}Critical Analysis}{18}{subsection.3.3.6}%
+\contentsline {chapter}{\chapternumberline {4}MOBs}{20}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Overview}{20}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Simulator}{20}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Graphical User Interface}{21}{subsection.4.1.2}%
+\contentsline {subsubsection}{\numberline {4.1.2.1}Parametrization}{22}{subsubsection.4.1.2.1}%
+\contentsline {subsubsection}{\numberline {4.1.2.2}Topology Specification}{22}{subsubsection.4.1.2.2}%
+\contentsline {subsubsection}{\numberline {4.1.2.3}Visualizer}{23}{subsubsection.4.1.2.3}%
+\contentsline {subsubsection}{\numberline {4.1.2.4}Statistical Analysis}{23}{subsubsection.4.1.2.4}%
+\contentsline {section}{\numberline {4.2}Initial Exercise}{23}{section.4.2}%
+\contentsline {chapter}{\chapternumberline {5}Work to be developed}{26}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Proposed work}{26}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Network Layer Enhancement}{26}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Improve qualitative data}{27}{subsection.5.1.2}%
+\contentsline {section}{\numberline {5.2}Work Plan}{28}{section.5.2}%
+\contentsline {chapter}{Bibliography}{29}{section*.6}%
 \contentsline {chapter}{Appendices}{}{}
 \contentsline {chapter}{Annexes}{}{}
