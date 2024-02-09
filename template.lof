@@ -9,14 +9,14 @@
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Flow of PoW}}{12}{figure.2.1}%
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Flow of PoS}}{12}{figure.2.2}%
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Flow of DPoS}}{13}{figure.2.3}%
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Flow of PBFT}}{13}{figure.2.4}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Flow of PBFT}}{14}{figure.2.4}%
 \addvspace {10pt}
-\contentsline {figure}{\numberline {3.1}{\ignorespaces BlockSim Architecture}}{17}{figure.3.1}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces BlockSim Architecture~\blx@tocontentsinit {0}\cite {blocksim1}}}{18}{figure.3.1}%
 \addvspace {10pt}
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Illustration of top-level module interactions}}{21}{figure.4.1}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Parameters window}}{22}{figure.4.2}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Topology window and possible parametrizations for each individual node}}{22}{figure.4.3}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Time-lapse in the Visualizer window}}{23}{figure.4.4}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Output from the first iteration of the log analyser script}}{25}{figure.4.5}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Output from the second iteration of the log analyser script}}{26}{figure.4.6}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Illustration of top-level module interactions}}{23}{figure.4.1}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Parameters window}}{24}{figure.4.2}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Topology window and possible parametrizations for each individual node}}{24}{figure.4.3}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Time-lapse in the Visualizer window}}{25}{figure.4.4}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Output from the first iteration of the log analyser script}}{27}{figure.4.5}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Output from the second iteration of the log analyser script}}{28}{figure.4.6}%
 \addvspace {10pt}

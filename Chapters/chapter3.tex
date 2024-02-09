@@ -10,7 +10,8 @@
 
 \chapter{Related work}\label{cha:related_work}
 
-In this chapter we will talk about work that has been developed and that we will use
+In this chapter we will talk about work that has been developed and we found that is most in line with the
+work we want to develop. We will use them
 either as a comparison to what we want to develop or as a part of the solution that
 we are proposing.
 
@@ -70,7 +71,7 @@ using Babel and standalone versions of the same protocols in Java. This is achie
 mostly by the logic that is covered in the network and core layers, relieving the developer
 from having to worry about handling timers, message ordering and most communication besides events.
 
-Regarding performance tests conducted by implementing MultiPaxos \cite{paxos} with the framework
+Regarding performance tests conducted by implementing MultiPaxos~\cite{paxos} with the framework
 when comparing to standalone implementations, the implementation using Babel showed comparable performance
 with less implementation overhead.
 
@@ -117,15 +118,15 @@ Vibes can have one of three roles:
 
 \subsection{BlockSim: Blockchain Simulator}~\label{subsec:blocksim1}
 
-BlockSim~\cite{blocksim1} is a simaulation framework that assists in the design and Evaluation
-of blockchain protocols. Developed in Python it uses a probablistic distributions model that
-can be specified by the user to model rnadom phenomena such as time taken to validate a block and
+BlockSim~\cite{blocksim1} is a simulation framework that assists in the design and Evaluation
+of blockchain protocols. Developed in Python it uses a probabilistic distributions model that
+can be specified by the user to model random phenomena such as time taken to validate a block and
 network latency.
 
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=4.5in, angle =0]{blocksim_fig}
-	\caption{BlockSim Architecture}
+	\caption{BlockSim Architecture~\cite{blocksim1}}
 	\label{fig:blocksim_fig}
 \end{figure}
 
@@ -138,13 +139,13 @@ BlockSim's architecture, as shown in the figure, is made up by the following com
   \item \textbf{Transaction and Node Factory:} Responsible for creating batches of 
   transactions modelled as random phenomena. Node Factory creates nodes that are used 
   during the simulation
-  \item \textbf{Programatic interface and Simulation Example:} Main interface available to 
+  \item \textbf{Programmatic interface and Simulation Example:} Main interface available to 
   the user
   \item \textbf{Monitor and reports:} Monitor captures metrics during the simulation, 
   i.e.\ number of transactions broadcasted or received, transactions added to queue. 
   These metrics are stored in the reports component
   \item \textbf{Blockchain modelling Framework:} Has several layers like the Node layer,
-  the Consensus, the Ledger, Transaction and block, Network and Cryptgraphic.
+  the Consensus, the Ledger, Transaction and block, Network and Cryptographic.
 \end{itemize}
 
 \subsection{BlockSim: Extensible simulation tool for blockchain systems}~\label{subsec:blocksim2}
@@ -177,7 +178,7 @@ The base module has three layers that can be extended by the user:
 
 SimBlock was developed in Java to preform experiments on blockchain protocols
 with a large amount of nodes. It allows users to easily change the behaviour of nodes
-and sutdy their overall impact on the network. It also provides users with a simple GUI for
+and study their overall impact on the network. It also provides users with a simple GUI for
 users to load the output file of a simulation and observe evolution of the simulated protocol.
 Simblock is divided into three components:
 
@@ -208,7 +209,14 @@ JABS is composed of five main components:
   \item \textbf{Logger:} Handles all the outputs in the simulation into either a standard output or
   a CSV file.
 \end{itemize}
+
+
 \subsection{Critical Analysis}~\label{subsec:critical_analysis}
+
+We analysed the presented simulators, either by reading the papers presented by the creators,
+using the publicly available ones to run their implemented protocols or in the case of JABS, trying to
+implement a new protocol to see how the creators provided modularity and extensibility. From that
+analysis we compiled this data:
 
 \begin{table}[h]
   \tiny
@@ -221,7 +229,7 @@ JABS is composed of five main components:
     \textbf{BlockSim} \cite{blocksim2} & \begin{tabular}[c]{@{}c@{}}not\\ modeled\end{tabular}                   & \begin{tabular}[c]{@{}c@{}}not \\ modeled\end{tabular}            & \begin{tabular}[c]{@{}c@{}}not \\ modeled\end{tabular}                                    & \begin{tabular}[c]{@{}c@{}}fully \\ linked\end{tabular}                & \begin{tabular}[c]{@{}c@{}}not \\ modeled\end{tabular}    & \begin{tabular}[c]{@{}c@{}}bitcoin \\ ethereum\end{tabular}              & no           \\ \hline
     \textbf{SimBlock} \cite{simblock} & \begin{tabular}[c]{@{}c@{}}not \\ modeled\end{tabular}                  & \begin{tabular}[c]{@{}c@{}}not \\ modeled\end{tabular}            & \begin{tabular}[c]{@{}c@{}}specify \\ expected \\ available \\ bandwidth\end{tabular}     & \begin{tabular}[c]{@{}c@{}}generated \\ via \\ params\end{tabular}     & \begin{tabular}[c]{@{}c@{}}simple \\ example\end{tabular} & \begin{tabular}[c]{@{}c@{}}bitcoin \\ dogecoin \\ litecoin\end{tabular}  & yes          \\ \hline
     \textbf{JABS} \cite{jabs} & \begin{tabular}[c]{@{}c@{}}not \\ modeled\end{tabular}                  & \begin{tabular}[c]{@{}c@{}}not \\ modeled\end{tabular}            & \begin{tabular}[c]{@{}c@{}}configurable\end{tabular}     & \begin{tabular}[c]{@{}c@{}}generated \\ via \\ network \\ layer\end{tabular}     & \begin{tabular}[c]{@{}c@{}}simple \\ example\end{tabular} & \begin{tabular}[c]{@{}c@{}}bitcoin \\ DAGsper\end{tabular}  & no          \\ \hline
-    \textbf{MOBs}     & yes                                                                     & yes                                                               & parameterizable                                                                           & \begin{tabular}[c]{@{}c@{}}generated \\ via \\ params\end{tabular}     & tenderbake                                                & \begin{tabular}[c]{@{}c@{}}bitcoin \\ algorand \\ ouroboros\end{tabular} & yes          \\ \hline
+    \textbf{MOBs}     & yes                                                                     & yes                                                               & parametrizable                                                                           & \begin{tabular}[c]{@{}c@{}}generated \\ via \\ params\end{tabular}     & tenderbake                                                & \begin{tabular}[c]{@{}c@{}}bitcoin \\ algorand \\ ouroboros\end{tabular} & yes          \\ \hline
     \end{tabular}
   \caption{Feature comparison between existing blockchain simulators and MOBS.}
 \label{table:1}

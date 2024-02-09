@@ -27,9 +27,9 @@ these requirements. Blockchain protocols allow for simultaneous access, validati
 a distributed database, each node has its own copy of the ledger that it uses to validate information and reach a consensus
 about its accuracy.
 
-Around 2008 blockchain protocols appeared with the motivation
+Around 2008, blockchain protocols appeared with the motivation
 to serve as a distributed ledger for cryptocurrency transactions. These protocols are not static, being because vulnerabilities 
-or flaws that need to be correct or due to the very nature of the protocol itself.
+or flaws that need to be corrected.
 One of these dynamic protocols is Tezos~\cite{tezos}, which relies on the stake-holders that participate in the system to propose and
 agree on changes and upgrades to the protocol. Another example is Ethereum~\cite{ethereum} that started by using a blockchain protocol based on proof
 of work and in 2022 migrated towards an implementation based solely on proof of stake for Ethereum2.
@@ -55,13 +55,13 @@ of the arrangement of the participants and the validation of the correctness of 
 Consensus protocols are not trivial to define or understand correctly and in blockchain systems, where the behaviour can be dynamic and mostly 
 financial transactions are dealt with, their correctness is crucial and errors can be costly. One example of this is Ethereum moving from 
 Proof of Work to a Proof of Stake consensus, this opened the protocol to vulnerabilities to bouncing attacks on liveness~\cite{ethereum_analysis}.
-There is also Solana~\cite{solana}, a new blockchain protocol that relies on Proof-of-History to build his chain,
+There is also Solana~\cite{solana}, a new blockchain protocol that relies on Proof-of-History to build its chain,
 where after repeated testing results showed that the protocol does not fully achieve consensus and
 a single malicious validator can halt the Solana blockchain~\cite{solana_halting_problem}. These tests also showed that there are
 inconsistencies in the behaviour between what is described in the documentation and what the protocol showed since Solana's implementation
 has deviated in undocumented ways from the available protocol design descriptions.
 
-To help with this MOBs was developed giving the ability to test and validate these protocols under different conditions and settings by 
+To help with this, MOBs was developed giving the ability to test and validate these protocols under different conditions and settings by 
 changing the execution parameters, aiming to catch these vulnerabilities or even logic errors before deploying changes to these protocols.
 
 Right now the parameters to the network are set before the execution of the simulation, and regarding the network behaviour we can

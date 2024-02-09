@@ -24,7 +24,7 @@ blockchain protocols.
 \section{Membership Protocols}\label{sec:membership_protocols}
 
 This section introduces some membership protocols that have been considered to
-part of the work that will be developed.
+be implemented as part of the work that will be developed.
 
 
 \subsection{Membership}\label{sub:membership}
@@ -257,8 +257,9 @@ efficiency
 
 \section{Consensus Protocols}\label{sec:consensus}
 
-Consensus protocols solve the problem of in a system of participants reaching
-an agreement on a given value. These algorithms must ensure an agreement is reached
+Consensus protocols address the challenge of participants within a system reaching 
+an agreement on a specific value.
+These algorithms must ensure an agreement is reached
 even in the presence of faulty nodes in the network. Consensus protocols must ensure
 they satisfy the following properties~\cite{distributed_systems_concepts}:
 \begin{itemize}
@@ -436,6 +437,16 @@ Tolerance protocol with low algorithmic complexity, it contains five phases: req
 pre-prepare, prepare, commit and reply. PBFT guarantees nodes maintain a common state and take
 a consistent action in each round, guarantees strong consistency and is adopted by
 EOS to validate blocks while using DPoS for creation.
+
+\section{Conclusion}\label{sec:background_conclusion}
+
+After studying the different membership protocols it helped us understand the different solutions
+to different problems and their trade-offs and the importance of testing blockchain protocols under different
+scenarios since they can have a big impact on their performance and resilience.
+
+Also considering the different consensus and blockchain protocols we can also see the similarities since they
+all try to solve the same problem of reaching an agreed value between all the correct processes. This will
+help us to better extract better qualitative data across different protocols.
 
 \begin{figure}[h]
 	\centering

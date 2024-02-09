@@ -714,10 +714,6 @@ INPUT ./Chapters/abstract-en.tex
 INPUT ./Chapters/abstract-en.tex
 INPUT ./Chapters/abstract-en.tex
 INPUT Chapters/abstract-en.tex
-INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/newpx/t1npxtt.fd
-INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/newpx/t1npxtt.fd
-INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/newpx/t1npxtt.fd
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/txfonts/t1xtt.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/newpx/zpl-Bold-tlf-t1.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf-pc.enc
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc
@@ -841,6 +837,10 @@ INPUT ./Chapters/chapter5.tex
 INPUT ./Chapters/chapter5.tex
 INPUT ./Chapters/chapter5.tex
 INPUT Chapters/chapter5.tex
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/newpx/t1npxtt.fd
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/newpx/t1npxtt.fd
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/newpx/t1npxtt.fd
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/txfonts/t1xtt.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/newpx/zpl-Regular-tlf-sc-t1.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/newpx/zpl-Regular-tlf-sc-t1.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/arkandis/gillius/GilliusADFNo2-Regular-lf-t1.tfm
