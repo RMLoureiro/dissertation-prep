@@ -785,6 +785,10 @@ INPUT ./Chapters/chapter3.tex
 INPUT ./Chapters/chapter3.tex
 INPUT ./Chapters/chapter3.tex
 INPUT Chapters/chapter3.tex
+INPUT ./Chapters/Figures/blocksim_fig.png
+INPUT ./Chapters/Figures/blocksim_fig.png
+INPUT ./Chapters/Figures/blocksim_fig.png
+INPUT ./Chapters/Figures/blocksim_fig.png
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/newpx/zpl-Regular-tlf-t1.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/newpx/zpl-Regular-tlf-ot1.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/newpx/zpl-Regular-tlf-ot1.tfm
@@ -824,6 +828,14 @@ INPUT ./Chapters/Figures/visualizer.png
 INPUT ./Chapters/Figures/visualizer.png
 INPUT ./Chapters/Figures/visualizer.png
 INPUT ./Chapters/Figures/visualizer.png
+INPUT ./Chapters/Figures/consensus_log_script_v1.png
+INPUT ./Chapters/Figures/consensus_log_script_v1.png
+INPUT ./Chapters/Figures/consensus_log_script_v1.png
+INPUT ./Chapters/Figures/consensus_log_script_v1.png
+INPUT ./Chapters/Figures/consensus_log_script_v2.png
+INPUT ./Chapters/Figures/consensus_log_script_v2.png
+INPUT ./Chapters/Figures/consensus_log_script_v2.png
+INPUT ./Chapters/Figures/consensus_log_script_v2.png
 INPUT ./Chapters/chapter5.tex
 INPUT ./Chapters/chapter5.tex
 INPUT ./Chapters/chapter5.tex

@@ -116,9 +116,7 @@ The GUI will parse the output.json file and display it in an easy-to-read format
 These formats can come as graphs, displaying minimum and maximum values observed
 for each metric that was produced and a graph with per node statistics.
 
-\section{Initial Exercise}\label{sub:initial_exercise}
-
-TODO rewrite to include the new work done with Chandra Tueg and Paxos.
+\section{Initial Network Exercise}\label{sub:initial_exercise}
 
 As an initial exercise we chose to implement Chord in MOBs, this served twofold:
 
@@ -193,3 +191,51 @@ to specific nodes.
 
 We can also leverage this implementation at the network level to make the network
 module even more modular and extensible, making it easier to implement new network protocols.
+
+\section{Consensus protocols implemented}\label{sub:consensus_protocols_implemented}
+
+One of the problems we want to tackle with this thesis is getting better qualitative information out of
+blockchain and consensus protocols logs so that we can evaluate their correctness at the end 
+of the simulation. To achieve this we implemented two simple and well known consensus protocols
+so that we can extract the runtime information and use them as a simple example to see MOBs' limitations
+and if further work needs to be done in Statistics and Logging module.
+
+The first of these protocols was Paxos. This was implemented as referenced in~\ref{sub:paxos},
+with only main changes to the protocol made taking an optimistic approach and as a first phase
+not worrying about scenarios where malicious nodes are present or messages are lost. The second was
+having only 1 proposer through the whole simulation, making this an implementation closer to MultiPaxos
+than regular Paxos, this was done for the sake of simplicity an ease of implementation and testing.
+
+With and implementation of Paxos done and validated, a script in Python was done that allowed us To
+scrub the logs and extract runtime metrics:
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=4.5in, angle =0]{consensus_log_script_v1}
+	\caption{Output from the first iteration of the log analyser script}
+	\label{fig:consensus_log_script_v1}
+\end{figure}
+
+This was the first iteration of this script which allowed us to see what value was accepted,
+at what tie it was accepted, how many nodes accepted the value and how many accept messages
+reached the proposer after the value was accepted. 
+On the second iteration of this script we added a section with condensed global data, where we can more
+easily observe metrics like number of values accepted, total simulation runtime, average time per consensus
+and the average acceptance percentage of consensus. 
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=4.5in, angle =0]{consensus_log_script_v2}
+	\caption{Output from the second iteration of the log analyser script}
+	\label{fig:consensus_log_script_v2}
+\end{figure}
+
+The implementation of both the protocol and
+the script can be consulted at this pull request: https://github.com/RMLoureiro/MOBS/pull/2.
+
+With this work done we implemented Chandra-Tueg as described in~\ref{sub:chandra-toueg}, 
+we chose this protocol for the ease of implementation
+and again focused on an optimistic implementation where we didn't take into account malicious nodes and
+lost messages. We also took into account and implemented the logs of this protocol so that the same script
+developed for Paxos could be used without changes to analyse this protocol. The implementation can be
+consulted at this pull request: https://github.com/RMLoureiro/MOBS/pull/4.

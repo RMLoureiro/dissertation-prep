@@ -95,7 +95,6 @@ a given graph, will be a helpful visual aid to understand the layout of the netw
 that a protocol generates.
 
 \section{Simulators}~\label{sec:simulators}
-
 \subsection{VIBES}~\label{subsec:vibes}
 
 Vibes~\cite{vibes} is a message driven blockchain simulator developed with the goal of providing
@@ -123,7 +122,12 @@ of blockchain protocols. Developed in Python it uses a probablistic distribution
 can be specified by the user to model rnadom phenomena such as time taken to validate a block and
 network latency.
 
-TODO -- Insert Blocksim architecture
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=4.5in, angle =0]{blocksim_fig}
+	\caption{BlockSim Architecture}
+	\label{fig:blocksim_fig}
+\end{figure}
 
 BlockSim's architecture, as shown in the figure, is made up by the following components:
 
@@ -186,7 +190,7 @@ Simblock is divided into three components:
 
 \subsection{JABS}~\label{subsec:jabs}
 
-JABS was developed in JAVA and is aimed at researching large-scale blockchain consensus algorithms, with a main focus
+JABS~\cite{jabs} was developed in JAVA and is aimed at researching large-scale blockchain consensus algorithms, with a main focus
 on simulating consensus, network, and ledger-data layers. The simulator is designed to be
 modular and extensible, optimized for performance and scalability.
 
@@ -206,8 +210,6 @@ JABS is composed of five main components:
 \end{itemize}
 \subsection{Critical Analysis}~\label{subsec:critical_analysis}
 
-TODO add JABS to table
-
 \begin{table}[h]
   \tiny
   \centering
@@ -218,6 +220,7 @@ TODO add JABS to table
     \textbf{BlockSim} \cite{blocksim1} & \begin{tabular}[c]{@{}c@{}}not\\ modeled\end{tabular}                   & \begin{tabular}[c]{@{}c@{}}not \\ modeled\end{tabular}            & \begin{tabular}[c]{@{}c@{}}Throughput \\ calculated \\ from \\ distributionn\end{tabular} & \begin{tabular}[c]{@{}c@{}}fully \\ linked\end{tabular}                & \begin{tabular}[c]{@{}c@{}}not \\ modeled\end{tabular}    & \begin{tabular}[c]{@{}c@{}}bitcoin \\ ethereum\end{tabular}              & no           \\ \hline
     \textbf{BlockSim} \cite{blocksim2} & \begin{tabular}[c]{@{}c@{}}not\\ modeled\end{tabular}                   & \begin{tabular}[c]{@{}c@{}}not \\ modeled\end{tabular}            & \begin{tabular}[c]{@{}c@{}}not \\ modeled\end{tabular}                                    & \begin{tabular}[c]{@{}c@{}}fully \\ linked\end{tabular}                & \begin{tabular}[c]{@{}c@{}}not \\ modeled\end{tabular}    & \begin{tabular}[c]{@{}c@{}}bitcoin \\ ethereum\end{tabular}              & no           \\ \hline
     \textbf{SimBlock} \cite{simblock} & \begin{tabular}[c]{@{}c@{}}not \\ modeled\end{tabular}                  & \begin{tabular}[c]{@{}c@{}}not \\ modeled\end{tabular}            & \begin{tabular}[c]{@{}c@{}}specify \\ expected \\ available \\ bandwidth\end{tabular}     & \begin{tabular}[c]{@{}c@{}}generated \\ via \\ params\end{tabular}     & \begin{tabular}[c]{@{}c@{}}simple \\ example\end{tabular} & \begin{tabular}[c]{@{}c@{}}bitcoin \\ dogecoin \\ litecoin\end{tabular}  & yes          \\ \hline
+    \textbf{JABS} \cite{jabs} & \begin{tabular}[c]{@{}c@{}}not \\ modeled\end{tabular}                  & \begin{tabular}[c]{@{}c@{}}not \\ modeled\end{tabular}            & \begin{tabular}[c]{@{}c@{}}configurable\end{tabular}     & \begin{tabular}[c]{@{}c@{}}generated \\ via \\ network \\ layer\end{tabular}     & \begin{tabular}[c]{@{}c@{}}simple \\ example\end{tabular} & \begin{tabular}[c]{@{}c@{}}bitcoin \\ DAGsper\end{tabular}  & no          \\ \hline
     \textbf{MOBs}     & yes                                                                     & yes                                                               & parameterizable                                                                           & \begin{tabular}[c]{@{}c@{}}generated \\ via \\ params\end{tabular}     & tenderbake                                                & \begin{tabular}[c]{@{}c@{}}bitcoin \\ algorand \\ ouroboros\end{tabular} & yes          \\ \hline
     \end{tabular}
   \caption{Feature comparison between existing blockchain simulators and MOBS.}

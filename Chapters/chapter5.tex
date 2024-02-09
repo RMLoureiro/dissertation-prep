@@ -8,22 +8,42 @@
 
 \typeout{NT FILE chapter5.tex}%
 
-\chapter{Work to be developed}
-\label{cha:work_to_be_developed}
+\chapter{Work to be developed}\label{cha:work_to_be_developed}
 
 This chapter will describe the work that will be developed to address the
-problems presented in \ref{sub:problem} making use of the tools and information
-presented in \ref{cha:related_work} and \ref{cha:mobs}.
+problems presented in~\ref{sub:problem} making use of the tools and information
+presented in~\ref{cha:related_work} and~\ref{cha:mobs}.
 
-\section{Proposed work}
-\label{sub:sub_proposed_work}
+\section{Proposed work}\label{sub:sub_proposed_work}
 
-The work will be divided in two sections, enhancing MOBs' network layer,
-and the extending the logs and statistics module to allow for better qualitative
-information about the implemented protocols at the node level.
+The work will be divided in two sections, extending the logs and statistics 
+module to allow for better qualitative
+information about the implemented protocols at the node level and enhancing MOBs' network layer.
 
-\subsection{Network Layer Enhancement}
-\label{subsec:network_layer_enchancement}
+\subsection{Improve qualitative data}\label{subsec:improve_qualitative_data}
+
+In a first step to better understand what information we can extract and how
+we can leverage the simulator to evaluate Blockchain protocols, we will finish implementing
+simpler consensus protocols, namely Chandra-Toueg and MultiPaxos described in~\ref{sec:consensus}.
+Finishing the implementations will give us the ability to test with more than 1 proposer and
+failing and malicious nodes.
+
+This will allow us to better understand and see if changes
+need to be done to the current log and statistics modules in order to obtain enough qualitative
+data for the consensus protocols to evaluate and validate their execution under different
+conditions and scenarios.
+
+We will leverage the post execution script approach to scrub and analyse the logs from MOBs,
+this will allow the users to use custom scripts to fit their needs. We will also consider an
+improvement to the GUI to allow the user to select the script they want to execute and in turn
+feed data into the GUI for visual representation.
+
+After these implementations and validations we will move to blockchain protocols and see
+if we can qualitatively evaluate these protocols, specifically we will try to
+replicate the vulnerabilities found in Ethereum in~\cite{ethereum_analysis}, and try
+to implement Solana and see if we can reach similar conclusions to what was found in~\cite{solana_halting_problem}.
+
+\subsection{Network Layer Enhancement}\label{subsec:network_layer_enchancement}
 
 In this section we will present the proposed enhancements to the Network layer of
 MOBs. For this, we propose the following work to be conducted:
@@ -81,24 +101,8 @@ while now giving the ability to select which network protocol to run, the valida
 script for said protocol and show the results given by that script.
 \end{itemize}
 
-\subsection{Improve qualitative data}
-\label{subsec:improve_qualitative_data}
 
-In a first step to better understand what information we can extract and how
-we can leverage the simulator to evaluate Blockchain protocols, we will first implement
-simpler consensus protocols, namely Chandra-Toueg, Paxos and MultiPaxos described in \ref{sec:consensus}.
-
-Implementing these protocols will allow us to better understand and see if changes
-need to be done to the current log and statistics modules in order to obtain better qualitative
-data, needed to evaluate these protocols. For this further study needs to be done
-in order to evaluate what data and properties we need.
-
-After these implementations and validations we will move to blockchain protocols and see
-if we can qualitativly evaluate these protocols, specifically we will try to
-replicate the vulnerabilities found in Ethereum in \cite{ethereum_analysis}.
-
-\section{Work Plan}
-\label{sub:work_plan}
+\section{Work Plan}\label{sub:work_plan}
 
 In this section we present the work plan for the elaboration of this work.
 We will divide the work into six phases. The enhancement of the network layer,
@@ -109,27 +113,26 @@ finally writing of the final thesis document.
 
 \begin{table}[ht]
 \centering
-\caption{Schedule}
-\label{tab:schedule}
+\caption{Schedule}\label{tab:schedule}
 \begin{tabular}{lccc}
   \toprule
   \multicolumn{1}{c}{\textbf{Task}}					& \textbf{Start Date} & \textbf{End Date} & \textbf{Weeks}	\\ 
   \midrule
-  \textbf{Enhancement of the network layer}					& 31 July            & 8 September          & 5             	\\
-  \quad Implementation 								&                     &                   &                	\\ 
-  \quad Testing and Validation 								&                     &                   &                	\\
-  \midrule
-  \textbf{Consensus protocols}						& 11 September             & 20 October       & 6              	\\
+  \textbf{Consensus protocols}						& 11 March             & 3 May       & 8              	\\
   \quad Study of consensus protocols in MOBS 								&                     &                   &                	\\ 
   \quad Implementation 								&                     &                   &                	\\ 
   \quad Testing and Validation								&                     &                   &                	\\ 
   \midrule
-  \textbf{Blockchain protocols}						& 23 October             & 22 December       & 9         	\\
+  \textbf{Enhancement of the network layer}					& 6 May            & 14 June          & 6             	\\
+  \quad Implementation 								&                     &                   &                	\\ 
+  \quad Testing and Validation 								&                     &                   &                	\\
+  \midrule
+  \textbf{Blockchain protocols}						& 17 June             & 16 August       & 10         	\\
   \quad Study of needed parameters for evaluation 								&                     &                   &                	\\ 
   \quad Implementation 								&                     &                   &                	\\ 
   \quad Testing and Validation								&                     &                   &                	\\ 
   \midrule
-  \textbf{Thesis plus Article}									& 2 January           & 9 February      & 6          	  	\\   
+  \textbf{Thesis plus Article}									& 19 August           & 30 September      & 6          	  	\\   
   \bottomrule
 \end{tabular}
 \end{table}

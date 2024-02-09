@@ -675,6 +675,64 @@
       \verb https://www.microsoft.com/en-us/research/publication/pastry-scalable-distributed-object-location-and-routing-for-large-scale-peer-to-peer-systems/
       \endverb
     \endentry
+    \entry{solana_halting_problem}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=e03e8e5d3222409381fe2592683fd50a}{%
+           family={Sliwinski},
+           familyi={S\bibinitperiod},
+           given={Jakub},
+           giveni={J\bibinitperiod}}}%
+        {{hash=116e697277f1c8d66e37330d8e149a85}{%
+           family={Kniep},
+           familyi={K\bibinitperiod},
+           given={Quentin},
+           giveni={Q\bibinitperiod}}}%
+        {{hash=5c162b9d03517a96680df0dc8d8263eb}{%
+           family={Wattenhofer},
+           familyi={W\bibinitperiod},
+           given={Roger},
+           giveni={R\bibinitperiod}}}%
+        {{hash=49afcb26ba17032785ac232d2564b7b9}{%
+           family={Schaich},
+           familyi={S\bibinitperiod},
+           given={Fabian},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {<conf-loc>, <city>Chennai</city>, <country>India</country>, </conf-loc>}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{f8b4730975b893fa06bc894cf1c68332}
+      \strng{fullhash}{02c8649b966cba2d3a154a859c0c7c6d}
+      \strng{bibnamehash}{f8b4730975b893fa06bc894cf1c68332}
+      \strng{authorbibnamehash}{f8b4730975b893fa06bc894cf1c68332}
+      \strng{authornamehash}{f8b4730975b893fa06bc894cf1c68332}
+      \strng{authorfullhash}{02c8649b966cba2d3a154a859c0c7c6d}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Solana is a blockchain protocol that has gained significant attention in the cryptocurrency community. This work examines Solana’s consensus protocol and its reference implementation. In this paper we try to get an understanding of the Solana protocol. However, this is not so easy because the publicly available resources are insufficient to specify the details of the protocol. Moreover, the implementation has deviated in undocumented ways from the available protocol design description. Thus the consensus rules and their implied security properties remain unclear. We evaluate a number of experimental scenarios in a local Solana testnet. These tests seem to confirm our basic understanding that Solana does not fully achieve consensus. In this paper we show how a single malicious validator, once elected as leader, might be able to halt the Solana blockchain. We also observe some inconsistent behavior, which is not readily explained by any of the consensus rules we are aware of.}
+      \field{booktitle}{Proceedings of the 25th International Conference on Distributed Computing and Networking}
+      \field{isbn}{9798400716737}
+      \field{series}{ICDCN '24}
+      \field{title}{Halting the Solana Blockchain with Epsilon Stake}
+      \field{year}{2024}
+      \field{pages}{45\bibrangedash 54}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1145/3631461.3631553
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1145/3631461.3631553
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1145/3631461.3631553
+      \endverb
+      \keyw{Blockchain Security Denial of Service.}
+    \endentry
     \entry{chord}{article}{}
       \name{author}{7}{}{%
         {{hash=6c0e25b703ac672324ac72dba3eb4446}{%
@@ -767,6 +825,63 @@
       \field{year}{2017}
       \field{pages}{19\bibrangedash 20}
       \range{pages}{2}
+    \endentry
+    \entry{jabs}{article}{}
+      \name{author}{3}{}{%
+        {{hash=891f477534e715438bc0081b34eb96e9}{%
+           family={Yajam},
+           familyi={Y\bibinitperiod},
+           given={Habib},
+           giveni={H\bibinitperiod}}}%
+        {{hash=f71a2b5f26cf06ea4a5aeae1b4ac14d7}{%
+           family={Ebadi},
+           familyi={E\bibinitperiod},
+           given={Elnaz},
+           giveni={E\bibinitperiod}}}%
+        {{hash=1238504f36790102ee5fac467feaa806}{%
+           family={Akhaee},
+           familyi={A\bibinitperiod},
+           given={Mohammad\bibnamedelima Ali},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{b134f435a00889be72c6057a54946476}
+      \strng{fullhash}{b134f435a00889be72c6057a54946476}
+      \strng{bibnamehash}{b134f435a00889be72c6057a54946476}
+      \strng{authorbibnamehash}{b134f435a00889be72c6057a54946476}
+      \strng{authornamehash}{b134f435a00889be72c6057a54946476}
+      \strng{authorfullhash}{b134f435a00889be72c6057a54946476}
+      \field{sortinit}{Y}
+      \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Network Science and Engineering}
+      \field{title}{JABS: A Blockchain Simulator for Researching Consensus Algorithms}
+      \field{year}{2023}
+    \endentry
+    \entry{solana}{article}{}
+      \name{author}{1}{}{%
+        {{hash=09c9e78c1481cee9e6190c05e10a8924}{%
+           family={Yakovenko},
+           familyi={Y\bibinitperiod},
+           given={Anatoly},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{09c9e78c1481cee9e6190c05e10a8924}
+      \strng{fullhash}{09c9e78c1481cee9e6190c05e10a8924}
+      \strng{bibnamehash}{09c9e78c1481cee9e6190c05e10a8924}
+      \strng{authorbibnamehash}{09c9e78c1481cee9e6190c05e10a8924}
+      \strng{authornamehash}{09c9e78c1481cee9e6190c05e10a8924}
+      \strng{authorfullhash}{09c9e78c1481cee9e6190c05e10a8924}
+      \field{sortinit}{Y}
+      \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Whitepaper}
+      \field{title}{Solana: A new architecture for a high performance blockchain v0. 8.13}
+      \field{year}{2018}
     \endentry
     \entry{blockchain_consensus}{article}{}
       \name{author}{2}{}{%
