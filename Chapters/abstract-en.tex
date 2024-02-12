@@ -23,15 +23,13 @@ into a proof of stake solution or Tezos where stakeholders are capable of propos
 it to evolve over time. Because of this a number of tools focused on assisting with the development of these protocols have emerged.
 
 One of these tools is MOBS, Modular Blockchain Simulator, a simulator built with extensibility and
-modularity in mind, allowing users to simulate any family of protocols as well as parametrize multiple scenarios for their study.
-These parameterizations include bandwidth limits, byzantine behaviour of the participant nodes and adversarial behaviour. After the execution
-the desired statistics and information needed to validate the execution of the protocols can also be parametrized.
+modularity in mind, allowing users to simulate consensus and blockchain protocols as well as parametrize multiple scenarios for their study.
+These parameterizations include bandwidth limits, network layout and Byzantine and adversarial behaviour of the participant nodes.
 
-The goal of this dissertation is of tools that will allow us to validate the correctness 
-of the implemented consensus protocols through the logs of the simulator, allowing for better qualitative results to be extracted and evaluated.
-Secondly we also propose an extension to this tool to better allow the simulator to provide different sets of execution environments by
-allowing parameterization of the network layer of the simulator we propose Chord, HyParView and X-BOT since they are diverse protocols and very different from each other.
-
+The goal of this dissertation is twofold, first we want to extract statistics and information from MOBs' logs so that we can provide
+developers with qualitative information about the protocols' execution. Secondly we also propose to improve the
+behaviour and parameterization of the network layer to allow for specific membership protocols to be selected and determine
+the network layout and re-configuration when participants join or leave the network at runtime.
 
 % Palavras-chave do resumo em Inglês
 % \begin{keywords}

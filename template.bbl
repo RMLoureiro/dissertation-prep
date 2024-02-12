@@ -409,6 +409,35 @@
       \field{pages}{11\bibrangedash 15}
       \range{pages}{5}
     \endentry
+    \entry{have_we_reached_consensus}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=ab451ce5642ffe31693f5d0a199bee34}{%
+           family={Howard},
+           familyi={H\bibinitperiod},
+           given={Heidi},
+           giveni={H\bibinitperiod}}}%
+        {{hash=ba494cf2fcd5b5c3ed0f9d081c6a4556}{%
+           family={Mortier},
+           familyi={M\bibinitperiod},
+           given={Richard},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{155eaf7d6e5116ee52dc6e1fc8ee63c9}
+      \strng{fullhash}{155eaf7d6e5116ee52dc6e1fc8ee63c9}
+      \strng{bibnamehash}{155eaf7d6e5116ee52dc6e1fc8ee63c9}
+      \strng{authorbibnamehash}{155eaf7d6e5116ee52dc6e1fc8ee63c9}
+      \strng{authornamehash}{155eaf7d6e5116ee52dc6e1fc8ee63c9}
+      \strng{authorfullhash}{155eaf7d6e5116ee52dc6e1fc8ee63c9}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 7th Workshop on Principles and Practice of Consistency for Distributed Data}
+      \field{title}{Paxos vs Raft: Have we reached consensus on distributed consensus?}
+      \field{year}{2020}
+      \field{pages}{1\bibrangedash 9}
+      \range{pages}{9}
+    \endentry
     \entry{tman}{article}{}
       \name{author}{3}{}{%
         {{hash=2373df2581f0556778d5dd54d705d300}{%

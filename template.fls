@@ -749,12 +749,12 @@ INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/newpx/ts1zpltlf.fd
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/newpx/ts1zpltlf.fd
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/newpx/ts1zpltlf.fd
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/newpx/zplTLF-Regular-ts1.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/newpx/zpl_TOsF.enc
 INPUT ./Chapters/chapter2.tex
 INPUT ./Chapters/chapter2.tex
 INPUT ./Chapters/chapter2.tex
 INPUT ./Chapters/chapter2.tex
 INPUT Chapters/chapter2.tex
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/newpx/zpl_TOsF.enc
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/newpx/zpl-Regular-tlf-t1.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/newpx/zpl-Bold-tlf-t1.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/newpx/zpl-Italic-tlf-t1.tfm

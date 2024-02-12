@@ -13,19 +13,20 @@
 In this chapter we will discuss relevant work considering the goals of the work
 to be conducted in this thesis. In particular, we will focus on the following topics:
 
-In section~\ref{sec:membership_protocols} we discuss the differences between
+In Section~\ref{sec:membership_protocols} we discuss the differences between
 the different kinds of membership systems as well as some implementations.
 
-In section~\ref{sec:consensus} we will discuss some consensus protocols.
+In Section~\ref{sec:consensus} we will discuss some consensus protocols.
 
-In section~\ref{sec:blockchain} we will discuss some different types of
+In Section~\ref{sec:blockchain} we will discuss some different types of
 blockchain protocols.
 
 \section{Membership Protocols}\label{sec:membership_protocols}
 
-This section introduces some membership protocols that have been considered to
-be implemented as part of the work that will be developed.
-
+This section introduces membership protocols that have been considered to
+be implemented as part of the work that will be developed. We selected these
+memberships to study due to their wide differences in properties and their
+popularity in usage.
 
 \subsection{Membership}\label{sub:membership}
 
@@ -255,6 +256,15 @@ These nodes are always selected based upon the link cost values provided by the 
 ensuring that every time the optimization procedure is called the network increases its
 efficiency
 
+\subsubsection{Final takes}\label{subsec:final_takes_membership}
+
+After analysis of the presented protocols we suggest the implementation of Chord,
+HyParView and X-BOT. We chose these protocols due to their ease of implementation,
+wide difference in properties and popularity of usage in real-world. We believe that
+these protocols will allow us to provide developers with different scenarios that
+can closely simulate real world conditions in order to provide more qualitative data
+specially when considering non-perfect conditions in the network.
+
 \section{Consensus Protocols}\label{sec:consensus}
 
 Consensus protocols address the challenge of participants within a system reaching 
@@ -377,7 +387,16 @@ If the leader is relatively stable phase 1 becomes unnecessary. To achieve this
 we include the round number along with each value which is incremented in each round
 by the same leader. We still need the phase 1 for the first round but in
 consequent rounds if the Leader does not change nor fails we can skip it, reducing
-the overhead for each round
+the overhead for each round.
+
+\subsubsection{Final takes}\label{subsec:final_takes_consensus}
+
+After analysis of the presented protocols we believe that implementing both protocols
+will allow us to check their similarities and what data is important to provide
+to evaluate their execution. This should allow us to confirm if further work
+needs to be done to MOBs to provide the necessary information, and if we can also
+provide qualitative and consistent data to blockchain protocols in a way that is
+extensible to fit the protocols' and the developers' needs.
 
 \section{Blockchain Protocols}\label{sec:blockchain}
 
@@ -437,16 +456,6 @@ Tolerance protocol with low algorithmic complexity, it contains five phases: req
 pre-prepare, prepare, commit and reply. PBFT guarantees nodes maintain a common state and take
 a consistent action in each round, guarantees strong consistency and is adopted by
 EOS to validate blocks while using DPoS for creation.
-
-\section{Conclusion}\label{sec:background_conclusion}
-
-After studying the different membership protocols it helped us understand the different solutions
-to different problems and their trade-offs and the importance of testing blockchain protocols under different
-scenarios since they can have a big impact on their performance and resilience.
-
-Also considering the different consensus and blockchain protocols we can also see the similarities since they
-all try to solve the same problem of reaching an agreed value between all the correct processes. This will
-help us to better extract better qualitative data across different protocols.
 
 \begin{figure}[h]
 	\centering

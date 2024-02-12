@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.2.3)  9 FEB 2024 01:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.2.3)  12 FEB 2024 03:49
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -2166,7 +2166,7 @@ Package biblatex Info: Reference segment=0 on input line 204.
 \cftsubfigureindent=\skip296
 \cftsubfigurenumwidth=\skip297
 
-TIME class loading=110725
+TIME class loading=100659
 \c@/@nt/hook/mainmatter/@names/@sizecnt=\count729
 \c@/@nt/hook/mainmatter/@paths/@sizecnt=\count730
 \c@/@nt/hook/mainmatter/pre/@sizecnt=\count731
@@ -2296,7 +2296,7 @@ l.215 \typeout
 
  <./NOVAthesisFiles/Schools/nova/Images/nova-insignia.pdf> <./NOVAthesisFiles/S
 chools/nova/fct/Images/nova-fct-logo.pdf>]
-TIME process covers=128520
+TIME process covers=117279
 LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
 (Font)              scaled to size 24.88pt on input line 216.
 LaTeX Font Info:    Font shape `T1/GilliusADFNoTwo-LF/m/n' will be
@@ -2310,11 +2310,8 @@ LaTeX Font Info:    Font shape `T1/zpltlf/m/sc' will be
 (./Chapters/abstract-en.tex
 NT FILE abstrac-en.tex
 LaTeX Font Info:    Font shape `T1/zpltlf/b/n' will be
-(Font)              scaled to size 10.95pt on input line 46.
-)
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [1
+(Font)              scaled to size 10.95pt on input line 44.
+) [1
 
 
 
@@ -2323,17 +2320,17 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 {/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf-pc.enc}{/u
-sr/local/texlive/2023/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}] [2]
-(./template.toc [3
+sr/local/texlive/2023/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}]
+(./template.toc [2
 
 
-]) [4] (./template.lof) [5
+]) [3] (./template.lof) [4
 
-] (./template.lot) [6
+] (./template.lot) [5
 
 ]
 (./template.gls) (./template.acr) (./template.sls)
-TIME process frontmatter=133551
+TIME process frontmatter=121784
 (./Chapters/chapter1.tex
 NT FILE chapter1.tex
 LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
@@ -2348,49 +2345,44 @@ LaTeX Font Info:    Font shape `T1/zpltlf/b/n' will be
 
 ]
 LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
-(Font)              scaled to size 10.0pt on input line 72.
+(Font)              scaled to size 10.0pt on input line 75.
 LaTeX Font Info:    Font shape `T1/zpltlf/m/sc' will be
-(Font)              scaled to size 10.0pt on input line 72.
+(Font)              scaled to size 10.0pt on input line 75.
  [2]
-Overfull \hbox (5.71942pt too wide) in paragraph at lines 78--82
-\T1/zpltlf/m/n/10.95 (-10) With the dif-fer-ent prop-er-ties that dif-fer-ent n
-et-work over-lays pro-vide be-sides the parametriza-
- []
-
 LaTeX Font Info:    Trying to load font information for TS1+zpltlf on input lin
-e 89.
-(/usr/local/texlive/2023/texmf-dist/tex/latex/newpx/ts1zpltlf.fd
+e 95.
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/newpx/ts1zpltlf.fd
 File: ts1zpltlf.fd 2021/11/24 v1.0 fd file for TS1/zpltlf
 )
 LaTeX Font Info:    Font shape `TS1/zpltlf/m/n' will be
-(Font)              scaled to size 10.95pt on input line 89.
+(Font)              scaled to size 10.95pt on input line 95.
 
 
 Package microtype Warning: I cannot find a spacing list for font
 (microtype)                `TS1/zpltlf/m/n/10.95' (context: `nonfrench'). Switc
 hing off
-(microtype)                spacing for this font on input line 89.
+(microtype)                spacing for this font on input line 95.
 
-) (./Chapters/chapter2.tex
+[3{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/newpx/zpl_TOsF.enc}])
+(./Chapters/chapter2.tex
 NT FILE chapter2.tex
-[3{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/newpx/zpl_TOsF.enc}]
+[4]
 LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
-(Font)              scaled to size 12.0pt on input line 30.
+(Font)              scaled to size 12.0pt on input line 31.
 LaTeX Font Info:    Font shape `T1/zpltlf/b/n' will be
-(Font)              scaled to size 12.0pt on input line 30.
+(Font)              scaled to size 12.0pt on input line 31.
 LaTeX Font Info:    Font shape `T1/zpltlf/m/it' will be
-(Font)              scaled to size 10.95pt on input line 34.
-
-[4
+(Font)              scaled to size 10.95pt on input line 35.
+ [5
 
 ]
-Overfull \hbox (1.89609pt too wide) in paragraph at lines 69--74
+Overfull \hbox (1.89609pt too wide) in paragraph at lines 70--75
 []\T1/zpltlf/m/n/10.95 (-10) However, hav-ing a pre-de-fined topol-ogy come at 
 the cost of a more costly re-structuration
  []
 
-[5]
-Overfull \hbox (0.22572pt too wide) in paragraph at lines 137--140
+[6]
+Overfull \hbox (0.22572pt too wide) in paragraph at lines 138--141
 \T1/zpltlf/m/n/10.95 (-10) SWIM [[][][]7[][]] stands for \T1/zpltlf/b/n/10.95 (
 -10) S\T1/zpltlf/m/n/10.95 (-10) calable \T1/zpltlf/b/n/10.95 (-10) W\T1/zpltlf
 /m/n/10.95 (-10) eakly-consistent \T1/zpltlf/b/n/10.95 (-10) I\T1/zpltlf/m/n/10
@@ -2398,32 +2390,36 @@ Overfull \hbox (0.22572pt too wide) in paragraph at lines 137--140
 m/n/10.95 (-10) embership
  []
 
-[6{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}{/u
+[7{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}{/u
 sr/local/texlive/2023/texmf-dist/fonts/enc/dvips/newpx/px-lms.enc}]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [7]
-[8] [9] [10] [11]
-<Chapters/Figures/pow.jpg, id=304, 361.35pt x 143.26088pt>
+ [8]
+[9] [10] [11] [12]
+<Chapters/Figures/pow.jpg, id=305, 361.35pt x 143.26088pt>
 File: Chapters/Figures/pow.jpg Graphic file (type jpg)
 <use Chapters/Figures/pow.jpg>
-Package pdftex.def Info: Chapters/Figures/pow.jpg  used on input line 404.
+Package pdftex.def Info: Chapters/Figures/pow.jpg  used on input line 423.
 (pdftex.def)             Requested size: 325.215pt x 128.93578pt.
-<Chapters/Figures/pos.jpg, id=305, 377.9785pt x 120.87637pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Chapters/Figures/pos.jpg, id=306, 377.9785pt x 120.87637pt>
 File: Chapters/Figures/pos.jpg Graphic file (type jpg)
 <use Chapters/Figures/pos.jpg>
-Package pdftex.def Info: Chapters/Figures/pos.jpg  used on input line 418.
+Package pdftex.def Info: Chapters/Figures/pos.jpg  used on input line 437.
 (pdftex.def)             Requested size: 325.215pt x 104.00513pt.
- [12 <./Chapters/Figures/pow.jpg> <./Chapters/Figures/pos.jpg>]
-<Chapters/Figures/dpos.jpg, id=312, 377.9785pt x 188.66946pt>
+[13]
+<Chapters/Figures/dpos.jpg, id=315, 377.9785pt x 188.66946pt>
 File: Chapters/Figures/dpos.jpg Graphic file (type jpg)
 <use Chapters/Figures/dpos.jpg>
-Package pdftex.def Info: Chapters/Figures/dpos.jpg  used on input line 430.
+Package pdftex.def Info: Chapters/Figures/dpos.jpg  used on input line 449.
 (pdftex.def)             Requested size: 325.215pt x 162.33604pt.
-<Chapters/Figures/pbft.jpg, id=313, 216.81pt x 114.48079pt>
+<Chapters/Figures/pbft.jpg, id=316, 216.81pt x 114.48079pt>
 File: Chapters/Figures/pbft.jpg Graphic file (type jpg)
 <use Chapters/Figures/pbft.jpg>
-Package pdftex.def Info: Chapters/Figures/pbft.jpg  used on input line 453.
+Package pdftex.def Info: Chapters/Figures/pbft.jpg  used on input line 462.
 (pdftex.def)             Requested size: 325.215pt x 171.74345pt.
 
 
@@ -2431,31 +2427,31 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 ) (./Chapters/chapter3.tex
 NT FILE chapter3.tex
-[13 <./Chapters/Figures/dpos.jpg>] [14 <./Chapters/Figures/pbft.jpg>] [15
+[14 <./Chapters/Figures/pow.jpg> <./Chapters/Figures/pos.jpg> <./Chapters/Figur
+es/dpos.jpg>] [15 <./Chapters/Figures/pbft.jpg>] [16
 
-]
-[16]
-<Chapters/Figures/blocksim_fig.png, id=341, 604.2575pt x 419.5675pt>
+] [17]
+<Chapters/Figures/blocksim_fig.png, id=344, 604.2575pt x 419.5675pt>
 File: Chapters/Figures/blocksim_fig.png Graphic file (type png)
 <use Chapters/Figures/blocksim_fig.png>
 Package pdftex.def Info: Chapters/Figures/blocksim_fig.png  used on input line 
-128.
+133.
 (pdftex.def)             Requested size: 325.215pt x 225.81403pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[17] [18 <./Chapters/Figures/blocksim_fig.png>] [19]
+[18] [19 <./Chapters/Figures/blocksim_fig.png>] [20]
 LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
-(Font)              scaled to size 7.0pt on input line 222.
+(Font)              scaled to size 7.0pt on input line 227.
 LaTeX Font Info:    Font shape `OT1/zpltlf/m/n' will be
-(Font)              scaled to size 7.3pt on input line 224.
+(Font)              scaled to size 7.3pt on input line 229.
 LaTeX Font Info:    Font shape `OT1/zpltlf/m/n' will be
-(Font)              scaled to size 5.5pt on input line 224.
+(Font)              scaled to size 5.5pt on input line 229.
 LaTeX Font Info:    Font shape `T1/zpltlf/b/n' will be
-(Font)              scaled to size 7.0pt on input line 226.
+(Font)              scaled to size 7.0pt on input line 231.
 ) (./Chapters/chapter4.tex
-[20
+[21
 pdfTeX warning (ext4): destination with the same identifier (name{table.3.1}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
@@ -2463,8 +2459,8 @@ as been already used, duplicate ignored
 l.8 
     ]
 NT FILE chapter4.tex
-[21]
-<Chapters/Figures/modules_mobs.png, id=380, 598.235pt x 532.99126pt>
+[22]
+<Chapters/Figures/modules_mobs.png, id=383, 598.235pt x 532.99126pt>
 File: Chapters/Figures/modules_mobs.png Graphic file (type png)
 <use Chapters/Figures/modules_mobs.png>
 Package pdftex.def Info: Chapters/Figures/modules_mobs.png  used on input line 
@@ -2474,37 +2470,37 @@ Package pdftex.def Info: Chapters/Figures/modules_mobs.png  used on input line
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[22
+[23
 
 ]
-<Chapters/Figures/mobs_parameters.png, id=386, 667.49374pt x 528.97626pt>
+<Chapters/Figures/mobs_parameters.png, id=389, 667.49374pt x 528.97626pt>
 File: Chapters/Figures/mobs_parameters.png Graphic file (type png)
 <use Chapters/Figures/mobs_parameters.png>
 Package pdftex.def Info: Chapters/Figures/mobs_parameters.png  used on input li
 ne 79.
 (pdftex.def)             Requested size: 325.215pt x 257.73161pt.
- [23 <./Chapters/Figures/modules_mobs.png>]
-<Chapters/Figures/topology.png, id=395, 657.45625pt x 383.4325pt>
+ [24 <./Chapters/Figures/modules_mobs.png>]
+<Chapters/Figures/topology.png, id=398, 657.45625pt x 383.4325pt>
 File: Chapters/Figures/topology.png Graphic file (type png)
 <use Chapters/Figures/topology.png>
 Package pdftex.def Info: Chapters/Figures/topology.png  used on input line 95.
 (pdftex.def)             Requested size: 325.215pt x 189.66803pt.
-<Chapters/Figures/visualizer.png, id=396, 405.515pt x 212.795pt>
+<Chapters/Figures/visualizer.png, id=399, 405.515pt x 212.795pt>
 File: Chapters/Figures/visualizer.png Graphic file (type png)
 <use Chapters/Figures/visualizer.png>
 Package pdftex.def Info: Chapters/Figures/visualizer.png  used on input line 10
 4.
 (pdftex.def)             Requested size: 325.215pt x 170.66158pt.
- [24 <./Chapters/Figures/mobs_parameters.png> <./Chapters/Figures/topology.png>
-] [25 <./Chapters/Figures/visualizer.png>] [26]
-<Chapters/Figures/consensus_log_script_v1.png, id=417, 553.06625pt x 58.2175pt>
+ [25 <./Chapters/Figures/mobs_parameters.png> <./Chapters/Figures/topology.png>
+] [26 <./Chapters/Figures/visualizer.png>] [27]
+<Chapters/Figures/consensus_log_script_v1.png, id=421, 553.06625pt x 58.2175pt>
 
 File: Chapters/Figures/consensus_log_script_v1.png Graphic file (type png)
 <use Chapters/Figures/consensus_log_script_v1.png>
 Package pdftex.def Info: Chapters/Figures/consensus_log_script_v1.png  used on 
 input line 214.
 (pdftex.def)             Requested size: 325.215pt x 34.23253pt.
-<Chapters/Figures/consensus_log_script_v2.png, id=418, 595.22375pt x 89.33376pt
+<Chapters/Figures/consensus_log_script_v2.png, id=422, 595.22375pt x 89.33376pt
 >
 File: Chapters/Figures/consensus_log_script_v2.png Graphic file (type png)
 <use Chapters/Figures/consensus_log_script_v2.png>
@@ -2515,16 +2511,16 @@ input line 228.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) (./Chapters/chapter5.tex [27 <./Chapters/Figures/consensus_log_script_v1.png>
+) (./Chapters/chapter5.tex [28 <./Chapters/Figures/consensus_log_script_v1.png>
 ]
 NT FILE chapter5.tex
-[28 <./Chapters/Figures/consensus_log_script_v2.png>]
-Underfull \vbox (badness 3364) has occurred while \output is active []
+[29 <./Chapters/Figures/consensus_log_script_v2.png>]
+Underfull \vbox (badness 1178) has occurred while \output is active []
 
- [29
+ [30
 
 ]
-[30]) [31
+[31]) [32
 pdfTeX warning (ext4): destination with the same identifier (name{table.5.1}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
@@ -2545,10 +2541,10 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/zpltlf/m/sc' will be
 (Font)              scaled to size 10.95pt on input line 236.
- [32
+ [33
 
 
-] [33]
+] [34]
 \blx@maxsegment@1=\count732
 \blx@sectionciteorder@1=\count733
 Package biblatex Info: Reference section=1 on input line 236.
@@ -2578,9 +2574,9 @@ Overfull \hbox (17.0pt too wide) in paragraph at lines 236--236
 []$[]$ 
  []
 
-[34]
-TIME process mainmatter=210681
-<NOVAthesisFiles/Schools/nova/fct/Images/nova-fct-msc-cover-back.pdf, id=528, 5
+[35]
+TIME process mainmatter=190227
+<NOVAthesisFiles/Schools/nova/fct/Images/nova-fct-msc-cover-back.pdf, id=533, 5
 97.50829pt x 845.0471pt>
 File: NOVAthesisFiles/Schools/nova/fct/Images/nova-fct-msc-cover-back.pdf Graph
 ic file (type pdf)
@@ -2599,7 +2595,7 @@ l.246 \ntprint{backcover}
 
 
  <./NOVAthesisFiles/Schools/nova/fct/Images/nova-fct-msc-cover-back.pdf>]
-TIME process process backcover=213485
+TIME process process backcover=192981
 \tf@toc=\write10
 \openout10 = `template.toc'.
 
@@ -2619,10 +2615,10 @@ Package logreq Info: Writing requests to 'template.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 57780 strings out of 474228
- 1146551 string characters out of 5746459
- 2132828 words of memory out of 5000000
- 78588 multiletter control sequences out of 15000+600000
+ 57788 strings out of 474228
+ 1146956 string characters out of 5746459
+ 2133046 words of memory out of 5000000
+ 78594 multiletter control sequences out of 15000+600000
  717726 words of font info for 383 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  124i,21n,146p,2390b,5290s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -2634,10 +2630,10 @@ e1/public/newpx/pxsys.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/publi
 c/txfonts/t1xtt.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newp
 x/zplb.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newpx/zplr.pf
 b></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newpx/zplri.pfb>
-Output written on template.pdf (43 pages, 1705630 bytes).
+Output written on template.pdf (43 pages, 1707890 bytes).
 PDF statistics:
- 768 PDF objects out of 1000 (max. 8388607)
- 664 compressed objects within 7 object streams
- 156 named destinations out of 1000 (max. 500000)
- 161232 words of extra memory for PDF output out of 184870 (max. 10000000)
+ 771 PDF objects out of 1000 (max. 8388607)
+ 667 compressed objects within 7 object streams
+ 158 named destinations out of 1000 (max. 500000)
+ 161224 words of extra memory for PDF output out of 184870 (max. 10000000)
 

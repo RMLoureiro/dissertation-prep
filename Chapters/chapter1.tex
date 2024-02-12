@@ -10,18 +10,18 @@
 
 \chapter{Introduction}\label{cha:introduction}
 
-This thesis aims to address the practical challenges in designing, implementing and maintaining blockchain and consensus
-protocols by providing a simulation environment to analyse their behaviour and provide empirical metrics of their runtime in
-different environments and conditions. To achieve this we intend to take MOBs and expand
-the previously done work to help better test and validate these protocols by providing a wider range of networks,
-a more dynamic and independent network layer and improve the logging of the application to extract data to validate the
-protocols' properties.
+This thesis aims to address the practical challenges in designing, implementing and maintaining blockchain consensus
+protocols by providing a simulation environment to analyse their behaviour and offering empirical metrics of their runtime in
+different environments and conditions. To achieve this we intend to take Modular Blockchain Simulator (MOBs) https://github.com/mce-alves/MOBS
+and expand the previously done work to help better test and validate these protocols by providing tools to extract statistics and 
+provide developers with qualitative data to about the protocols' runtime. We also want to provide a more dynamic and independent network layer
+to better simulate real-world conditions.
 
 \prependtographicspath{{Chapters/Figures/Covers/}}
 
 \section{Context}\label{sub:context}
 With each passing day the amount of distributed applications increases, and a subset of these are applications
-deal with data that requires validation, transactional operations by validated users and simultaneous access for updating and
+dealing with data that requires validation, transactional operations by validated users, and simultaneous access for updating and
 consulting the records. For this specific subset there are a group of protocols that have been created to meet and ensure
 these requirements. Blockchain protocols allow for simultaneous access, validation and update of records across
 a distributed database, each node has its own copy of the ledger that it uses to validate information and reach a consensus
@@ -31,7 +31,9 @@ Around 2008, blockchain protocols appeared with the motivation
 to serve as a distributed ledger for cryptocurrency transactions. These protocols are not static, being because vulnerabilities 
 or flaws that need to be corrected.
 One of these dynamic protocols is Tezos~\cite{tezos}, which relies on the stake-holders that participate in the system to propose and
-agree on changes and upgrades to the protocol. Another example is Ethereum~\cite{ethereum} that started by using a blockchain protocol based on proof
+agree on changes and upgrades to the protocol. These changes are done with Tezos' self-amendment, which enables the network to undergo
+changes without the need for a network fork, which in most blockchains is the common practice.
+Another example is Ethereum~\cite{ethereum} that started by using a blockchain protocol based on proof
 of work and in 2022 migrated towards an implementation based solely on proof of stake for Ethereum2.
 This opens a necessity for tools that aid in support these evolutions in a faster, more seamless and secure fashion.
 
@@ -46,13 +48,14 @@ explained in Chapter~\ref{cha:Background}.
 The challenges in developing blockchain protocols motivated the development of MOBs, a modular and extensible simulator that provides
 the ability to simulate different families of blockchain and consensus protocols.
 MOBs provides a parametrizable execution of the selected protocols, exhibiting a modular and extensible structure and offers detailed logs for the
-qualitative evaluation for the study of implemented protocols. However, this simulator can be further improved by incorporating conditions closer
-to real life, such as a dynamic and parametrizable network layer and more detailed logs with specific configurations for consensus protocols.
-These enhancements would enable the study and validation of the behaviour of these protocols in various scenarios, abstracted from the intricacies
-of the arrangement of the participants and the validation of the correctness of a wider array or protocols.
+qualitative evaluation for the study of implemented protocols. However, this simulator has limitations such as a network layer
+that only allows for static parameterizations, network layout and node behaviours are defined before runtime and there is no mechanism to
+re-structure the network after a node fails or leaves the system, there is also a lack of qualitative data making it difficult to
+evaluate the protocols' execution.
 
 \section{Problem}\label{sub:problem}
-Consensus protocols are not trivial to define or understand correctly and in blockchain systems, where the behaviour can be dynamic and mostly 
+Consensus protocols are not trivial to define or understand correctly~\cite{paxos}~\cite{have_we_reached_consensus}
+and in blockchain systems, where the behaviour can be dynamic and mostly 
 financial transactions are dealt with, their correctness is crucial and errors can be costly. One example of this is Ethereum moving from 
 Proof of Work to a Proof of Stake consensus, this opened the protocol to vulnerabilities to bouncing attacks on liveness~\cite{ethereum_analysis}.
 There is also Solana~\cite{solana}, a new blockchain protocol that relies on Proof-of-History to build its chain,
@@ -61,48 +64,59 @@ a single malicious validator can halt the Solana blockchain~\cite{solana_halting
 inconsistencies in the behaviour between what is described in the documentation and what the protocol showed since Solana's implementation
 has deviated in undocumented ways from the available protocol design descriptions.
 
-To help with this, MOBs was developed giving the ability to test and validate these protocols under different conditions and settings by 
-changing the execution parameters, aiming to catch these vulnerabilities or even logic errors before deploying changes to these protocols.
+Since evaluating correctness is very costly, and before planing such an implementation, developers should test their ideas and prototypes,
+MOBs was developed with the goal to give the ability to test and validate these protocols under different conditions and settings by 
+changing the execution parameters, aiming to catch vulnerabilities or even logic errors before deploying changes to these protocols.
 
-Right now the parameters to the network are set before the execution of the simulation, and regarding the network behaviour we can
-set the network topology, how many nodes will fail and when. In the real world a network's topology is dynamic, new nodes can enter
+Right now the parameters to the network are set before the execution of the simulation, and regarding the network behaviour, we can
+set the network topology and how many nodes will fail and when. In the real world a network's topology is dynamic, new nodes can enter
 as new participants, existing ones can leave, either by choice or by failure, and even when the participants are static the network
 can suffer changes to its topology as a result of optimizations performed by this layer.
 
-The simulation of how this layer behaves and the parametrization of the different protocols that can be used as its basis are the
-problems that we aim to address with this thesis.
+Currently, in MOBs there is no dynamic parameterization of the network layer, making it hard to simulate real world conditions,
+together with the lack of qualitative data provided by the simulator, validate a protocol's executions becomes hard.
 
 
 \section{Goal}\label{sub:goal}
 
-With the different properties that different network overlays provide besides the parametrizations that are already provided by MOBs,
-we can further provide an even more modular simulator that allows for the study of the behaviour in different membership protocols.
+With the different properties that different network overlays provide besides the parameterizations that are already provided by MOBs,
+we can offer a more complete simulator that allows for the study of the behaviour in different membership protocols.
 This will allow us to leverage the modularity of this layer to better simulate the behaviour of new participants coming into the system, existing
 ones leaving and how changes to the network topology of the network affects their execution.
 
 Another aspect we want to improve is the logging module of MOBs, by providing a template for logging of consensus protocols and
-an after execution analysis tool to verify their correction, validate their execution and extract metrics for
-comparison between executions in different environments.
+an after execution analysis tool to validate their execution and extract metrics for
+comparison between executions in different environments, like average time to reach consensus, consensus agreement percentage or
+number of agreements messages received after consensus.
 
-The goal of this thesis is to improve the networking layer of MOBs by making it more modular and therefore giving the following advantages:
+
+The goal of this thesis is twofold: first to improve the networking layer of MOBs by making it more modular and therefore giving the following advantages:
 \begin{itemize}
-  \item Different environments for more diverse testing scenarios.
-  \item Stronger parametrization regarding the behaviour of the network.
-  \item Better qualitative data by providing scenarios that better mimic real world execution.
+  \item Different environments for more diverse testing scenarios,
+  \item Stronger parameterization regarding the behaviour of the network,
+  \item Better qualitative data by providing scenarios that better mimic real world execution;
 \end{itemize}
+
+And secondly we want to improve the logs to provide better qualitative data like:
+\begin{itemize}
+  \item Average time to consensus,
+  \item Quorum agreement percentage for each consensus,
+  \item Number of late agreement messages;
+\end{itemize}
+This should allow us to better evaluate the protocols' execution.
 
 \section{Document Organization}\label{sub:document_organization}
 
-The remainder of this document is organized in the following manner:
+The remainder of this document is organized like so:
 
-Chapter~\ref{cha:Background} studies related work: in particular we will cover several membership protocols and some implementations;
-Some simple consensus protocols; Overview of the types of blockchain consensus;
+Chapter~\ref{cha:Background} studies related work: in particular we will cover several membership protocols and some implementations
+some simple consensus protocols, and an overview of the types of blockchain consensus;
 
 
-Chapter~\ref{cha:related_work} we show Babel which is a framework for implemented distributed system protocols; And NetworkX,
+Chapter~\ref{cha:related_work} presents Babel which is a framework for implemented distributed system protocols, and NetworkX,
 a package in Python that provides network analysis tools.
 
-Chapter~\ref{cha:mobs} studies the MOBs implementation.
+Chapter~\ref{cha:mobs} presents the MOBs implementation.
 
-Chapter~\ref{cha:work_to_be_developed} we will talk about the proposed work to address the problem
-introduced in this chapter.
+Chapter~\ref{cha:work_to_be_developed} lays out the proposed work to address the problem
+introduced in this chapter and the calendarization of its implementation.
