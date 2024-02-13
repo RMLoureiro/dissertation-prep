@@ -12,7 +12,7 @@
 
 This thesis aims to address the practical challenges in designing, implementing and maintaining blockchain consensus
 protocols by providing a simulation environment to analyse their behaviour and offering empirical metrics of their runtime in
-different environments and conditions. To achieve this we intend to take Modular Blockchain Simulator (MOBs) https://github.com/mce-alves/MOBS
+different environments and conditions. To achieve this we intend to take Modular Blockchain Simulator (MOBS) https://github.com/mce-alves/MOBS
 and expand the previously done work to help better test and validate these protocols by providing tools to extract statistics and 
 provide developers with qualitative data to about the protocols' runtime. We also want to provide a more dynamic and independent network layer
 to better simulate real-world conditions.
@@ -45,9 +45,9 @@ overlays allow for the benefits of a non-structured overlay at the cost of slowe
 procedures are regularly executed to improve routing and lookup operations. The trade-offs and some of these protocols will be further
 explained in Chapter~\ref{cha:Background}.
 
-The challenges in developing blockchain protocols motivated the development of MOBs, a modular and extensible simulator that provides
+The challenges in developing blockchain protocols motivated the development of MOBS, a modular and extensible simulator that provides
 the ability to simulate different families of blockchain and consensus protocols.
-MOBs provides a parametrizable execution of the selected protocols, exhibiting a modular and extensible structure and offers detailed logs for the
+MOBS provides a parametrizable execution of the selected protocols, exhibiting a modular and extensible structure and offers detailed logs for the
 qualitative evaluation for the study of implemented protocols. However, this simulator has limitations such as a network layer
 that only allows for static parameterizations, network layout and node behaviours are defined before runtime and there is no mechanism to
 re-structure the network after a node fails or leaves the system, there is also a lack of qualitative data making it difficult to
@@ -65,7 +65,7 @@ inconsistencies in the behaviour between what is described in the documentation 
 has deviated in undocumented ways from the available protocol design descriptions.
 
 Since evaluating correctness is very costly, and before planing such an implementation, developers should test their ideas and prototypes,
-MOBs was developed with the goal to give the ability to test and validate these protocols under different conditions and settings by 
+MOBS was developed with the goal to give the ability to test and validate these protocols under different conditions and settings by 
 changing the execution parameters, aiming to catch vulnerabilities or even logic errors before deploying changes to these protocols.
 
 Right now the parameters to the network are set before the execution of the simulation, and regarding the network behaviour, we can
@@ -73,31 +73,32 @@ set the network topology and how many nodes will fail and when. In the real worl
 as new participants, existing ones can leave, either by choice or by failure, and even when the participants are static the network
 can suffer changes to its topology as a result of optimizations performed by this layer.
 
-Currently, in MOBs there is no dynamic parameterization of the network layer, making it hard to simulate real world conditions,
+Currently, in MOBS there is no dynamic parameterization of the network layer, making it hard to simulate real world conditions,
 together with the lack of qualitative data provided by the simulator, validate a protocol's executions becomes hard.
 
 
 \section{Goal}\label{sub:goal}
 
-With the different properties that different network overlays provide besides the parameterizations that are already provided by MOBs,
+With the different properties that different network overlays provide besides the parameterizations that are already provided by MOBS,
 we can offer a more complete simulator that allows for the study of the behaviour in different membership protocols.
 This will allow us to leverage the modularity of this layer to better simulate the behaviour of new participants coming into the system, existing
 ones leaving and how changes to the network topology of the network affects their execution.
 
-Another aspect we want to improve is the logging module of MOBs, by providing a template for logging of consensus protocols and
+Another aspect we want to improve is the logging module of MOBS, by providing a template for logging of consensus protocols and
 an after execution analysis tool to validate their execution and extract metrics for
 comparison between executions in different environments, like average time to reach consensus, consensus agreement percentage or
 number of agreements messages received after consensus.
 
 
-The goal of this thesis is twofold: first to improve the networking layer of MOBs by making it more modular and therefore giving the following advantages:
+The goal of this thesis is twofold: first to improve the networking layer of MOBS by making it more modular and therefore giving the following advantages:
 \begin{itemize}
   \item Different environments for more diverse testing scenarios,
   \item Stronger parameterization regarding the behaviour of the network,
   \item Better qualitative data by providing scenarios that better mimic real world execution;
 \end{itemize}
 
-And secondly we want to improve the logs to provide better qualitative data like:
+\noindent~and secondly we want to improve the logs to provide better qualitative data so that we can quickly analyse the
+protocols properties and check their execution. We want to provide concise, meaningful and transversal data like:
 \begin{itemize}
   \item Average time to consensus,
   \item Quorum agreement percentage for each consensus,
@@ -116,7 +117,7 @@ some simple consensus protocols, and an overview of the types of blockchain cons
 Chapter~\ref{cha:related_work} presents Babel which is a framework for implemented distributed system protocols, and NetworkX,
 a package in Python that provides network analysis tools.
 
-Chapter~\ref{cha:mobs} presents the MOBs implementation.
+Chapter~\ref{cha:mobs} presents the MOBS implementation.
 
 Chapter~\ref{cha:work_to_be_developed} lays out the proposed work to address the problem
 introduced in this chapter and the calendarization of its implementation.

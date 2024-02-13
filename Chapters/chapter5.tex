@@ -19,9 +19,9 @@ a calendarization of the proposed work.
 
 The work will be divided in two sections, extending the logs and statistics 
 module to allow for better qualitative
-information about the implemented protocols at the node level and enhancing MOBs' network layer.
+information about the implemented protocols at the node level and enhancing MOBS' network layer.
 
-\subsection{Improve qualitative data}\label{subsec:improve_qualitative_data}
+\subsection{Analyse data qualitatively}\label{subsec:improve_qualitative_data}
 
 In a first step to better understand what information we can extract and how
 we can leverage the simulator to evaluate Blockchain protocols, we will finish implementing
@@ -29,12 +29,22 @@ simpler consensus protocols, namely Chandra-Toueg and MultiPaxos described in~\r
 Finishing the implementations will give us the ability to test with more than 1 proposer and
 failing and malicious nodes.
 
-This will allow us to better understand and see if changes
+Extracting more qualitative data will allow developers to better analyse the properties
+from the implemented protocols and compare their executions in different scenarios and conditions,
+this does not avoid the need for formal verification, but it can be a powerful tool in prototyping stage.
+In a first phase we will provide tools to analyse the output of consensus protocols
+with metrics that can be transversal across different classical consensus protocols, like
+average time needed for consensus and percentage of accepting nodes. These metrics were considered
+for the scenarios implemented until now that are optimistic and do not account for Byzantine or
+faulty nodes, more work needs to be done to consider what more metrics need to be extracted under
+imperfect conditions.
+
+This work should allow us to better understand and see if changes
 need to be done to the current log and statistics modules in order to obtain enough qualitative
 data for the consensus protocols to evaluate and validate their execution under different
 conditions and scenarios.
 
-We will leverage the post execution script approach to scrub and analyse the logs from MOBs,
+We will leverage the post execution script approach to scrub and analyse the logs from MOBS,
 this will allow the users to use custom scripts to fit their needs. We will also consider an
 improvement to the GUI to allow the user to select the script they want to execute and in turn
 feed data into the GUI for visual representation.
@@ -47,7 +57,7 @@ to implement Solana and see if we can reach similar conclusions to what was foun
 \subsection{Network Layer Enhancement}\label{subsec:network_layer_enchancement}
 
 In this section we will present the proposed enhancements to the Network layer of
-MOBs. For this, we propose the following work to be conducted:
+MOBS. For this, we propose the following work to be conducted:
 
 \begin{itemize}
   \item \textbf{Modular Network Layer:} The goal is to make the network layer
@@ -88,7 +98,7 @@ We propose to evaluate this work in the following way:
 \begin{itemize}
   \item After implementation of these protocols a script in Python with the aid of
 the NetworkX package should be written in order to validate the overlay's properties.
-The script should be able to generate a graph from the logs provided by MOBs.
+The script should be able to generate a graph from the logs provided by MOBS.
 The values of their properties and the metrics we can extract the overlay should be
 comparable to the ones presented in protocol's paper and other tests that were conducted
 on them.

@@ -12,7 +12,7 @@ BitShares
 PBFT
 NetworkX
 hashable
-MOBs
+MOBS
 ElectronJS
 json
 BlockSim

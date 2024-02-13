@@ -8,17 +8,17 @@
 
 \typeout{NT FILE chapter4.tex}%
 
-\chapter{MOBs}\label{cha:mobs}
+\chapter{MOBS}\label{cha:mobs}
 
 \section{Overview}\label{sub:overview}
 
-MOBs standing for Modular Blockchain Simulator is divided into two main components,
+MOBS standing for Modular Blockchain Simulator is divided into two main components,
 the simulator a and the graphical user interface, we will look into them separately.
 
 \subsection{Simulator}\label{subsec:simulator}
 
 The simulator makes use of OCaml's \textit{modules} and \textit{functors} to
-provide modularity and extensibility. MOBs adopts a \textit{Discrete-Event Simulation Model}
+provide modularity and extensibility. MOBS adopts a \textit{Discrete-Event Simulation Model}
 making the state of the system only change in discrete points in time when events occur.
 These events are stored in a queue ordered with two main values:
 \begin{itemize}
@@ -116,17 +116,24 @@ The GUI will parse the output.json file and display it in an easy-to-read format
 These formats can come as graphs, displaying minimum and maximum values observed
 for each metric that was produced and a graph with per node statistics.
 
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=4.5in, angle =0]{statistics}
+	\caption{Per Node Statistics window}
+	\label{fig:statistics}
+\end{figure}
+
 \section{Initial Network Exercise}\label{sub:initial_exercise}
 
-As an initial exercise we chose to implement Chord in MOBs; this served twofold:
+As an initial exercise we chose to implement Chord in MOBS; this served twofold:
 
 \begin{itemize}
-  \item To understand how MOBs worked and how to use it to implement protocols
-  \item To see the capabilities of MOBs in providing qualitative metrics to evaluate
+  \item To understand how MOBS worked and how to use it to implement protocols
+  \item To see the capabilities of MOBS in providing qualitative metrics to evaluate
 a membership protocol.
 \end{itemize}
 
-To achieve this implementation we made use of MOBs Node module and implemented the
+To achieve this implementation we made use of MOBS Node module and implemented the
 following events:
 
 \begin{itemize}
@@ -197,7 +204,7 @@ module even more modular and extensible, making it easier to implement new netwo
 One of the problems we want to tackle with this thesis is getting better qualitative information out of
 blockchain and consensus protocols logs so that we can evaluate their correctness at the end 
 of the simulation. To achieve this we implemented two simple and well known consensus protocols
-so that we can extract the runtime information and use them as a simple example to see MOBs' limitations
+so that we can extract the runtime information and use them as a simple example to see MOBS' limitations
 and if further work needs to be done in Statistics and Logging module.
 
 The first of these protocols was Paxos. This was implemented as referenced in~\ref{sub:paxos},
@@ -231,11 +238,27 @@ and the average acceptance percentage of consensus.
 \end{figure}
 
 The implementation of both the protocol and
-the script can be consulted at this pull request: https://github.com/RMLoureiro/MOBS/pull/2.
+the script can be consulted at \href{https://github.com/RMLoureiro/MOBS/pull/2}{this pull request}.
 
-With this work done we implemented Chandra-Tueg as described in~\ref{sub:chandra-toueg}, 
+With this work done we implemented Chandra-Toueg as described in~\ref{sub:chandra-toueg}, 
 we chose this protocol for the ease of implementation
 and again focused on an optimistic implementation where we didn't take into account malicious nodes and
 lost messages. We also took into account and implemented the logs of this protocol so that the same script
 developed for Paxos could be used without changes to analyse this protocol. The implementation can be
-consulted at this pull request: https://github.com/RMLoureiro/MOBS/pull/4.
+consulted at \href{https://github.com/RMLoureiro/MOBS/pull/4}{this pull request}.
+
+After the implementations were completed we compared their executions. We found that while both protocols
+reached near 100\% agreement, Paxos was on average twice as fast as Chandra-Toueg reaching consensus.
+After manually analysing the logs we came to the conclusion that the missing percentage of acceptance
+came from the protocol runtime being limited to 10000ms, and the simulation ending before all the Accept
+messages reached the proposer, since all values before accounted for 100\% acceptance.
+
+\begin{table}[h]
+	\caption{Average results from 20 executions at 10000ms runtime}\label{tab:simulation_comparison}
+	\begin{tabular}{|c|c|c|c|}
+	\hline
+						   & \textbf{\begin{tabular}[c]{@{}c@{}}Average Time \\ per Consensus\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Average acceptance \\ percentage\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Number of \\ consensus reached\end{tabular}} \\ \hline
+	\textbf{Paxos}         & 101.76 ms                                                                      & 98.35\%                                                                           & 97                                                                              \\ \hline
+	\textbf{Chandra-Toueg} & 201.755ms                                                                      & 98.85\%                                                                           & 49                                                                              \\ \hline
+	\end{tabular}
+\end{table}

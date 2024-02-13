@@ -772,10 +772,10 @@ INPUT ./Chapters/Figures/dpos.jpg
 INPUT ./Chapters/Figures/dpos.jpg
 INPUT ./Chapters/Figures/dpos.jpg
 INPUT ./Chapters/Figures/dpos.jpg
-INPUT ./Chapters/Figures/pbft.jpg
-INPUT ./Chapters/Figures/pbft.jpg
-INPUT ./Chapters/Figures/pbft.jpg
-INPUT ./Chapters/Figures/pbft.jpg
+INPUT ./Chapters/Figures/pbft.png
+INPUT ./Chapters/Figures/pbft.png
+INPUT ./Chapters/Figures/pbft.png
+INPUT ./Chapters/Figures/pbft.png
 INPUT ./Chapters/chapter3.tex
 INPUT ./Chapters/chapter3.tex
 INPUT ./Chapters/chapter3.tex
@@ -824,6 +824,10 @@ INPUT ./Chapters/Figures/visualizer.png
 INPUT ./Chapters/Figures/visualizer.png
 INPUT ./Chapters/Figures/visualizer.png
 INPUT ./Chapters/Figures/visualizer.png
+INPUT ./Chapters/Figures/statistics.png
+INPUT ./Chapters/Figures/statistics.png
+INPUT ./Chapters/Figures/statistics.png
+INPUT ./Chapters/Figures/statistics.png
 INPUT ./Chapters/Figures/consensus_log_script_v1.png
 INPUT ./Chapters/Figures/consensus_log_script_v1.png
 INPUT ./Chapters/Figures/consensus_log_script_v1.png
