@@ -50,9 +50,22 @@ improvement to the GUI to allow the user to select the script they want to execu
 feed data into the GUI for visual representation.
 
 After these implementations and validations we will move to blockchain protocols and see
-if we can qualitatively evaluate these protocols, specifically we will try to
-replicate the vulnerabilities found in Ethereum in~\cite{ethereum_analysis}, and try
-to implement Solana and see if we can reach similar conclusions to what was found in~\cite{solana_halting_problem}.
+if we can qualitatively evaluate these protocols. Specifically we want to take documented cases
+where protocols can in certain scenarios not provide their specified properties, and see if
+we can from MOBS' logs provide qualitative information to the developer to evaluate
+the protocol's execution. With this we hope to provide a tool that with empirical data can
+provide qualitative information to evaluate the protocols' execution.
+
+We found two documented cases we will try to replicate. First we can try to replicate the 
+vulnerabilities found in Ethereum in~\cite{ethereum_analysis} when the change
+from Proof of Work to a Proof of Stake consensus made the protocol open to bouncing attacks on liveness.
+Secondly we will  implement Solana and see if we can reach similar conclusions to what were 
+found in~\cite{solana_halting_problem}, where in scenarios with a single malicious validator
+can halt Solana's blockchain by not letting the protocol fully achieve consensus.
+In both of these scenarios we want to try and see if with the empirical data provided 
+we can verify their executions and reflect the vulnerabilities found in both cases, and if
+any fixes provided can be reflected in the logs and the extracted data showing if the protocols
+maintain the desired properties.
 
 \subsection{Network Layer Enhancement}\label{subsec:network_layer_enchancement}
 

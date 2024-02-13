@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.2.3)  13 FEB 2024 02:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.2.3)  13 FEB 2024 14:01
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -2166,7 +2166,7 @@ Package biblatex Info: Reference segment=0 on input line 204.
 \cftsubfigureindent=\skip296
 \cftsubfigurenumwidth=\skip297
 
-TIME class loading=99364
+TIME class loading=112984
 \c@/@nt/hook/mainmatter/@names/@sizecnt=\count729
 \c@/@nt/hook/mainmatter/@paths/@sizecnt=\count730
 \c@/@nt/hook/mainmatter/pre/@sizecnt=\count731
@@ -2296,7 +2296,7 @@ l.215 \typeout
 
  <./NOVAthesisFiles/Schools/nova/Images/nova-insignia.pdf> <./NOVAthesisFiles/S
 chools/nova/fct/Images/nova-fct-logo.pdf>]
-TIME process covers=115914
+TIME process covers=131265
 LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
 (Font)              scaled to size 24.88pt on input line 216.
 LaTeX Font Info:    Font shape `T1/GilliusADFNoTwo-LF/m/n' will be
@@ -2330,7 +2330,7 @@ sr/local/texlive/2023/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}]
 
 ]
 (./template.gls) (./template.acr) (./template.sls)
-TIME process frontmatter=120454
+TIME process frontmatter=136326
 (./Chapters/chapter1.tex
 NT FILE chapter1.tex
 LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
@@ -2531,7 +2531,7 @@ l.11 \chapter
 /Figures/consensus_log_script_v1.png> <./Chapters/Figures/consensus_log_script_
 v2.png>] [30
 
-] [31]) [32
+] [31]) [32] [33
 pdfTeX warning (ext4): destination with the same identifier (name{table.5.1}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
@@ -2552,10 +2552,10 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/zpltlf/m/sc' will be
 (Font)              scaled to size 10.95pt on input line 236.
- [33
+ [34
 
 
-] [34]
+] [35]
 \blx@maxsegment@1=\count732
 \blx@sectionciteorder@1=\count733
 Package biblatex Info: Reference section=1 on input line 236.
@@ -2585,9 +2585,9 @@ Overfull \hbox (17.0pt too wide) in paragraph at lines 236--236
 []$[]$ 
  []
 
-[35]
-TIME process mainmatter=208248
-<NOVAthesisFiles/Schools/nova/fct/Images/nova-fct-msc-cover-back.pdf, id=542, 5
+[36]
+TIME process mainmatter=226641
+<NOVAthesisFiles/Schools/nova/fct/Images/nova-fct-msc-cover-back.pdf, id=547, 5
 97.50829pt x 845.0471pt>
 File: NOVAthesisFiles/Schools/nova/fct/Images/nova-fct-msc-cover-back.pdf Graph
 ic file (type pdf)
@@ -2606,7 +2606,7 @@ l.246 \ntprint{backcover}
 
 
  <./NOVAthesisFiles/Schools/nova/fct/Images/nova-fct-msc-cover-back.pdf>]
-TIME process process backcover=210956
+TIME process process backcover=229345
 \tf@toc=\write10
 \openout10 = `template.toc'.
 
@@ -2626,9 +2626,9 @@ Package logreq Info: Writing requests to 'template.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 57800 strings out of 474228
- 1147325 string characters out of 5746459
- 2133174 words of memory out of 5000000
+ 57801 strings out of 474228
+ 1147332 string characters out of 5746459
+ 2133175 words of memory out of 5000000
  78604 multiletter control sequences out of 15000+600000
  717726 words of font info for 383 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2641,10 +2641,10 @@ e1/public/newpx/pxsys.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/publi
 c/txfonts/t1xtt.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newp
 x/zplb.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newpx/zplr.pf
 b></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newpx/zplri.pfb>
-Output written on template.pdf (43 pages, 2422472 bytes).
+Output written on template.pdf (44 pages, 2423865 bytes).
 PDF statistics:
- 780 PDF objects out of 1000 (max. 8388607)
- 674 compressed objects within 7 object streams
- 160 named destinations out of 1000 (max. 500000)
+ 784 PDF objects out of 1000 (max. 8388607)
+ 677 compressed objects within 7 object streams
+ 161 named destinations out of 1000 (max. 500000)
  161229 words of extra memory for PDF output out of 184870 (max. 10000000)
 
