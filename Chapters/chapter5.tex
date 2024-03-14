@@ -1,0 +1,165 @@
+%!TEX root = ../template.tex
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% chapter5.tex
+%% NOVA thesis document file
+%%
+%% Chapter with a short latex tutorial and examples
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\typeout{NT FILE chapter5.tex}%
+
+\chapter{Work to be developed}\label{cha:work_to_be_developed}
+
+This chapter will describe the work that will be developed to address the
+problems presented in~\ref{sub:problem} making use of the tools and information
+presented in~\ref{cha:related_work} and~\ref{cha:mobs} and will also provide
+a calendarization of the proposed work.
+
+\section{Proposed work}\label{sub:sub_proposed_work}
+
+The work will be divided in two sections, extending the logs and statistics 
+module to allow for better qualitative
+information about the implemented protocols at the node level and enhancing MOBS' network layer.
+
+\subsection{Analyse data qualitatively}\label{subsec:improve_qualitative_data}
+
+In a first step to better understand what information we can extract and how
+we can leverage the simulator to evaluate Blockchain protocols, we will finish implementing
+simpler consensus protocols, namely Chandra-Toueg and MultiPaxos described in~\ref{sec:consensus}.
+Finishing the implementations will give us the ability to test with more than 1 proposer and
+failing and malicious nodes.
+
+Extracting more qualitative data will allow developers to better analyse the properties
+from the implemented protocols and compare their executions in different scenarios and conditions,
+this does not avoid the need for formal verification, but it can be a powerful tool in prototyping stage.
+In a first phase we will provide tools to analyse the output of consensus protocols
+with metrics that can be transversal across different classical consensus protocols, like
+average time needed for consensus and percentage of accepting nodes. These metrics were considered
+for the scenarios implemented until now that are optimistic and do not account for Byzantine or
+faulty nodes, more work needs to be done to consider what more metrics need to be extracted under
+imperfect conditions.
+
+This work should allow us to better understand and see if changes
+need to be done to the current log and statistics modules in order to obtain enough qualitative
+data for the consensus protocols to evaluate and validate their execution under different
+conditions and scenarios.
+
+We will leverage the post execution script approach to scrub and analyse the logs from MOBS,
+this will allow the users to use custom scripts to fit their needs. We will also consider an
+improvement to the GUI to allow the user to select the script they want to execute and in turn
+feed data into the GUI for visual representation.
+
+After these implementations and validations we will move to blockchain protocols and see
+if we can qualitatively evaluate these protocols. Specifically we want to take documented cases
+where protocols can in certain scenarios not provide their specified properties, and see if
+we can from MOBS' logs provide qualitative information to the developer to evaluate
+the protocol's execution. With this we hope to provide a tool that with empirical data can
+provide qualitative information to evaluate the protocols' execution.
+
+We found two documented cases we will try to replicate. First we can try to replicate the 
+vulnerabilities found in Ethereum in~\cite{ethereum_analysis} when the change
+from Proof of Work to a Proof of Stake consensus made the protocol open to bouncing attacks on liveness.
+Secondly we will  implement Solana and see if we can reach similar conclusions to what were 
+found in~\cite{solana_halting_problem}, where in scenarios with a single malicious validator
+can halt Solana's blockchain by not letting the protocol fully achieve consensus.
+In both of these scenarios we want to try and see if with the empirical data provided 
+we can verify their executions and reflect the vulnerabilities found in both cases, and if
+any fixes provided can be reflected in the logs and the extracted data showing if the protocols
+maintain the desired properties.
+
+\subsection{Network Layer Enhancement}\label{subsec:network_layer_enchancement}
+
+In this section we will present the proposed enhancements to the Network layer of
+MOBS. For this, we propose the following work to be conducted:
+
+\begin{itemize}
+  \item \textbf{Modular Network Layer:} The goal is to make the network layer
+modular and allow for the implementation of diverse membership protocols. This
+will allow for a more diverse set of parametrizations and network environments
+when testing the already implemented.
+  \item \textbf{Network Module Parametrization:} Here we want to expand the already
+provided parametrizations of this module, allowing for the parametrization of events
+such as, allowing nodes to join the network after the simulation already started,
+allowing a random amount of nodes to fail at a random point during execution and
+simulate periodic bandwidth slowdowns between certain nodes.
+\end{itemize}
+
+These enhancements to the Network module will allow not only for the advantages
+described above, but also allow for the network itself to restructure in case of
+node failures and a closer replication of real-life conditions, since right now the
+overlay layout is static, besides being able to parametrize nodes to be offline after
+a certain amount of time. In the real world if this happens the network will restructure
+and initiate protocols to keep its integrity and correctness, which depends on the
+protocol that was implemented, for Chord we would try to re-structure back to a cyclic
+ring formation, for HyParView we would populate each node's active vies to go back to the
+parametrized size.
+
+For this we propose the implementation of three membership overlay protocols, Chord,
+HyParView and X-BOT. These three protocols were chosen so that we can have a
+structured overlay protocol, an unstructured protocol and a partially-structured
+respectively.
+
+We also propose a small upgrade to the GUI, allowing users to select the network
+protocol that they desire their simulation to run on alongside with the option for
+a validation script to be run after to check the network's correctness and integrity.
+These two extensions will allow users to either check the validation of a network
+protocol if they choose to implement a new one, or make sure of the integrity of
+the network overlay when studying the logs from the protocols that run on top of it.
+
+We propose to evaluate this work in the following way:
+
+\begin{itemize}
+  \item After implementation of these protocols a script in Python with the aid of
+the NetworkX package should be written in order to validate the overlay's properties.
+The script should be able to generate a graph from the logs provided by MOBS.
+The values of their properties and the metrics we can extract the overlay should be
+comparable to the ones presented in protocol's paper and other tests that were conducted
+on them.
+  \item After validation of each of these protocols run the already implemented
+consensus and blockchain protocols, and we should see similar results to the ones obtained
+when testing with the current Network layer. We should expect some variance in the 
+performance of the protocols implemented at the Node module since one of the
+goals of this enhancement is to study their performance using different overlays.
+  \item The enhancements to the GUI should be seamless and work for existing scenarios
+while now giving the ability to select which network protocol to run, the validation
+script for said protocol and show the results given by that script.
+\end{itemize}
+
+
+\section{Work Plan}\label{sub:work_plan}
+
+In this section we present the work plan for the elaboration of this work.
+We will divide the work into six phases. The enhancement of the network layer,
+study of the values and parameters needed for the validation of consensus protocols,
+implementation of consensus protocols and their validation, implementation of blockchain
+protocols and their validation, writing an article detailing the work conducted and
+finally writing of the final thesis document.
+
+\begin{table}[ht]
+\centering
+\caption{Schedule}\label{tab:schedule}
+\begin{tabular}{lccc}
+  \toprule
+  \multicolumn{1}{c}{\textbf{Task}}					& \textbf{Start Date} & \textbf{End Date} & \textbf{Weeks}	\\ 
+  \midrule
+  \textbf{Consensus protocols}						& 11 March             & 3 May       & 8              	\\
+  \quad Study of consensus protocols in MOBS 								&                     &                   &                	\\ 
+  \quad Implementation 								&                     &                   &                	\\ 
+  \quad Testing and Validation								&                     &                   &                	\\ 
+  \midrule
+  \textbf{Enhancement of the network layer}					& 6 May            & 14 June          & 6             	\\
+  \quad Implementation 								&                     &                   &                	\\ 
+  \quad Testing and Validation 								&                     &                   &                	\\
+  \midrule
+  \textbf{Blockchain protocols}						& 17 June             & 16 August       & 10         	\\
+  \quad Study of needed parameters for evaluation 								&                     &                   &                	\\ 
+  \quad Implementation 								&                     &                   &                	\\ 
+  \quad Testing and Validation								&                     &                   &                	\\ 
+  \midrule
+  \textbf{Thesis plus Article}									& 19 August           & 30 September      & 6          	  	\\   
+  \bottomrule
+\end{tabular}
+\end{table}
+
+On our planning we are leaving about 2 months as a buffer in case any of the
+phases of work becomes more troublesome than expected.

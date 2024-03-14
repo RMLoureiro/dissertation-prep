@@ -1,0 +1,40 @@
+%!TEX root = ../template.tex
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% abstrac-pt.tex
+%% NOVA thesis document file
+%%
+%% Abstract in Portuguese
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\typeout{NT FILE abstrac-pt.tex}%
+
+O número de serviços e aplicações que necessitam e utilizam dados replicados, verificáveis e transacionais para funcionarem estão a aumentar
+com cada dia que passa, desde aplicações bancárias e financeiros a sistemas de voto online. Com estes requisitos também vêm desafios,
+como disponibilidade, consistência dos dados e mecanismos de segurança que permitam a integridade, a não repudiação e a encriptação de mensagens.
+
+Uma solução comum que estas aplicações usam para satisfazer estes requisitos são Tecnologias de Registos Distribuídos ou TRD. Os sistemas de TRD
+são caracterizados por terem uma base de dados descentralizada, mecanismos de consensos para  validar transações e dados imutáveis após verificados.
+Mas com a vasta diversidade de requisitos vem uma quantidade diversa de protocolos. Estes necessitam de ser testados, validados e inevitavelmente 
+corrigir os erros de lógica e as vulnerabilidades descobertas 'a posteriori'. Como o uso de TRDs é relativamente recente, há uma falta de ferramentas para
+testar e validar estes protocolos, o que implica que problemas de lógica ou vulnerabilidades são muitas vezes descobertos depois das aplicações que os utilizam
+serem lançadas.
+
+Uma destas ferramentas é o MOBS(referencia), Modular Blockchain Simulator, este simulador foi construído com a extensibilidade e modularidade em mente,
+permitindo os utilizadores simular qualquer família de protocolos tal como parametrizar múltiplos cenários para o estudo destes. Estas parametrizações incluem
+limites de bandwidth, comportamentos bizantinos dos nós participantes e comportamento adversarial. Após a execução as estatísticas escolhidas e informações
+necessárias para a validação da execução destes protocolos também pode ser parametrizada e estendida.
+
+Neste documento propomos uma extensão desta ferramenta para melhor simular e fornecer diferentes conjuntos de ambientes de execução
+permitindo a parametrização da camada de rede do simulador. Isto vai permitir a definição de protocolos onde esta camada vai ser construida, 
+tanto com uma rede estruturada ou não estruturada, ou permitindo à rede a execução de algoritmos de otimização para a mesma, permitindo assim o estudo
+do desempenho, a correção destes protocolos num ambiente dinâmico, em diferentes camadas de rede que vão independentemente responder a comportamentos
+bizantinos ou mudanças na camada de rede.
+
+% Palavras-chave do resumo em Português
+% \begin{keywords}
+% Palavra-chave 1, Palavra-chave 2, Palavra-chave 3, Palavra-chave 4
+% \end{keywords}
+\keywords{
+  Tecnologia de Registo Distribuído
+}
+% to add an extra black line

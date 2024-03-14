@@ -1,0 +1,997 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{blocksim2}{article}{}
+      \name{author}{2}{}{%
+        {{hash=20933e84f61f0ee78ee4e36cc71eb6c0}{%
+           family={Alharby},
+           familyi={A\bibinitperiod},
+           given={Maher},
+           giveni={M\bibinitperiod}}}%
+        {{hash=88b415ba1ba199e1125b34317c01488b}{%
+           family={Moorsel},
+           familyi={M\bibinitperiod},
+           given={Aad},
+           giveni={A\bibinitperiod},
+           prefix={van},
+           prefixi={v\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Frontiers Media SA}%
+      }
+      \strng{namehash}{3c8098c61030b9ea4e6bd678d2e76666}
+      \strng{fullhash}{3c8098c61030b9ea4e6bd678d2e76666}
+      \strng{bibnamehash}{3c8098c61030b9ea4e6bd678d2e76666}
+      \strng{authorbibnamehash}{3c8098c61030b9ea4e6bd678d2e76666}
+      \strng{authornamehash}{3c8098c61030b9ea4e6bd678d2e76666}
+      \strng{authorfullhash}{3c8098c61030b9ea4e6bd678d2e76666}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Frontiers in Blockchain}
+      \field{title}{Blocksim: An extensible simulation tool for blockchain systems}
+      \field{volume}{3}
+      \field{year}{2020}
+      \field{pages}{28}
+      \range{pages}{1}
+    \endentry
+    \entry{tezos}{article}{}
+      \name{author}{3}{}{%
+        {{hash=2be3aaebf830fc5b984ee43cd2e43865}{%
+           family={Allombert},
+           familyi={A\bibinitperiod},
+           given={Victor},
+           giveni={V\bibinitperiod}}}%
+        {{hash=c86ddbf0751acd2e5bf8d4736056bb19}{%
+           family={Bourgoin},
+           familyi={B\bibinitperiod},
+           given={Mathias},
+           giveni={M\bibinitperiod}}}%
+        {{hash=b7c4352771cc6dd51a4f264d015a81b9}{%
+           family={Tesson},
+           familyi={T\bibinitperiod},
+           given={Julien},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{552f723119af3ef1715ba6206a566266}
+      \strng{fullhash}{552f723119af3ef1715ba6206a566266}
+      \strng{bibnamehash}{552f723119af3ef1715ba6206a566266}
+      \strng{authorbibnamehash}{552f723119af3ef1715ba6206a566266}
+      \strng{authornamehash}{552f723119af3ef1715ba6206a566266}
+      \strng{authorfullhash}{552f723119af3ef1715ba6206a566266}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{CoRR}
+      \field{title}{Introduction to the Tezos Blockchain}
+      \field{volume}{abs/1909.08458}
+      \field{year}{2019}
+      \verb{eprint}
+      \verb 1909.08458
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1909.08458
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1909.08458
+      \endverb
+    \endentry
+    \entry{simblock}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{hash=93f5b71a24aaf39e1031288e4ea681c2}{%
+           family={Aoki},
+           familyi={A\bibinitperiod},
+           given={Yusuke},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=ea876c57646bf3319daf31aab8b3659b}{%
+           family={Otsuki},
+           familyi={O\bibinitperiod},
+           given={Kai},
+           giveni={K\bibinitperiod}}}%
+        {{hash=4c3613f9e20b74b63b955de1c7bf69d3}{%
+           family={Kaneko},
+           familyi={K\bibinitperiod},
+           given={Takeshi},
+           giveni={T\bibinitperiod}}}%
+        {{hash=82662cdd92a03a304dd92cd7cbea6dcf}{%
+           family={Banno},
+           familyi={B\bibinitperiod},
+           given={Ryohei},
+           giveni={R\bibinitperiod}}}%
+        {{hash=0e6952f0de1ba169a766f24775f38558}{%
+           family={Shudo},
+           familyi={S\bibinitperiod},
+           given={Kazuyuki},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{4f35dee1b5cb1f4ab8baeddf11256bbc}
+      \strng{fullhash}{7a6dc50c224835e84858af5feb22d879}
+      \strng{bibnamehash}{4f35dee1b5cb1f4ab8baeddf11256bbc}
+      \strng{authorbibnamehash}{4f35dee1b5cb1f4ab8baeddf11256bbc}
+      \strng{authornamehash}{4f35dee1b5cb1f4ab8baeddf11256bbc}
+      \strng{authorfullhash}{7a6dc50c224835e84858af5feb22d879}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{IEEE INFOCOM 2019-IEEE Conference on Computer Communications Workshops (INFOCOM WKSHPS)}
+      \field{title}{Simblock: A blockchain network simulator}
+      \field{year}{2019}
+      \field{pages}{325\bibrangedash 329}
+      \range{pages}{5}
+    \endentry
+    \entry{ethereum}{article}{}
+      \name{author}{1}{}{%
+        {{hash=850981945102d0f671b6762173c8988a}{%
+           family={Buterin},
+           familyi={B\bibinitperiod},
+           given={Vitalik},
+           giveni={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{850981945102d0f671b6762173c8988a}
+      \strng{fullhash}{850981945102d0f671b6762173c8988a}
+      \strng{bibnamehash}{850981945102d0f671b6762173c8988a}
+      \strng{authorbibnamehash}{850981945102d0f671b6762173c8988a}
+      \strng{authornamehash}{850981945102d0f671b6762173c8988a}
+      \strng{authorfullhash}{850981945102d0f671b6762173c8988a}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Ethereum White Paper: A Next Generation Smart Contract \& Decentralized Application Platform}
+      \field{year}{2013}
+      \verb{urlraw}
+      \verb https://github.com/ethereum/wiki/wiki/White-Paper
+      \endverb
+      \verb{url}
+      \verb https://github.com/ethereum/wiki/wiki/White-Paper
+      \endverb
+    \endentry
+    \entry{chandra}{article}{}
+      \name{author}{2}{}{%
+        {{hash=6f6ae1bc577a18f6410f2da26c03bc76}{%
+           family={Chandra},
+           familyi={C\bibinitperiod},
+           given={Tushar\bibnamedelima Deepak},
+           giveni={T\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=cb2a37b3f7247366eddc401ec2bef7cf}{%
+           family={Toueg},
+           familyi={T\bibinitperiod},
+           given={Sam},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {ACM New York, NY, USA}%
+      }
+      \strng{namehash}{5c86a8783c1be8ff9f10a7342d7ea242}
+      \strng{fullhash}{5c86a8783c1be8ff9f10a7342d7ea242}
+      \strng{bibnamehash}{5c86a8783c1be8ff9f10a7342d7ea242}
+      \strng{authorbibnamehash}{5c86a8783c1be8ff9f10a7342d7ea242}
+      \strng{authornamehash}{5c86a8783c1be8ff9f10a7342d7ea242}
+      \strng{authorfullhash}{5c86a8783c1be8ff9f10a7342d7ea242}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of the ACM (JACM)}
+      \field{number}{2}
+      \field{title}{Unreliable failure detectors for reliable distributed systems}
+      \field{volume}{43}
+      \field{year}{1996}
+      \field{pages}{225\bibrangedash 267}
+      \range{pages}{43}
+    \endentry
+    \entry{distributed_systems_concepts}{book}{}
+      \name{author}{3}{}{%
+        {{hash=ba7558d26c2b47c68bbd9c3ae78afe6f}{%
+           family={Coulouris},
+           familyi={C\bibinitperiod},
+           given={George},
+           giveni={G\bibinitperiod}}}%
+        {{hash=b8575e961dd1a27c0844cbf89179dd13}{%
+           family={Dollimore},
+           familyi={D\bibinitperiod},
+           given={Jean},
+           giveni={J\bibinitperiod}}}%
+        {{hash=f331f31acb4f7411c14a757aeb826e85}{%
+           family={Kindberg},
+           familyi={K\bibinitperiod},
+           given={Tim},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Addison-Wesley Longman, Amsterdam}%
+      }
+      \strng{namehash}{f2dc1636d69dcbdc137451db7e22ca0c}
+      \strng{fullhash}{f2dc1636d69dcbdc137451db7e22ca0c}
+      \strng{bibnamehash}{f2dc1636d69dcbdc137451db7e22ca0c}
+      \strng{authorbibnamehash}{f2dc1636d69dcbdc137451db7e22ca0c}
+      \strng{authornamehash}{f2dc1636d69dcbdc137451db7e22ca0c}
+      \strng{authorfullhash}{f2dc1636d69dcbdc137451db7e22ca0c}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{4th rev. ed.}
+      \field{isbn}{0321263545}
+      \field{title}{Distributed Systems: Concepts and Design (International Computer Science)}
+      \field{year}{2005}
+      \keyw{addison-wesley books coulouris distributed}
+    \endentry
+    \entry{swim}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=7308ed786f4f0e133a08199872f5b395}{%
+           family={Das},
+           familyi={D\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=49015e487bb5e9ce14f40dd6b6a8cfe7}{%
+           family={Gupta},
+           familyi={G\bibinitperiod},
+           given={I.},
+           giveni={I\bibinitperiod}}}%
+        {{hash=c4d2bfaadb5d208603153918fbeefad6}{%
+           family={Motivala},
+           familyi={M\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{b4c2f2caae7ad9c1c804ba14bf66d908}
+      \strng{fullhash}{b4c2f2caae7ad9c1c804ba14bf66d908}
+      \strng{bibnamehash}{b4c2f2caae7ad9c1c804ba14bf66d908}
+      \strng{authorbibnamehash}{b4c2f2caae7ad9c1c804ba14bf66d908}
+      \strng{authornamehash}{b4c2f2caae7ad9c1c804ba14bf66d908}
+      \strng{authorfullhash}{b4c2f2caae7ad9c1c804ba14bf66d908}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings International Conference on Dependable Systems and Networks}
+      \field{title}{SWIM: scalable weakly-consistent infection-style process group membership protocol}
+      \field{year}{2002}
+      \field{pages}{303\bibrangedash 312}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1109/DSN.2002.1028914
+      \endverb
+    \endentry
+    \entry{blocksim1}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=7202002fb39565af2f99107905419dda}{%
+           family={Faria},
+           familyi={F\bibinitperiod},
+           given={Carlos},
+           giveni={C\bibinitperiod}}}%
+        {{hash=94bf404999be16249f36aec641dcfd76}{%
+           family={Correia},
+           familyi={C\bibinitperiod},
+           given={Miguel},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{d3b3b6d65863b2fa415ba430a284b247}
+      \strng{fullhash}{d3b3b6d65863b2fa415ba430a284b247}
+      \strng{bibnamehash}{d3b3b6d65863b2fa415ba430a284b247}
+      \strng{authorbibnamehash}{d3b3b6d65863b2fa415ba430a284b247}
+      \strng{authornamehash}{d3b3b6d65863b2fa415ba430a284b247}
+      \strng{authorfullhash}{d3b3b6d65863b2fa415ba430a284b247}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2019 IEEE International Conference on Blockchain (Blockchain)}
+      \field{title}{BlockSim: blockchain simulator}
+      \field{year}{2019}
+      \field{pages}{439\bibrangedash 446}
+      \range{pages}{8}
+    \endentry
+    \entry{babel}{misc}{}
+      \name{author}{4}{}{%
+        {{hash=6298c9a3be3a2f188263cc0e4725d63e}{%
+           family={Fouto},
+           familyi={F\bibinitperiod},
+           given={Pedro},
+           giveni={P\bibinitperiod}}}%
+        {{hash=97cc13fd0fc6bb09b67bac798dfc5a04}{%
+           family={Costa},
+           familyi={C\bibinitperiod},
+           given={Pedro\bibnamedelima Ákos},
+           giveni={P\bibinitperiod\bibinitdelim Á\bibinitperiod}}}%
+        {{hash=01eb907fe4f9429b911ea87887f73363}{%
+           family={Preguiça},
+           familyi={P\bibinitperiod},
+           given={Nuno},
+           giveni={N\bibinitperiod}}}%
+        {{hash=d671f26f95ae952ec0e9b83750ec18aa}{%
+           family={Leitão},
+           familyi={L\bibinitperiod},
+           given={João},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{3e818da08a41bba89034500ead9639b7}
+      \strng{fullhash}{be57ec5db4713b557e6d6b09298f6ad3}
+      \strng{bibnamehash}{3e818da08a41bba89034500ead9639b7}
+      \strng{authorbibnamehash}{3e818da08a41bba89034500ead9639b7}
+      \strng{authornamehash}{3e818da08a41bba89034500ead9639b7}
+      \strng{authorfullhash}{be57ec5db4713b557e6d6b09298f6ad3}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.DC}
+      \field{eprinttype}{arXiv}
+      \field{title}{Babel: A Framework for Developing Performant and Dependable Distributed Protocols}
+      \field{year}{2022}
+      \verb{eprint}
+      \verb 2205.02106
+      \endverb
+    \endentry
+    \entry{networkx}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=94707ad079516150870c2f9a2932df46}{%
+           family={Hagberg},
+           familyi={H\bibinitperiod},
+           given={Aric\bibnamedelima A.},
+           giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=12f80aa3aca50b90f024775e52dde170}{%
+           family={Schult},
+           familyi={S\bibinitperiod},
+           given={Daniel\bibnamedelima A.},
+           giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=58fb3a96810da0d56606677a3ce7e677}{%
+           family={Swart},
+           familyi={S\bibinitperiod},
+           given={Pieter\bibnamedelima J.},
+           giveni={P\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \name{editor}{3}{}{%
+        {{hash=cfa3239dded54488f9a82a5718d5b927}{%
+           family={Varoquaux},
+           familyi={V\bibinitperiod},
+           given={Gaël},
+           giveni={G\bibinitperiod}}}%
+        {{hash=5d98f8482048dcc3052b092b91de894c}{%
+           family={Vaught},
+           familyi={V\bibinitperiod},
+           given={Travis},
+           giveni={T\bibinitperiod}}}%
+        {{hash=eca9aeefdc8563b0e153fbedf08bc1a1}{%
+           family={Millman},
+           familyi={M\bibinitperiod},
+           given={Jarrod},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Pasadena, CA USA}%
+      }
+      \strng{namehash}{3a1b2e51fcffd45628935c7b6334f944}
+      \strng{fullhash}{3a1b2e51fcffd45628935c7b6334f944}
+      \strng{bibnamehash}{3a1b2e51fcffd45628935c7b6334f944}
+      \strng{authorbibnamehash}{3a1b2e51fcffd45628935c7b6334f944}
+      \strng{authornamehash}{3a1b2e51fcffd45628935c7b6334f944}
+      \strng{authorfullhash}{3a1b2e51fcffd45628935c7b6334f944}
+      \strng{editorbibnamehash}{5c6f569244b62f16c51830f1dac15458}
+      \strng{editornamehash}{5c6f569244b62f16c51830f1dac15458}
+      \strng{editorfullhash}{5c6f569244b62f16c51830f1dac15458}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 7th Python in Science Conference}
+      \field{title}{Exploring Network Structure, Dynamics, and Function using NetworkX}
+      \field{year}{2008}
+      \field{pages}{11\bibrangedash 15}
+      \range{pages}{5}
+    \endentry
+    \entry{have_we_reached_consensus}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=ab451ce5642ffe31693f5d0a199bee34}{%
+           family={Howard},
+           familyi={H\bibinitperiod},
+           given={Heidi},
+           giveni={H\bibinitperiod}}}%
+        {{hash=ba494cf2fcd5b5c3ed0f9d081c6a4556}{%
+           family={Mortier},
+           familyi={M\bibinitperiod},
+           given={Richard},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{155eaf7d6e5116ee52dc6e1fc8ee63c9}
+      \strng{fullhash}{155eaf7d6e5116ee52dc6e1fc8ee63c9}
+      \strng{bibnamehash}{155eaf7d6e5116ee52dc6e1fc8ee63c9}
+      \strng{authorbibnamehash}{155eaf7d6e5116ee52dc6e1fc8ee63c9}
+      \strng{authornamehash}{155eaf7d6e5116ee52dc6e1fc8ee63c9}
+      \strng{authorfullhash}{155eaf7d6e5116ee52dc6e1fc8ee63c9}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 7th Workshop on Principles and Practice of Consistency for Distributed Data}
+      \field{title}{Paxos vs Raft: Have we reached consensus on distributed consensus?}
+      \field{year}{2020}
+      \field{pages}{1\bibrangedash 9}
+      \range{pages}{9}
+    \endentry
+    \entry{tman}{article}{}
+      \name{author}{3}{}{%
+        {{hash=2373df2581f0556778d5dd54d705d300}{%
+           family={Jelasity},
+           familyi={J\bibinitperiod},
+           given={Márk},
+           giveni={M\bibinitperiod}}}%
+        {{hash=1a3f8ab08478a43150277c1aee0ca9ea}{%
+           family={Montresor},
+           familyi={M\bibinitperiod},
+           given={Alberto},
+           giveni={A\bibinitperiod}}}%
+        {{hash=076295e13847a1c03f06d3d9dbf0f4f1}{%
+           family={Babaoglu},
+           familyi={B\bibinitperiod},
+           given={Ozalp},
+           giveni={O\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New York, NY, USA}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier North-Holland, Inc.}%
+      }
+      \strng{namehash}{2f2c5e64ce1c9719b727cc9c232fc61a}
+      \strng{fullhash}{2f2c5e64ce1c9719b727cc9c232fc61a}
+      \strng{bibnamehash}{2f2c5e64ce1c9719b727cc9c232fc61a}
+      \strng{authorbibnamehash}{2f2c5e64ce1c9719b727cc9c232fc61a}
+      \strng{authornamehash}{2f2c5e64ce1c9719b727cc9c232fc61a}
+      \strng{authorfullhash}{2f2c5e64ce1c9719b727cc9c232fc61a}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1389-1286}
+      \field{journaltitle}{Comput. Netw.}
+      \field{month}{8}
+      \field{number}{13}
+      \field{title}{T-Man: Gossip-based Fast Overlay Topology Construction}
+      \field{volume}{53}
+      \field{year}{2009}
+      \field{pages}{2321\bibrangedash 2339}
+      \range{pages}{19}
+      \verb{doi}
+      \verb 10.1016/j.comnet.2009.03.013
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1016/j.comnet.2009.03.013
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1016/j.comnet.2009.03.013
+      \endverb
+      \keyw{Bootstrapping,Gossip-based protocols,Overlay networks,Self-organizing middleware}
+    \endentry
+    \entry{paxos}{article}{}
+      \name{author}{1}{}{%
+        {{hash=5d77435450d10a850a5b58577b9a456b}{%
+           family={Lamport},
+           familyi={L\bibinitperiod},
+           given={Leslie},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{5d77435450d10a850a5b58577b9a456b}
+      \strng{fullhash}{5d77435450d10a850a5b58577b9a456b}
+      \strng{bibnamehash}{5d77435450d10a850a5b58577b9a456b}
+      \strng{authorbibnamehash}{5d77435450d10a850a5b58577b9a456b}
+      \strng{authornamehash}{5d77435450d10a850a5b58577b9a456b}
+      \strng{authorfullhash}{5d77435450d10a850a5b58577b9a456b}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{At the PODC 2001 conference, I got tired of everyone saying how difficult it was to understand the Paxos algorithm, published in [122]. Although people got so hung up in the pseudo-Greek names that they found the paper hard to understand, the algorithm itself is very simple. So, I cornered a couple of people at the conference and explained the algorithm to them orally, with no paper. When I got home, I wrote down the explanation as a short note, which I later revised based on comments from Fred Schneider and Butler Lampson. The current version is 13 pages long, and contains no formula more complicated than n1 > n2.}
+      \field{edition}{ACM SIGACT News (Distributed Computing Column) 32, 4 (Whole Number 121, December 2001)}
+      \field{journaltitle}{ACM SIGACT News (Distributed Computing Column) 32, 4 (Whole Number 121, December 2001)}
+      \field{month}{12}
+      \field{title}{Paxos Made Simple}
+      \field{year}{2001}
+      \field{pages}{51\bibrangedash 58}
+      \range{pages}{8}
+      \verb{urlraw}
+      \verb https://www.microsoft.com/en-us/research/publication/paxos-made-simple/
+      \endverb
+      \verb{url}
+      \verb https://www.microsoft.com/en-us/research/publication/paxos-made-simple/
+      \endverb
+    \endentry
+    \entry{hyparview}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=106b679d45af07d117b237f56dc95469}{%
+           family={Leitao},
+           familyi={L\bibinitperiod},
+           given={Joao},
+           giveni={J\bibinitperiod}}}%
+        {{hash=dcfcc16cd5b5b9061b2302ff7cdf48e1}{%
+           family={Pereira},
+           familyi={P\bibinitperiod},
+           given={Jose},
+           giveni={J\bibinitperiod}}}%
+        {{hash=0bd25e3d7c906cfadb1f214c8c4ffbf0}{%
+           family={Rodrigues},
+           familyi={R\bibinitperiod},
+           given={Luis},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Washington, DC, USA}%
+      }
+      \list{publisher}{1}{%
+        {IEEE Computer Society}%
+      }
+      \strng{namehash}{8f2ddefc34459078a32130518cebf53a}
+      \strng{fullhash}{8f2ddefc34459078a32130518cebf53a}
+      \strng{bibnamehash}{8f2ddefc34459078a32130518cebf53a}
+      \strng{authorbibnamehash}{8f2ddefc34459078a32130518cebf53a}
+      \strng{authornamehash}{8f2ddefc34459078a32130518cebf53a}
+      \strng{authorfullhash}{8f2ddefc34459078a32130518cebf53a}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 37th Annual IEEE/IFIP International Conference on Dependable Systems and Networks}
+      \field{isbn}{0-7695-2855-4}
+      \field{series}{DSN '07}
+      \field{title}{HyParView: A Membership Protocol for Reliable Gossip-Based Broadcast}
+      \field{year}{2007}
+      \field{pages}{419\bibrangedash 429}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1109/DSN.2007.56
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1109/DSN.2007.56
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1109/DSN.2007.56
+      \endverb
+    \endentry
+    \entry{xbot}{article}{}
+      \name{author}{4}{}{%
+        {{hash=d671f26f95ae952ec0e9b83750ec18aa}{%
+           family={Leitão},
+           familyi={L\bibinitperiod},
+           given={João},
+           giveni={J\bibinitperiod}}}%
+        {{hash=8c4af25b23762ec2447506a60ec4ee47}{%
+           family={Marques},
+           familyi={M\bibinitperiod},
+           given={João},
+           giveni={J\bibinitperiod}}}%
+        {{hash=998c15449568dd3725fb543cf78af277}{%
+           family={Pereira},
+           familyi={P\bibinitperiod},
+           given={José},
+           giveni={J\bibinitperiod}}}%
+        {{hash=5d8320156219bc2e29580bd98a98ef90}{%
+           family={Rodrigues},
+           familyi={R\bibinitperiod},
+           given={Luís},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Los Alamitos, CA, USA}%
+      }
+      \list{publisher}{1}{%
+        {IEEE Computer Society}%
+      }
+      \strng{namehash}{2e74a2108610f9cfc0fec1ceff815abc}
+      \strng{fullhash}{e460f2e6e03c477494184265b8757e65}
+      \strng{bibnamehash}{2e74a2108610f9cfc0fec1ceff815abc}
+      \strng{authorbibnamehash}{2e74a2108610f9cfc0fec1ceff815abc}
+      \strng{authornamehash}{2e74a2108610f9cfc0fec1ceff815abc}
+      \strng{authorfullhash}{e460f2e6e03c477494184265b8757e65}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1045-9219}
+      \field{journaltitle}{IEEE Transactions on Parallel and Distributed Systems}
+      \field{number}{PrePrints}
+      \field{title}{{X-BOT}: A Protocol for Resilient Optimization of Unstructured Overlay Networks}
+      \field{volume}{99}
+      \field{year}{2012}
+      \verb{doi}
+      \verb http://doi.ieeecomputersociety.org/10.1109/TPDS.2012.29
+      \endverb
+    \endentry
+    \entry{ethereum_analysis}{misc}{}
+      \name{author}{3}{}{%
+        {{hash=668a54036ed9215e9c1d44cf31211dcd}{%
+           family={Pavloff},
+           familyi={P\bibinitperiod},
+           given={Ulysse},
+           giveni={U\bibinitperiod}}}%
+        {{hash=99c2f8229e3958893de0e6d13e85f2b7}{%
+           family={Amoussou-Guenou},
+           familyi={A\bibinithyphendelim G\bibinitperiod},
+           given={Yackolley},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=3676da59cb3adc517f9034c565906535}{%
+           family={Tucci-Piergiovanni},
+           familyi={T\bibinithyphendelim P\bibinitperiod},
+           given={Sara},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{f2ae3e678f9d01bab9e7bdd3b339d5c0}
+      \strng{fullhash}{f2ae3e678f9d01bab9e7bdd3b339d5c0}
+      \strng{bibnamehash}{f2ae3e678f9d01bab9e7bdd3b339d5c0}
+      \strng{authorbibnamehash}{f2ae3e678f9d01bab9e7bdd3b339d5c0}
+      \strng{authornamehash}{f2ae3e678f9d01bab9e7bdd3b339d5c0}
+      \strng{authorfullhash}{f2ae3e678f9d01bab9e7bdd3b339d5c0}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.CR}
+      \field{eprinttype}{arXiv}
+      \field{title}{Ethereum Proof-of-Stake under Scrutiny}
+      \field{year}{2022}
+      \verb{eprint}
+      \verb 2210.16070
+      \endverb
+    \endentry
+    \entry{pastry}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=0a533a242403515a10bbc9b4e89b9a7c}{%
+           family={Rowstron},
+           familyi={R\bibinitperiod},
+           given={Ant},
+           giveni={A\bibinitperiod}}}%
+        {{hash=fb43649db15953eb2164df87bc5034a3}{%
+           family={Druschel},
+           familyi={D\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer Berlin Heidelberg}%
+      }
+      \strng{namehash}{0ebefdfc9e35ad5f15ba8010cb65f9ac}
+      \strng{fullhash}{0ebefdfc9e35ad5f15ba8010cb65f9ac}
+      \strng{bibnamehash}{0ebefdfc9e35ad5f15ba8010cb65f9ac}
+      \strng{authorbibnamehash}{0ebefdfc9e35ad5f15ba8010cb65f9ac}
+      \strng{authornamehash}{0ebefdfc9e35ad5f15ba8010cb65f9ac}
+      \strng{authorfullhash}{0ebefdfc9e35ad5f15ba8010cb65f9ac}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{IFIP/ACM International Conference on Distributed Systems Platforms (Middleware)}
+      \field{chapter}{Middleware 2001}
+      \field{edition}{IFIP/ACM International Conference on Distributed Systems Platforms (Middleware)}
+      \field{isbn}{978-3-540-45518-9}
+      \field{month}{11}
+      \field{title}{Pastry: Scalable, distributed object location and routing for large-scale peer-to-peer systems}
+      \field{volume}{2218}
+      \field{year}{2001}
+      \field{pages}{329\bibrangedash 350}
+      \range{pages}{22}
+      \verb{urlraw}
+      \verb https://www.microsoft.com/en-us/research/publication/pastry-scalable-distributed-object-location-and-routing-for-large-scale-peer-to-peer-systems/
+      \endverb
+      \verb{url}
+      \verb https://www.microsoft.com/en-us/research/publication/pastry-scalable-distributed-object-location-and-routing-for-large-scale-peer-to-peer-systems/
+      \endverb
+    \endentry
+    \entry{solana_halting_problem}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=e03e8e5d3222409381fe2592683fd50a}{%
+           family={Sliwinski},
+           familyi={S\bibinitperiod},
+           given={Jakub},
+           giveni={J\bibinitperiod}}}%
+        {{hash=116e697277f1c8d66e37330d8e149a85}{%
+           family={Kniep},
+           familyi={K\bibinitperiod},
+           given={Quentin},
+           giveni={Q\bibinitperiod}}}%
+        {{hash=5c162b9d03517a96680df0dc8d8263eb}{%
+           family={Wattenhofer},
+           familyi={W\bibinitperiod},
+           given={Roger},
+           giveni={R\bibinitperiod}}}%
+        {{hash=49afcb26ba17032785ac232d2564b7b9}{%
+           family={Schaich},
+           familyi={S\bibinitperiod},
+           given={Fabian},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {<conf-loc>, <city>Chennai</city>, <country>India</country>, </conf-loc>}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{f8b4730975b893fa06bc894cf1c68332}
+      \strng{fullhash}{02c8649b966cba2d3a154a859c0c7c6d}
+      \strng{bibnamehash}{f8b4730975b893fa06bc894cf1c68332}
+      \strng{authorbibnamehash}{f8b4730975b893fa06bc894cf1c68332}
+      \strng{authornamehash}{f8b4730975b893fa06bc894cf1c68332}
+      \strng{authorfullhash}{02c8649b966cba2d3a154a859c0c7c6d}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Solana is a blockchain protocol that has gained significant attention in the cryptocurrency community. This work examines Solana’s consensus protocol and its reference implementation. In this paper we try to get an understanding of the Solana protocol. However, this is not so easy because the publicly available resources are insufficient to specify the details of the protocol. Moreover, the implementation has deviated in undocumented ways from the available protocol design description. Thus the consensus rules and their implied security properties remain unclear. We evaluate a number of experimental scenarios in a local Solana testnet. These tests seem to confirm our basic understanding that Solana does not fully achieve consensus. In this paper we show how a single malicious validator, once elected as leader, might be able to halt the Solana blockchain. We also observe some inconsistent behavior, which is not readily explained by any of the consensus rules we are aware of.}
+      \field{booktitle}{Proceedings of the 25th International Conference on Distributed Computing and Networking}
+      \field{isbn}{9798400716737}
+      \field{series}{ICDCN '24}
+      \field{title}{Halting the Solana Blockchain with Epsilon Stake}
+      \field{year}{2024}
+      \field{pages}{45\bibrangedash 54}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1145/3631461.3631553
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1145/3631461.3631553
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1145/3631461.3631553
+      \endverb
+      \keyw{Blockchain Security Denial of Service.}
+    \endentry
+    \entry{chord}{article}{}
+      \name{author}{7}{}{%
+        {{hash=6c0e25b703ac672324ac72dba3eb4446}{%
+           family={Stoica},
+           familyi={S\bibinitperiod},
+           given={I.},
+           giveni={I\bibinitperiod}}}%
+        {{hash=a995f0aca91224a5fb16a79eb45baee9}{%
+           family={Morris},
+           familyi={M\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=f671babe77f60ae13d8fceb376993463}{%
+           family={Liben-Nowell},
+           familyi={L\bibinithyphendelim N\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=b9e544ca96ee3aca10a788af9f2b3009}{%
+           family={Karger},
+           familyi={K\bibinitperiod},
+           given={D.R.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=0b79a07a060e0e282bb235357c9e4978}{%
+           family={Kaashoek},
+           familyi={K\bibinitperiod},
+           given={M.F.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=5054522e1d29150a617ca2b72e5edf35}{%
+           family={Dabek},
+           familyi={D\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod}}}%
+        {{hash=269cedff581ea63cd7dd3fed7e35c26c}{%
+           family={Balakrishnan},
+           familyi={B\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{c59a6edaef8c6a0caeb1a10cd6272035}
+      \strng{fullhash}{aa3d1bc0d76b2bfaa43bb90692b32797}
+      \strng{bibnamehash}{c59a6edaef8c6a0caeb1a10cd6272035}
+      \strng{authorbibnamehash}{c59a6edaef8c6a0caeb1a10cd6272035}
+      \strng{authornamehash}{c59a6edaef8c6a0caeb1a10cd6272035}
+      \strng{authorfullhash}{aa3d1bc0d76b2bfaa43bb90692b32797}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE/ACM Transactions on Networking}
+      \field{number}{1}
+      \field{title}{Chord: a scalable peer-to-peer lookup protocol for Internet applications}
+      \field{volume}{11}
+      \field{year}{2003}
+      \field{pages}{17\bibrangedash 32}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1109/TNET.2002.808407
+      \endverb
+    \endentry
+    \entry{vibes}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=a1f6a3004bcfb7a0e89ccc747045c1ba}{%
+           family={Stoykov},
+           familyi={S\bibinitperiod},
+           given={Lyubomir},
+           giveni={L\bibinitperiod}}}%
+        {{hash=aa0bb4cfff9b737682f0d6a5f18a20ea}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Kaiwen},
+           giveni={K\bibinitperiod}}}%
+        {{hash=ea92f9ebc3ace54ebda154ff2ca3d7fc}{%
+           family={Jacobsen},
+           familyi={J\bibinitperiod},
+           given={Hans-Arno},
+           giveni={H\bibinithyphendelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{5ac053a56977254f8e545f76ab97dec2}
+      \strng{fullhash}{5ac053a56977254f8e545f76ab97dec2}
+      \strng{bibnamehash}{5ac053a56977254f8e545f76ab97dec2}
+      \strng{authorbibnamehash}{5ac053a56977254f8e545f76ab97dec2}
+      \strng{authornamehash}{5ac053a56977254f8e545f76ab97dec2}
+      \strng{authorfullhash}{5ac053a56977254f8e545f76ab97dec2}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 18th ACM/IFIP/USENIX Middleware Conference: Posters and Demos}
+      \field{title}{Vibes: fast blockchain simulations for large-scale peer-to-peer networks}
+      \field{year}{2017}
+      \field{pages}{19\bibrangedash 20}
+      \range{pages}{2}
+    \endentry
+    \entry{jabs}{article}{}
+      \name{author}{3}{}{%
+        {{hash=891f477534e715438bc0081b34eb96e9}{%
+           family={Yajam},
+           familyi={Y\bibinitperiod},
+           given={Habib},
+           giveni={H\bibinitperiod}}}%
+        {{hash=f71a2b5f26cf06ea4a5aeae1b4ac14d7}{%
+           family={Ebadi},
+           familyi={E\bibinitperiod},
+           given={Elnaz},
+           giveni={E\bibinitperiod}}}%
+        {{hash=1238504f36790102ee5fac467feaa806}{%
+           family={Akhaee},
+           familyi={A\bibinitperiod},
+           given={Mohammad\bibnamedelima Ali},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{b134f435a00889be72c6057a54946476}
+      \strng{fullhash}{b134f435a00889be72c6057a54946476}
+      \strng{bibnamehash}{b134f435a00889be72c6057a54946476}
+      \strng{authorbibnamehash}{b134f435a00889be72c6057a54946476}
+      \strng{authornamehash}{b134f435a00889be72c6057a54946476}
+      \strng{authorfullhash}{b134f435a00889be72c6057a54946476}
+      \field{sortinit}{Y}
+      \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Network Science and Engineering}
+      \field{title}{JABS: A Blockchain Simulator for Researching Consensus Algorithms}
+      \field{year}{2023}
+    \endentry
+    \entry{solana}{article}{}
+      \name{author}{1}{}{%
+        {{hash=09c9e78c1481cee9e6190c05e10a8924}{%
+           family={Yakovenko},
+           familyi={Y\bibinitperiod},
+           given={Anatoly},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{09c9e78c1481cee9e6190c05e10a8924}
+      \strng{fullhash}{09c9e78c1481cee9e6190c05e10a8924}
+      \strng{bibnamehash}{09c9e78c1481cee9e6190c05e10a8924}
+      \strng{authorbibnamehash}{09c9e78c1481cee9e6190c05e10a8924}
+      \strng{authornamehash}{09c9e78c1481cee9e6190c05e10a8924}
+      \strng{authorfullhash}{09c9e78c1481cee9e6190c05e10a8924}
+      \field{sortinit}{Y}
+      \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Whitepaper}
+      \field{title}{Solana: A new architecture for a high performance blockchain v0. 8.13}
+      \field{year}{2018}
+    \endentry
+    \entry{blockchain_consensus}{article}{}
+      \name{author}{2}{}{%
+        {{hash=42f529b7f497ff7acc1d2547f55bdb47}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Shijie},
+           giveni={S\bibinitperiod}}}%
+        {{hash=e0308a7d7dbf52bde1e20b7cfd04f2dd}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Jong-Hyouk},
+           giveni={J\bibinithyphendelim H\bibinitperiod}}}%
+      }
+      \strng{namehash}{f620488228c3eacf39186035fa1461b7}
+      \strng{fullhash}{f620488228c3eacf39186035fa1461b7}
+      \strng{bibnamehash}{f620488228c3eacf39186035fa1461b7}
+      \strng{authorbibnamehash}{f620488228c3eacf39186035fa1461b7}
+      \strng{authornamehash}{f620488228c3eacf39186035fa1461b7}
+      \strng{authorfullhash}{f620488228c3eacf39186035fa1461b7}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Blockchain is the core technology of many cryptocurrencies. Blockchain as a distributed ledger technology has received extensive research attention. In addition to cryptography and P2P (peer-to-peer) technology, consensus protocols are also a fundamental part of the blockchain technology. A good consensus protocol can guarantee the fault tolerance and security of the blockchain systems. The consensus protocols currently used in most blockchain systems can be broadly divided into two categories: the probabilistic-finality consensus protocols and the absolute-finality consensus protocols. This paper introduces some of the main consensus protocols of these two categories, and analyzes their strengths and weaknesses as well as the applicable blockchain types.}
+      \field{issn}{2405-9595}
+      \field{journaltitle}{ICT Express}
+      \field{number}{2}
+      \field{title}{Analysis of the main consensus protocols of blockchain}
+      \field{volume}{6}
+      \field{year}{2020}
+      \field{pages}{93\bibrangedash 97}
+      \range{pages}{5}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.icte.2019.08.001
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S240595951930164X
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S240595951930164X
+      \endverb
+      \keyw{Blockchains,Consensus protocols,Cryptocurrencies}
+    \endentry
+  \enddatalist
+\endrefsection
+
+\refsection{1}
+  \datalist[entry]{nty/global//global/global}
+    \entry{novathesis-manual}{manual}{}
+      \name{author}{1}{}{%
+        {{hash=419e7851ce9e726652864635d63207af}{%
+           family={Lourenço},
+           familyi={L\bibinitperiod},
+           given={João\bibnamedelima M.},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {NOVA University Lisbon}%
+      }
+      \strng{namehash}{419e7851ce9e726652864635d63207af}
+      \strng{fullhash}{419e7851ce9e726652864635d63207af}
+      \strng{bibnamehash}{419e7851ce9e726652864635d63207af}
+      \strng{authorbibnamehash}{419e7851ce9e726652864635d63207af}
+      \strng{authornamehash}{419e7851ce9e726652864635d63207af}
+      \strng{authorfullhash}{419e7851ce9e726652864635d63207af}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{The NOVAthesis \LaTeX{} Template User's Manual}}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://github.com/joaomlourenco/novathesis/raw/main/template.pdf
+      \endverb
+      \verb{url}
+      \verb https://github.com/joaomlourenco/novathesis/raw/main/template.pdf
+      \endverb
+      \keyw{novathesis-manual}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

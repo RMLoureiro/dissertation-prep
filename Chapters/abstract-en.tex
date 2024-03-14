@@ -1,0 +1,46 @@
+%!TEX root = ../template.tex
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% abstrac-en.tex
+%% NOVA thesis document file
+%%
+%% Abstract in English([^%]*)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\typeout{NT FILE abstrac-en.tex}%
+
+The number of services and applications that require and rely on transactional, replicated and verifiable data to 
+function is increasing with each passing day, from banking and financial applications to online voting. With these
+requirements also come challenges, like availability, consistency, and security mechanisms that allow for integrity, non-repudiation and
+encryption of messages.
+
+A common solution that these applications use to satisfy these requirements are blockchain protocols, usually defined as
+distributed ledgers with a growing list of records (blocks), linked together by cryptographic hashes. Records are permanent and
+distributed across a peer-to-peer computer network where participants adhere to the consensus protocols to validate and add
+transactions.
+
+There are a wide range of different blockchain protocols and some of them are not set in stone, Like Ethereum which moved from proof of work
+into a proof of stake solution or Tezos where stakeholders are capable of proposing and agreeing on changes to the consensus protocol allowing
+it to evolve over time. Because of this a number of tools focused on assisting with the development of these protocols have emerged.
+
+One of these tools is MOBS, Modular Blockchain Simulator, built with extensibility and
+modularity in mind, allows for simulation of consensus and blockchain protocols as well as parametrize multiple scenarios for their study which
+include bandwidth limits, network layout and Byzantine and adversarial behaviour of participant nodes.
+
+The goal of this dissertation is twofold, first we want to extract statistics and information from MOBS' logs so that we can provide
+developers with qualitative information about the protocols' execution to empirically verify the protocols' properties
+(it does not avoid the need for formal verification, it is only a support during the prototyping phase). 
+Secondly we also propose to improve the
+behaviour and parameterization of the network layer to allow for specific membership protocols to be selected and determine
+the network layout and re-configuration when participants join or leave the network at runtime.
+
+% Palavras-chave do resumo em Inglês
+% \begin{keywords}
+% Keyword 1, Keyword 2, Keyword 3, Keyword 4, Keyword 5, Keyword 6, Keyword 7, Keyword 8, Keyword 9
+% \end{keywords}
+\keywords{
+  Blockchain,
+  Networking,
+  Consensus,
+  Simulation,
+  Validation of protocol properties
+}
