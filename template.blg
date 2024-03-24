@@ -1,30 +1,30 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
 [0] Config.pm:310> INFO - Logfile is 'template.blg'
-[28] biber-darwin:340> INFO - === Tue Feb 13, 2024, 01:12:08
-[37] Biber.pm:419> INFO - Reading 'template.bcf'
-[69] Biber.pm:979> INFO - Found 23 citekeys in bib section 0
-[69] Biber.pm:979> INFO - Found 1 citekeys in bib section 1
-[69] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
-[78] Biber.pm:4419> INFO - Processing section 0
-[83] Biber.pm:4610> INFO - Looking for bibtex file './NOVAthesisFiles/fix-bib.bib' for section 0
-[83] bibtex.pm:1713> INFO - LaTeX decoding ...
-[84] bibtex.pm:1519> INFO - Found BibTeX data source './NOVAthesisFiles/fix-bib.bib'
-[85] Biber.pm:4610> INFO - Looking for bibtex file 'Bibliography/bibliography.bib' for section 0
-[86] bibtex.pm:1713> INFO - LaTeX decoding ...
-[98] bibtex.pm:1519> INFO - Found BibTeX data source 'Bibliography/bibliography.bib'
-[180] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[180] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[180] Biber.pm:4239> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
-[180] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
-[194] Biber.pm:4419> INFO - Processing section 1
-[194] Biber.pm:4610> INFO - Looking for bibtex file './NOVAthesisFiles/fix-bib.bib' for section 1
-[199] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[199] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[199] Biber.pm:4239> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
-[199] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
-[200] bbl.pm:660> INFO - Writing 'template.bbl' with encoding 'UTF-8'
-[209] bbl.pm:763> INFO - Output to template.bbl
-[209] Biber.pm:131> WARN - legacy month field 'December' in entry 'paxos' is not an integer - this will probably not sort properly.
-[209] Biber.pm:131> WARN - ISBN '9798400716737' in entry 'solana_halting_problem' is invalid - run biber with '--validate_datamodel' for details.
-[209] Biber.pm:131> WARN - legacy month field 'November' in entry 'pastry' is not an integer - this will probably not sort properly.
-[209] Biber.pm:133> INFO - WARNINGS: 3
+[32] biber-darwin:340> INFO - === Sun Mar 24, 2024, 05:10:55
+[39] Biber.pm:419> INFO - Reading 'template.bcf'
+[74] Biber.pm:979> INFO - Found 24 citekeys in bib section 0
+[74] Biber.pm:979> INFO - Found 1 citekeys in bib section 1
+[74] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
+[84] Biber.pm:4419> INFO - Processing section 0
+[89] Biber.pm:4610> INFO - Looking for bibtex file './NOVAthesisFiles/fix-bib.bib' for section 0
+[90] bibtex.pm:1713> INFO - LaTeX decoding ...
+[91] bibtex.pm:1519> INFO - Found BibTeX data source './NOVAthesisFiles/fix-bib.bib'
+[92] Biber.pm:4610> INFO - Looking for bibtex file 'Bibliography/bibliography.bib' for section 0
+[93] bibtex.pm:1713> INFO - LaTeX decoding ...
+[106] bibtex.pm:1519> INFO - Found BibTeX data source 'Bibliography/bibliography.bib'
+[197] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[197] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[198] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[198] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[208] Biber.pm:4419> INFO - Processing section 1
+[208] Biber.pm:4610> INFO - Looking for bibtex file './NOVAthesisFiles/fix-bib.bib' for section 1
+[213] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[213] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[213] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[213] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[214] bbl.pm:660> INFO - Writing 'template.bbl' with encoding 'UTF-8'
+[221] bbl.pm:763> INFO - Output to template.bbl
+[221] Biber.pm:131> WARN - legacy month field 'December' in entry 'paxos' is not an integer - this will probably not sort properly.
+[221] Biber.pm:131> WARN - ISBN '9798400716737' in entry 'solana_halting_problem' is invalid - run biber with '--validate_datamodel' for details.
+[221] Biber.pm:131> WARN - legacy month field 'November' in entry 'pastry' is not an integer - this will probably not sort properly.
+[221] Biber.pm:133> INFO - WARNINGS: 3
